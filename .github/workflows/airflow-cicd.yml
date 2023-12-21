@@ -44,6 +44,7 @@ jobs:
 
     - name: Run Airflow Tests
       run: |
+        cd dags
         current_time=$(date -u -d "+1 minutes" "+%Y-%m-%dT%H:%M:%S")
         airflow tasks test fantasy_premier_league_debug current_season_history_bronze_to_silver_test $current_time
 
