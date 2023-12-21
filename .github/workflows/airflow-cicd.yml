@@ -34,7 +34,9 @@ jobs:
       run: ls -al
 
     - name: Check full path
-      run: pwd
+      run: |
+        pwd
+        ls -a /home/runner/
 
     - name: Check dag file
       run: |
@@ -44,7 +46,7 @@ jobs:
 
     - name: Run Airflow Tests
       run: |
-        cd dags
+        ls -lrt
         current_time=$(date -u -d "+1 minutes" "+%Y-%m-%dT%H:%M:%S")
         airflow tasks test fantasy_premier_league_debug current_season_history_bronze_to_silver_test $current_time
 
