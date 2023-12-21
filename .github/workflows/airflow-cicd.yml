@@ -28,26 +28,11 @@ jobs:
     
     - name: Initialize Airflow Database
       run: |
-        airflow db init
-
-    - name: Check file path
-      run: ls -al
-
-    - name: Check full path
-      run: |
-        pwd
-        ls -a /home/runner/
-
-    - name: Check dag file
-      run: |
-        cd dags
-        ls -a
+        AIRFLOW_HOME=/home/runner/work/fantasy_premier_league_airflow/fantasy_premier_league_airflow airflow db init
         
 
     - name: Run Airflow Tests
       run: |
-        ls -lrt
-        export PYTHONPATH=$(pwd)/dags
         current_time=$(date -u -d "+1 minutes" "+%Y-%m-%dT%H:%M:%S")
         AIRFLOW_HOME=/home/runner/work/fantasy_premier_league_airflow/fantasy_premier_league_airflow/dags airflow tasks test fantasy_premier_league_debug current_season_history_bronze_to_silver_test $current_time
 
