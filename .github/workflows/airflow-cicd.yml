@@ -28,7 +28,11 @@ jobs:
     
     - name: Initialize Airflow Database
       run: |
-        AIRFLOW_HOME=/home/runner/work/fantasy_premier_league_airflow/fantasy_premier_league_airflow airflow db init
+        AIRFLOW_HOME=/home/runner/work/fantasy_premier_league_airflow/fantasy_premier_league_airflow 
+
+        mkdir -p $AIRFLOW_HOME/logs/scheduler/2023-12-21
+
+        airflow db initairflow db init
         
 
     - name: Run Airflow Tests
