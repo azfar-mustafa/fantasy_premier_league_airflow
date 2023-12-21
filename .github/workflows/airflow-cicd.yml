@@ -49,7 +49,7 @@ jobs:
         ls -lrt
         export PYTHONPATH=$(pwd)/dags
         current_time=$(date -u -d "+1 minutes" "+%Y-%m-%dT%H:%M:%S")
-        airflow tasks test fantasy_premier_league_debug current_season_history_bronze_to_silver_test $current_time
+        AIRFLOW_HOME=/home/runner/work/fantasy_premier_league_airflow/fantasy_premier_league_airflow/dags airflow tasks test fantasy_premier_league_debug current_season_history_bronze_to_silver_test $current_time
 
     - name: Deploy Airflow DAGs
       run: |
