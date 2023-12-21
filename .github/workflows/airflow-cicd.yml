@@ -37,7 +37,9 @@ jobs:
       run: pwd
 
     - name: Check dag file
-      run: cd dags
+      run: |
+        cd dags
+        ls -a
         
 
     - name: Run Airflow Tests
