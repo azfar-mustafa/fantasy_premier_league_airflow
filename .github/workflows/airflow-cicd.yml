@@ -32,7 +32,7 @@ jobs:
 
         mkdir -p $AIRFLOW_HOME/logs/scheduler/2023-12-21
 
-        airflow db initairflow db init
+        airflow db init
         
 
     - name: Run Airflow Tests
