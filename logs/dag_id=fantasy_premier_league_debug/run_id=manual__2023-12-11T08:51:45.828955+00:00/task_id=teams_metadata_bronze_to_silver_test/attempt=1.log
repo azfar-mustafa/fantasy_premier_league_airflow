@@ -1,0 +1,25 @@
+[2023-12-11T16:52:23.794+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.teams_metadata_bronze_to_silver_test manual__2023-12-11T08:51:45.828955+00:00 [queued]>
+[2023-12-11T16:52:23.807+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.teams_metadata_bronze_to_silver_test manual__2023-12-11T08:51:45.828955+00:00 [queued]>
+[2023-12-11T16:52:23.808+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-11T16:52:23.837+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): teams_metadata_bronze_to_silver_test> on 2023-12-11 08:51:45.828955+00:00
+[2023-12-11T16:52:23.841+0800] {standard_task_runner.py:57} INFO - Started process 77639 to run task
+[2023-12-11T16:52:23.844+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'teams_metadata_bronze_to_silver_test', 'manual__2023-12-11T08:51:45.828955+00:00', '--job-id', '189', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmp9pjhcpfi']
+[2023-12-11T16:52:23.846+0800] {standard_task_runner.py:85} INFO - Job 189: Subtask teams_metadata_bronze_to_silver_test
+[2023-12-11T16:52:23.897+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.teams_metadata_bronze_to_silver_test manual__2023-12-11T08:51:45.828955+00:00 [running]> on host azfartitu.
+[2023-12-11T16:52:24.015+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='teams_metadata_bronze_to_silver_test' AIRFLOW_CTX_EXECUTION_DATE='2023-12-11T08:51:45.828955+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-11T08:51:45.828955+00:00'
+[2023-12-11T16:52:24.030+0800] {logging_mixin.py:154} INFO - Temporary directory is created: /tmp/tmp01h3n5am
+[2023-12-11T16:52:24.037+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T16:52:24.510+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T16:52:25.356+0800] {logging_mixin.py:154} INFO - teams_metadata_11122023.json is downloaded at /tmp/tmp01h3n5am from teams_metadata/current/11122023
+[2023-12-11T16:52:25.368+0800] {logging_mixin.py:154} INFO - Table teams_metadata is created
+[2023-12-11T16:52:25.377+0800] {logging_mixin.py:154} INFO - Copy data from table teams_metadata into file teams_metadata_11122023.parquet
+[2023-12-11T16:52:25.380+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T16:52:25.384+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T16:52:26.271+0800] {logging_mixin.py:154} INFO - File teams_metadata_11122023.parquet is uploaded into silver container
+[2023-12-11T16:52:26.272+0800] {logging_mixin.py:154} INFO - /tmp/tmp01h3n5am/teams_metadata_11122023.parquet is removed
+[2023-12-11T16:52:26.273+0800] {logging_mixin.py:154} INFO - /tmp/tmp01h3n5am/teams_metadata_11122023.json is removed
+[2023-12-11T16:52:26.273+0800] {logging_mixin.py:154} INFO - /tmp/tmp01h3n5am is removed
+[2023-12-11T16:52:26.275+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-11T16:52:26.285+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=teams_metadata_bronze_to_silver_test, execution_date=20231211T085145, start_date=20231211T085223, end_date=20231211T085226
+[2023-12-11T16:52:26.349+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-11T16:52:26.369+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

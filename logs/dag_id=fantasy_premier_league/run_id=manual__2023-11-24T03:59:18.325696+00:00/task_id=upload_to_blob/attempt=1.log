@@ -1,0 +1,33 @@
+[2023-11-24T11:59:29.281+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league.upload_to_blob manual__2023-11-24T03:59:18.325696+00:00 [queued]>
+[2023-11-24T11:59:29.288+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league.upload_to_blob manual__2023-11-24T03:59:18.325696+00:00 [queued]>
+[2023-11-24T11:59:29.288+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-24T11:59:29.309+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): upload_to_blob> on 2023-11-24 03:59:18.325696+00:00
+[2023-11-24T11:59:29.312+0800] {standard_task_runner.py:57} INFO - Started process 69848 to run task
+[2023-11-24T11:59:29.318+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league', 'upload_to_blob', 'manual__2023-11-24T03:59:18.325696+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/fantasy_premier_league_dag.py', '--cfg-path', '/tmp/tmpr_dqz97b']
+[2023-11-24T11:59:29.319+0800] {standard_task_runner.py:85} INFO - Job 15: Subtask upload_to_blob
+[2023-11-24T11:59:29.366+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league.upload_to_blob manual__2023-11-24T03:59:18.325696+00:00 [running]> on host azfartitu.
+[2023-11-24T11:59:29.436+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league' AIRFLOW_CTX_TASK_ID='upload_to_blob' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T03:59:18.325696+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-24T03:59:18.325696+00:00'
+[2023-11-24T11:59:29.541+0800] {logging_mixin.py:154} INFO - Temporary file created: /tmp/tmpu78y9kie
+[2023-11-24T11:59:29.546+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T11:59:30.669+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T11:59:31.719+0800] {logging_mixin.py:154} INFO - Temporary file removed: /tmp/tmpu78y9kie
+[2023-11-24T11:59:31.720+0800] {fantasy_premier_league_dag.py:88} INFO - File uploaded to Azure Blob Storage: bronze/events_metadata_24112023.json
+[2023-11-24T11:59:31.724+0800] {logging_mixin.py:154} INFO - Temporary file created: /tmp/tmp49jva3zk
+[2023-11-24T11:59:31.728+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T11:59:31.732+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T11:59:32.643+0800] {logging_mixin.py:154} INFO - Temporary file removed: /tmp/tmp49jva3zk
+[2023-11-24T11:59:32.643+0800] {fantasy_premier_league_dag.py:88} INFO - File uploaded to Azure Blob Storage: bronze/teams_metadata_24112023.json
+[2023-11-24T11:59:32.822+0800] {logging_mixin.py:154} INFO - Temporary file created: /tmp/tmpy8eu7imp
+[2023-11-24T11:59:32.826+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T11:59:32.830+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T11:59:35.058+0800] {logging_mixin.py:154} INFO - Temporary file removed: /tmp/tmpy8eu7imp
+[2023-11-24T11:59:35.058+0800] {fantasy_premier_league_dag.py:88} INFO - File uploaded to Azure Blob Storage: bronze/player_metadata_24112023.json
+[2023-11-24T11:59:35.059+0800] {logging_mixin.py:154} INFO - Temporary file created: /tmp/tmpn6zeeii4
+[2023-11-24T11:59:35.062+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T11:59:35.068+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T11:59:35.963+0800] {logging_mixin.py:154} INFO - Temporary file removed: /tmp/tmpn6zeeii4
+[2023-11-24T11:59:35.964+0800] {fantasy_premier_league_dag.py:88} INFO - File uploaded to Azure Blob Storage: bronze/position_metadata_24112023.json
+[2023-11-24T11:59:35.967+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-24T11:59:35.973+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league, task_id=upload_to_blob, execution_date=20231124T035918, start_date=20231124T035929, end_date=20231124T035935
+[2023-11-24T11:59:36.032+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-24T11:59:36.048+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,26 @@
+[2023-11-24T18:18:19.034+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test manual__2023-11-24T10:18:15.068393+00:00 [queued]>
+[2023-11-24T18:18:19.040+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test manual__2023-11-24T10:18:15.068393+00:00 [queued]>
+[2023-11-24T18:18:19.040+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-24T18:18:19.067+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): download_file_from_blob_test> on 2023-11-24 10:18:15.068393+00:00
+[2023-11-24T18:18:19.069+0800] {standard_task_runner.py:57} INFO - Started process 100352 to run task
+[2023-11-24T18:18:19.078+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'download_file_from_blob_test', 'manual__2023-11-24T10:18:15.068393+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmpasaspdad']
+[2023-11-24T18:18:19.079+0800] {standard_task_runner.py:85} INFO - Job 9: Subtask download_file_from_blob_test
+[2023-11-24T18:18:19.128+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test manual__2023-11-24T10:18:15.068393+00:00 [running]> on host azfartitu.
+[2023-11-24T18:18:19.203+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='download_file_from_blob_test' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T10:18:15.068393+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-24T10:18:15.068393+00:00'
+[2023-11-24T18:18:19.218+0800] {logging_mixin.py:154} INFO - Temporary directory created: /tmp/tmppecg0pn6
+[2023-11-24T18:18:19.229+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T18:18:19.816+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T18:18:22.644+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmppecg0pn6
+[2023-11-24T18:18:22.885+0800] {logging_mixin.py:154} INFO - <class 'list'>
+[2023-11-24T18:18:22.886+0800] {logging_mixin.py:154} INFO - File is deleted in /tmp/tmppecg0pn6
+[2023-11-24T18:18:23.222+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:18:23.224+0800] {logging_mixin.py:154} INFO - /tmp/tmppecg0pn6/100_24112023.json is created
+[2023-11-24T18:18:23.227+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T18:18:23.232+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T18:18:24.224+0800] {logging_mixin.py:154} INFO - File is uploaded at blob
+[2023-11-24T18:18:24.228+0800] {logging_mixin.py:154} INFO - File is deleted in /tmp/tmppecg0pn6
+[2023-11-24T18:18:24.229+0800] {logging_mixin.py:154} INFO - Directory is deleted in /tmp/tmppecg0pn6
+[2023-11-24T18:18:24.234+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-24T18:18:24.252+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=download_file_from_blob_test, execution_date=20231124T101815, start_date=20231124T101819, end_date=20231124T101824
+[2023-11-24T18:18:24.301+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-24T18:18:24.348+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

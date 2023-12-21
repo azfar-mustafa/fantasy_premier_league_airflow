@@ -1,0 +1,29 @@
+[2023-11-30T22:20:25.285+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-30T14:20:01.230033+00:00 [queued]>
+[2023-11-30T22:20:25.295+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-30T14:20:01.230033+00:00 [queued]>
+[2023-11-30T22:20:25.295+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-30T22:20:25.318+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): delete_file_in_actual_folder> on 2023-11-30 14:20:01.230033+00:00
+[2023-11-30T22:20:25.321+0800] {standard_task_runner.py:57} INFO - Started process 47332 to run task
+[2023-11-30T22:20:25.326+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'delete_file_in_actual_folder', 'manual__2023-11-30T14:20:01.230033+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmp4n7wrdhb']
+[2023-11-30T22:20:25.328+0800] {standard_task_runner.py:85} INFO - Job 81: Subtask delete_file_in_actual_folder
+[2023-11-30T22:20:25.372+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-30T14:20:01.230033+00:00 [running]> on host azfartitu.
+[2023-11-30T22:20:25.451+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='delete_file_in_actual_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-11-30T14:20:01.230033+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-30T14:20:01.230033+00:00'
+[2023-11-30T22:20:25.469+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:26.473+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-11-30T22:20:26.477+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:27.421+0800] {logging_mixin.py:154} INFO - Folder 'current_season_history/28112023' deleted successfully.
+[2023-11-30T22:20:27.423+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-11-30T22:20:27.428+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:28.317+0800] {logging_mixin.py:154} INFO - Folder 'events_metadata/28112023' deleted successfully.
+[2023-11-30T22:20:28.319+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-11-30T22:20:28.324+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:29.222+0800] {logging_mixin.py:154} INFO - Folder 'player_metadata/28112023' deleted successfully.
+[2023-11-30T22:20:29.224+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-11-30T22:20:29.229+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:30.151+0800] {logging_mixin.py:154} INFO - Folder 'position_metadata/28112023' deleted successfully.
+[2023-11-30T22:20:30.154+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-11-30T22:20:30.157+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:31.065+0800] {logging_mixin.py:154} INFO - Folder 'teams_metadata/28112023' deleted successfully.
+[2023-11-30T22:20:31.069+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-30T22:20:31.075+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=delete_file_in_actual_folder, execution_date=20231130T142001, start_date=20231130T142025, end_date=20231130T142031
+[2023-11-30T22:20:31.117+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-30T22:20:31.129+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

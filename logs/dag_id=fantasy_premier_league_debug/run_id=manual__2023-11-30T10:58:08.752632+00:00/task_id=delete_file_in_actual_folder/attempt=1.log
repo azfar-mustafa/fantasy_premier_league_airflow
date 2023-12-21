@@ -1,0 +1,36 @@
+[2023-11-30T18:58:23.766+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-30T10:58:08.752632+00:00 [queued]>
+[2023-11-30T18:58:23.777+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-30T10:58:08.752632+00:00 [queued]>
+[2023-11-30T18:58:23.777+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-30T18:58:23.806+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): delete_file_in_actual_folder> on 2023-11-30 10:58:08.752632+00:00
+[2023-11-30T18:58:23.810+0800] {standard_task_runner.py:57} INFO - Started process 44562 to run task
+[2023-11-30T18:58:23.814+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'delete_file_in_actual_folder', 'manual__2023-11-30T10:58:08.752632+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmpyury3oda']
+[2023-11-30T18:58:23.815+0800] {standard_task_runner.py:85} INFO - Job 78: Subtask delete_file_in_actual_folder
+[2023-11-30T18:58:23.878+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-30T10:58:08.752632+00:00 [running]> on host azfartitu.
+[2023-11-30T18:58:23.967+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='delete_file_in_actual_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-11-30T10:58:08.752632+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-30T10:58:08.752632+00:00'
+[2023-11-30T18:58:23.968+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-11-30T18:58:23.975+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T18:58:23.982+0800] {_universal.py:514} INFO - Request URL: 'https://azfarsadev.dfs.core.windows.net/bronze/current_season_history%2F28112023?recursive=REDACTED'
+Request method: 'DELETE'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/json'
+    'User-Agent': 'azsdk-python-storage-dfs/12.14.0 Python/3.10.12 (Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '61c9b9ea-8f6f-11ee-8823-fb07cd381753'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+[2023-11-30T18:58:24.952+0800] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Server': 'Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-delete-type-permanent': 'REDACTED'
+    'x-ms-deletion-id': 'REDACTED'
+    'x-ms-request-id': 'df708cf5-601f-0011-1b7c-23887f000000'
+    'x-ms-version': 'REDACTED'
+    'x-ms-client-request-id': '61c9b9ea-8f6f-11ee-8823-fb07cd381753'
+    'Date': 'Thu, 30 Nov 2023 10:58:23 GMT'
+    'Content-Length': '0'
+[2023-11-30T18:58:24.952+0800] {logging_mixin.py:154} INFO - Folder 'current_season_history/28112023' deleted successfully.
+[2023-11-30T18:58:24.954+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-30T18:58:24.963+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=delete_file_in_actual_folder, execution_date=20231130T105808, start_date=20231130T105823, end_date=20231130T105824
+[2023-11-30T18:58:24.993+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-30T18:58:25.003+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

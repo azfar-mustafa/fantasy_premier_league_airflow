@@ -1,0 +1,15 @@
+[2023-12-04T11:14:32.097+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league.fetch_fpl_api_data scheduled__2023-12-01T00:12:48.395122+00:00 [queued]>
+[2023-12-04T11:14:32.119+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league.fetch_fpl_api_data scheduled__2023-12-01T00:12:48.395122+00:00 [queued]>
+[2023-12-04T11:14:32.119+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-04T11:14:32.160+0800] {taskinstance.py:1382} INFO - Executing <Task(SimpleHttpOperator): fetch_fpl_api_data> on 2023-12-01 00:12:48.395122+00:00
+[2023-12-04T11:14:32.165+0800] {standard_task_runner.py:57} INFO - Started process 12757 to run task
+[2023-12-04T11:14:32.178+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league', 'fetch_fpl_api_data', 'scheduled__2023-12-01T00:12:48.395122+00:00', '--job-id', '102', '--raw', '--subdir', 'DAGS_FOLDER/fantasy_premier_league_dag.py', '--cfg-path', '/tmp/tmpf3vky28l']
+[2023-12-04T11:14:32.181+0800] {standard_task_runner.py:85} INFO - Job 102: Subtask fetch_fpl_api_data
+[2023-12-04T11:14:32.249+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league.fetch_fpl_api_data scheduled__2023-12-01T00:12:48.395122+00:00 [running]> on host azfartitu.
+[2023-12-04T11:14:32.400+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league' AIRFLOW_CTX_TASK_ID='fetch_fpl_api_data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-01T00:12:48.395122+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-01T00:12:48.395122+00:00'
+[2023-12-04T11:14:32.401+0800] {http.py:164} INFO - Calling HTTP method
+[2023-12-04T11:14:32.408+0800] {base.py:73} INFO - Using connection ID 'fpl_api' for task execution.
+[2023-12-04T11:14:32.674+0800] {base.py:73} INFO - Using connection ID 'fpl_api' for task execution.
+[2023-12-04T11:14:33.042+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league, task_id=fetch_fpl_api_data, execution_date=20231201T001248, start_date=20231204T031432, end_date=20231204T031433
+[2023-12-04T11:14:33.075+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-04T11:14:33.121+0800] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,60 @@
+[2023-11-29T07:04:50.936+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test scheduled__2023-11-27T23:04:19.207165+00:00 [queued]>
+[2023-11-29T07:04:51.037+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test scheduled__2023-11-27T23:04:19.207165+00:00 [queued]>
+[2023-11-29T07:04:51.038+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-29T07:04:51.229+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): download_file_from_blob_test> on 2023-11-27 23:04:19.207165+00:00
+[2023-11-29T07:04:51.366+0800] {standard_task_runner.py:57} INFO - Started process 19401 to run task
+[2023-11-29T07:04:51.435+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'download_file_from_blob_test', 'scheduled__2023-11-27T23:04:19.207165+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmp7d3yjtqr']
+[2023-11-29T07:04:51.439+0800] {standard_task_runner.py:85} INFO - Job 24: Subtask download_file_from_blob_test
+[2023-11-29T07:04:51.792+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test scheduled__2023-11-27T23:04:19.207165+00:00 [running]> on host azfartitu.
+[2023-11-29T07:04:52.294+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='download_file_from_blob_test' AIRFLOW_CTX_EXECUTION_DATE='2023-11-27T23:04:19.207165+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-27T23:04:19.207165+00:00'
+[2023-11-29T07:04:52.480+0800] {logging_mixin.py:154} INFO - Temporary directory created: /tmp/tmp_env1n_2
+[2023-11-29T07:04:52.516+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-29T07:04:56.262+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-29T07:04:57.576+0800] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py", line 49, in download_file_from_blob_test
+    az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=blob_path)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/wasb.py", line 391, in get_file
+    stream = self.download(container_name=container_name, blob_name=blob_name, **kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/wasb.py", line 446, in download
+    return blob_client.download_blob(offset=offset, length=length, **kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/core/tracing/decorator.py", line 78, in wrapper_use_tracer
+    return func(*args, **kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_blob_client.py", line 942, in download_blob
+    return StorageStreamDownloader(**options)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_download.py", line 366, in __init__
+    self._response = self._initial_request()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_download.py", line 462, in _initial_request
+    process_storage_error(error)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_shared/response_handlers.py", line 184, in process_storage_error
+    exec("raise error from None")   # pylint: disable=exec-used # nosec
+  File "<string>", line 1, in <module>
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_download.py", line 414, in _initial_request
+    location_mode, response = self._clients.blob.download(
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/core/tracing/decorator.py", line 78, in wrapper_use_tracer
+    return func(*args, **kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_generated/operations/_blob_operations.py", line 1611, in download
+    map_error(status_code=response.status_code, response=response, error_map=error_map)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/core/exceptions.py", line 165, in map_error
+    raise error
+azure.core.exceptions.ResourceNotFoundError: The specified blob does not exist.
+RequestId:1d307a84-801e-0009-4b4f-225718000000
+Time:2023-11-28T23:04:53.8669459Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:1d307a84-801e-0009-4b4f-225718000000
+Time:2023-11-28T23:04:53.8669459Z</Message></Error>
+[2023-11-29T07:04:57.842+0800] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fantasy_premier_league_debug, task_id=download_file_from_blob_test, execution_date=20231127T230419, start_date=20231128T230450, end_date=20231128T230457
+[2023-11-29T07:04:58.085+0800] {standard_task_runner.py:104} ERROR - Failed to execute job 24 for task download_file_from_blob_test (The specified blob does not exist.
+RequestId:1d307a84-801e-0009-4b4f-225718000000
+Time:2023-11-28T23:04:53.8669459Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:1d307a84-801e-0009-4b4f-225718000000
+Time:2023-11-28T23:04:53.8669459Z</Message></Error>; 19401)
+[2023-11-29T07:04:58.127+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-29T07:04:58.184+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,30 @@
+[2023-12-05T23:51:07.922+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.move_file_into_archive_folder_test scheduled__2023-12-04T03:44:51.910374+00:00 [queued]>
+[2023-12-05T23:51:07.930+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.move_file_into_archive_folder_test scheduled__2023-12-04T03:44:51.910374+00:00 [queued]>
+[2023-12-05T23:51:07.931+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-05T23:51:07.954+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): move_file_into_archive_folder_test> on 2023-12-04 03:44:51.910374+00:00
+[2023-12-05T23:51:07.957+0800] {standard_task_runner.py:57} INFO - Started process 42113 to run task
+[2023-12-05T23:51:07.961+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'move_file_into_archive_folder_test', 'scheduled__2023-12-04T03:44:51.910374+00:00', '--job-id', '139', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmpnizsmcl5']
+[2023-12-05T23:51:07.963+0800] {standard_task_runner.py:85} INFO - Job 139: Subtask move_file_into_archive_folder_test
+[2023-12-05T23:51:08.011+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.move_file_into_archive_folder_test scheduled__2023-12-04T03:44:51.910374+00:00 [running]> on host azfartitu.
+[2023-12-05T23:51:08.090+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='move_file_into_archive_folder_test' AIRFLOW_CTX_EXECUTION_DATE='2023-12-04T03:44:51.910374+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-04T03:44:51.910374+00:00'
+[2023-12-05T23:51:08.102+0800] {logging_mixin.py:154} INFO - value 04122023
+[2023-12-05T23:51:08.111+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:09.186+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:14.418+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmp8iwwvlrb
+[2023-12-05T23:51:17.114+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-12-05T23:51:17.121+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:18.189+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmpblr5dakr
+[2023-12-05T23:51:18.594+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-12-05T23:51:18.600+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:21.321+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmpjgfqcepa
+[2023-12-05T23:51:22.942+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-12-05T23:51:22.950+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:23.877+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmpdqqn1h0e
+[2023-12-05T23:51:24.201+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-12-05T23:51:24.208+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:25.043+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmpokjr06mi
+[2023-12-05T23:51:25.269+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-12-05T23:51:25.275+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-05T23:51:25.287+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=move_file_into_archive_folder_test, execution_date=20231204T034451, start_date=20231205T155107, end_date=20231205T155125
+[2023-12-05T23:51:25.337+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-05T23:51:25.366+0800] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

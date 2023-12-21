@@ -1,0 +1,14 @@
+[2023-11-24T12:37:24.644+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league.upload_to_blob manual__2023-11-24T04:37:16.068412+00:00 [queued]>
+[2023-11-24T12:37:24.655+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league.upload_to_blob manual__2023-11-24T04:37:16.068412+00:00 [queued]>
+[2023-11-24T12:37:24.655+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-24T12:37:24.692+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): upload_to_blob> on 2023-11-24 04:37:16.068412+00:00
+[2023-11-24T12:37:24.695+0800] {standard_task_runner.py:57} INFO - Started process 76532 to run task
+[2023-11-24T12:37:24.702+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league', 'upload_to_blob', 'manual__2023-11-24T04:37:16.068412+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/fantasy_premier_league_dag.py', '--cfg-path', '/tmp/tmpgfq3_mpe']
+[2023-11-24T12:37:24.704+0800] {standard_task_runner.py:85} INFO - Job 17: Subtask upload_to_blob
+[2023-11-24T12:37:24.776+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league.upload_to_blob manual__2023-11-24T04:37:16.068412+00:00 [running]> on host azfartitu.
+[2023-11-24T12:37:24.860+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league' AIRFLOW_CTX_TASK_ID='upload_to_blob' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T04:37:16.068412+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-24T04:37:16.068412+00:00'
+[2023-11-24T12:37:24.912+0800] {fantasy_premier_league_dag.py:80} ERROR - Error uploading to Azure Blob Storage: 'NoneType' object is not iterable
+[2023-11-24T12:37:24.912+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-24T12:37:24.917+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league, task_id=upload_to_blob, execution_date=20231124T043716, start_date=20231124T043724, end_date=20231124T043724
+[2023-11-24T12:37:24.954+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-24T12:37:24.967+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

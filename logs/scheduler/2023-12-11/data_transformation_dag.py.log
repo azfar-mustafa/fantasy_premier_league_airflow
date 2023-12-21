@@ -1,0 +1,1036 @@
+[2023-12-11T22:45:05.825+0800] {processor.py:157} INFO - Started process (PID=98808) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:45:05.826+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:45:05.828+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:45:05.828+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:45:05.879+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:45:06.155+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:45:06.155+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:45:06.184+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:45:06.184+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:45:06.237+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.414 seconds
+[2023-12-11T22:45:37.197+0800] {processor.py:157} INFO - Started process (PID=98832) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:45:37.199+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:45:37.201+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:45:37.201+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:45:37.246+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:45:37.264+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:45:37.263+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:45:37.287+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:45:37.287+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:45:37.315+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.122 seconds
+[2023-12-11T22:46:07.498+0800] {processor.py:157} INFO - Started process (PID=98862) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:46:07.500+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:46:07.502+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:46:07.502+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:46:07.547+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:46:07.555+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:46:07.554+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:46:07.574+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:46:07.574+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:46:07.604+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.109 seconds
+[2023-12-11T22:46:38.055+0800] {processor.py:157} INFO - Started process (PID=98886) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:46:38.057+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:46:38.059+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:46:38.059+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:46:38.111+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:46:38.212+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:46:38.212+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:46:38.227+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:46:38.226+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:46:38.255+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.203 seconds
+[2023-12-11T22:47:09.225+0800] {processor.py:157} INFO - Started process (PID=98916) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:47:09.226+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:47:09.231+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:47:09.229+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:47:09.305+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:47:09.321+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:47:09.320+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:47:09.337+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:47:09.337+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:47:09.360+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.141 seconds
+[2023-12-11T22:47:39.604+0800] {processor.py:157} INFO - Started process (PID=98940) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:47:39.606+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:47:39.608+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:47:39.608+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:47:39.655+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:47:39.664+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:47:39.663+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:47:39.684+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:47:39.684+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:47:39.711+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.110 seconds
+[2023-12-11T22:48:09.903+0800] {processor.py:157} INFO - Started process (PID=98970) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:48:09.904+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:48:09.906+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:48:09.906+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:48:09.950+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:48:10.044+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:48:10.044+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:48:10.060+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:48:10.059+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:48:10.093+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.194 seconds
+[2023-12-11T22:48:40.210+0800] {processor.py:157} INFO - Started process (PID=98994) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:48:40.212+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:48:40.214+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:48:40.214+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:48:40.263+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:48:40.282+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:48:40.281+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:48:40.303+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:48:40.303+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:48:40.329+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.121 seconds
+[2023-12-11T22:49:10.507+0800] {processor.py:157} INFO - Started process (PID=99024) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:49:10.509+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:49:10.512+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:49:10.511+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:49:10.561+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:49:10.574+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:49:10.574+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:49:10.619+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:49:10.619+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:49:10.653+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.150 seconds
+[2023-12-11T22:49:40.832+0800] {processor.py:157} INFO - Started process (PID=99048) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:49:40.837+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:49:40.840+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:49:40.839+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:49:40.885+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:49:40.971+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:49:40.971+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:49:40.986+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:49:40.986+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:49:41.016+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.187 seconds
+[2023-12-11T22:50:11.205+0800] {processor.py:157} INFO - Started process (PID=99078) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:50:11.209+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:50:11.212+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:50:11.211+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:50:11.273+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:50:11.298+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:50:11.298+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:50:11.316+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:50:11.315+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:50:11.342+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.142 seconds
+[2023-12-11T22:50:41.539+0800] {processor.py:157} INFO - Started process (PID=99102) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:50:41.541+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:50:41.544+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:50:41.543+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:50:41.589+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:50:41.597+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:50:41.596+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:50:41.623+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:50:41.622+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:50:41.649+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.114 seconds
+[2023-12-11T22:51:11.875+0800] {processor.py:157} INFO - Started process (PID=99132) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:51:11.877+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:51:11.879+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:51:11.879+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:51:11.928+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:51:12.026+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:51:12.025+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:51:12.040+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:51:12.040+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:51:12.071+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.199 seconds
+[2023-12-11T22:51:42.219+0800] {processor.py:157} INFO - Started process (PID=99156) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:51:42.224+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:51:42.225+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:51:42.225+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:51:42.268+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:51:42.285+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:51:42.285+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:51:42.305+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:51:42.305+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:51:42.331+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.115 seconds
+[2023-12-11T22:52:12.555+0800] {processor.py:157} INFO - Started process (PID=99186) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:52:12.557+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:52:12.559+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:52:12.559+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:52:12.609+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:52:12.615+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:52:12.615+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:52:12.632+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:52:12.631+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:52:12.658+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.106 seconds
+[2023-12-11T22:52:43.709+0800] {processor.py:157} INFO - Started process (PID=99210) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:52:43.711+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:52:43.713+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:52:43.713+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:52:43.764+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:52:43.939+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:52:43.938+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:52:43.983+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:52:43.983+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:52:44.029+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.322 seconds
+[2023-12-11T22:53:14.824+0800] {processor.py:157} INFO - Started process (PID=99240) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:53:14.829+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:53:14.831+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:53:14.831+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:53:14.890+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:53:14.909+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:53:14.908+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:53:14.931+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:53:14.930+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:53:14.957+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.139 seconds
+[2023-12-11T22:53:45.358+0800] {processor.py:157} INFO - Started process (PID=99264) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:53:45.362+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:53:45.364+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:53:45.364+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:53:45.414+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:53:45.420+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:53:45.420+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:53:45.438+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:53:45.437+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:53:45.463+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.109 seconds
+[2023-12-11T22:54:15.669+0800] {processor.py:157} INFO - Started process (PID=99294) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:54:15.674+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:54:15.676+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:54:15.675+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:54:15.729+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:54:15.830+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:54:15.830+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:54:15.849+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:54:15.849+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:54:15.878+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.213 seconds
+[2023-12-11T22:54:46.071+0800] {processor.py:157} INFO - Started process (PID=99318) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:54:46.073+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:54:46.076+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:54:46.075+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:54:46.121+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:54:46.139+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:54:46.138+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:54:46.160+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:54:46.159+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:54:46.185+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.118 seconds
+[2023-12-11T22:55:16.403+0800] {processor.py:157} INFO - Started process (PID=99348) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:55:16.408+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:55:16.410+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:55:16.410+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:55:16.460+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:55:16.467+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:55:16.466+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:55:16.486+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:55:16.485+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:55:16.515+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.115 seconds
+[2023-12-11T22:55:46.747+0800] {processor.py:157} INFO - Started process (PID=99372) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:55:46.749+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:55:46.751+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:55:46.751+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:55:46.819+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:55:46.932+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:55:46.932+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:55:46.948+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:55:46.948+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:55:46.974+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.231 seconds
+[2023-12-11T22:56:17.073+0800] {processor.py:157} INFO - Started process (PID=99402) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:56:17.078+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:56:17.080+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:56:17.079+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:56:17.132+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:56:17.151+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:56:17.151+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:56:17.173+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:56:17.173+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:56:17.201+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.131 seconds
+[2023-12-11T22:56:47.420+0800] {processor.py:157} INFO - Started process (PID=99426) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:56:47.425+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:56:47.427+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:56:47.427+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:56:47.479+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:56:47.486+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:56:47.486+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:56:47.507+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:56:47.507+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:56:47.535+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.119 seconds
+[2023-12-11T22:57:17.776+0800] {processor.py:157} INFO - Started process (PID=99456) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:57:17.779+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:57:17.781+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:57:17.781+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:57:17.837+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:57:17.948+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:57:17.947+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:57:17.994+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:57:17.994+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:57:18.039+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.267 seconds
+[2023-12-11T22:57:48.111+0800] {processor.py:157} INFO - Started process (PID=99480) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:57:48.113+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:57:48.115+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:57:48.114+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:57:48.162+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:57:48.182+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:57:48.182+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:57:48.203+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:57:48.203+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:57:48.227+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.120 seconds
+[2023-12-11T22:58:18.634+0800] {processor.py:157} INFO - Started process (PID=99510) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:58:18.639+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:58:18.641+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:58:18.641+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:58:18.687+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:58:18.698+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:58:18.698+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:58:18.719+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:58:18.718+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:58:18.749+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.118 seconds
+[2023-12-11T22:58:49.145+0800] {processor.py:157} INFO - Started process (PID=99534) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:58:49.149+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:58:49.151+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:58:49.151+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:58:49.202+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:58:49.341+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:58:49.341+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:58:49.359+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:58:49.359+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:58:49.397+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.255 seconds
+[2023-12-11T22:59:19.455+0800] {processor.py:157} INFO - Started process (PID=99564) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:59:19.460+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:59:19.462+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:59:19.461+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:59:19.511+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:59:19.531+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:59:19.531+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:59:19.551+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:59:19.551+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:59:19.579+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.128 seconds
+[2023-12-11T22:59:49.834+0800] {processor.py:157} INFO - Started process (PID=99594) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:59:49.836+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T22:59:49.839+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:59:49.838+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:59:49.922+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T22:59:49.932+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:59:49.931+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T22:59:49.955+0800] {logging_mixin.py:154} INFO - [2023-12-11T22:59:49.955+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T22:59:49.991+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.163 seconds
+[2023-12-11T23:00:20.142+0800] {processor.py:157} INFO - Started process (PID=99618) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:00:20.145+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:00:20.148+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:00:20.147+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:00:20.207+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:00:20.412+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:00:20.411+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:00:20.436+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:00:20.436+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:00:20.475+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.336 seconds
+[2023-12-11T23:00:50.674+0800] {processor.py:157} INFO - Started process (PID=99648) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:00:50.676+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:00:50.679+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:00:50.678+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:00:50.729+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:00:50.748+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:00:50.748+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:00:50.769+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:00:50.768+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:00:50.796+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.125 seconds
+[2023-12-11T23:01:21.005+0800] {processor.py:157} INFO - Started process (PID=99672) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:01:21.006+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:01:21.008+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:01:21.008+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:01:21.055+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:01:21.063+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:01:21.062+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:01:21.081+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:01:21.081+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:01:21.111+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.109 seconds
+[2023-12-11T23:01:51.246+0800] {processor.py:157} INFO - Started process (PID=99702) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:01:51.249+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:01:51.251+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:01:51.250+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:01:51.295+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:01:51.394+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:01:51.394+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:01:51.422+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:01:51.421+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:01:51.472+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.229 seconds
+[2023-12-11T23:02:21.572+0800] {processor.py:157} INFO - Started process (PID=99726) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:02:21.573+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:02:21.575+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:02:21.574+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:02:21.619+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:02:21.636+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:02:21.636+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:02:21.658+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:02:21.658+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:02:21.687+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.119 seconds
+[2023-12-11T23:02:51.910+0800] {processor.py:157} INFO - Started process (PID=99756) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:02:51.912+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:02:51.915+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:02:51.914+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:02:51.974+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:02:51.986+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:02:51.985+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:02:52.019+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:02:52.019+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:02:52.054+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.147 seconds
+[2023-12-11T23:03:22.256+0800] {processor.py:157} INFO - Started process (PID=99780) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:03:22.261+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:03:22.263+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:03:22.263+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:03:22.307+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:03:22.398+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:03:22.398+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:03:22.413+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:03:22.412+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:03:22.439+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.186 seconds
+[2023-12-11T23:03:52.587+0800] {processor.py:157} INFO - Started process (PID=99810) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:03:52.588+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:03:52.590+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:03:52.590+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:03:52.634+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:03:52.655+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:03:52.654+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:03:52.676+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:03:52.676+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:03:52.702+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.119 seconds
+[2023-12-11T23:04:22.927+0800] {processor.py:157} INFO - Started process (PID=99834) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:04:22.931+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:04:22.933+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:04:22.933+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:04:22.978+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:04:22.986+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:04:22.985+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:04:23.004+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:04:23.004+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:04:23.031+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.107 seconds
+[2023-12-11T23:04:53.334+0800] {processor.py:157} INFO - Started process (PID=99864) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:04:53.336+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:04:53.338+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:04:53.337+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:04:53.384+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:04:53.473+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:04:53.473+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:04:53.489+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:04:53.489+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:04:53.536+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.205 seconds
+[2023-12-11T23:05:23.771+0800] {processor.py:157} INFO - Started process (PID=99888) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:05:23.776+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:05:23.778+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:05:23.778+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:05:23.823+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:05:23.841+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:05:23.840+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:05:23.861+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:05:23.861+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:05:23.887+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.119 seconds
+[2023-12-11T23:05:54.113+0800] {processor.py:157} INFO - Started process (PID=99918) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:05:54.114+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:05:54.116+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:05:54.116+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:05:54.163+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:05:54.171+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:05:54.170+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:05:54.189+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:05:54.189+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:05:54.214+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.105 seconds
+[2023-12-11T23:06:24.443+0800] {processor.py:157} INFO - Started process (PID=99942) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:06:24.447+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:06:24.449+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:06:24.449+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:06:24.493+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:06:24.584+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:06:24.583+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:06:24.605+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:06:24.605+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:06:24.642+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.202 seconds
+[2023-12-11T23:06:54.883+0800] {processor.py:157} INFO - Started process (PID=99972) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:06:54.884+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:06:54.886+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:06:54.885+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:06:54.929+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:06:54.947+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:06:54.946+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:06:54.965+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:06:54.965+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:06:54.992+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.113 seconds
+[2023-12-11T23:07:25.217+0800] {processor.py:157} INFO - Started process (PID=99996) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:07:25.222+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:07:25.224+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:07:25.223+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:07:25.269+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:07:25.276+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:07:25.275+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:07:25.295+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:07:25.295+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:07:25.320+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.106 seconds
+[2023-12-11T23:07:55.547+0800] {processor.py:157} INFO - Started process (PID=100026) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:07:55.552+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:07:55.554+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:07:55.553+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:07:55.599+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:07:55.687+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:07:55.686+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:07:55.701+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:07:55.701+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:07:55.725+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.181 seconds
+[2023-12-11T23:08:25.870+0800] {processor.py:157} INFO - Started process (PID=100050) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:08:25.875+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:08:25.877+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:08:25.877+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:08:25.922+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:08:25.941+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:08:25.940+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:08:25.960+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:08:25.960+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:08:25.983+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.117 seconds
+[2023-12-11T23:08:56.113+0800] {processor.py:157} INFO - Started process (PID=100081) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:08:56.115+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:08:56.117+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:08:56.117+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:08:56.170+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:08:56.177+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:08:56.177+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:08:56.197+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:08:56.197+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:08:56.224+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.114 seconds
+[2023-12-11T23:09:26.449+0800] {processor.py:157} INFO - Started process (PID=100105) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:09:26.450+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:09:26.452+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:09:26.451+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:09:26.499+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:09:26.588+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:09:26.587+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:09:26.602+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:09:26.602+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:09:26.629+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.184 seconds
+[2023-12-11T23:09:56.779+0800] {processor.py:157} INFO - Started process (PID=100135) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:09:56.784+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:09:56.786+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:09:56.786+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:09:56.829+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:09:56.847+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:09:56.846+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:09:56.868+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:09:56.868+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:09:56.894+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.118 seconds
+[2023-12-11T23:10:27.119+0800] {processor.py:157} INFO - Started process (PID=100159) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:10:27.121+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:10:27.123+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:10:27.123+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:10:27.168+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:10:27.175+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:10:27.175+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:10:27.192+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:10:27.192+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:10:27.216+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.101 seconds
+[2023-12-11T23:10:57.455+0800] {processor.py:157} INFO - Started process (PID=100189) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:10:57.457+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:10:57.460+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:10:57.460+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:10:57.508+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:10:57.596+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:10:57.596+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:10:57.611+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:10:57.610+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:10:57.639+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.189 seconds
+[2023-12-11T23:11:27.780+0800] {processor.py:157} INFO - Started process (PID=100213) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:11:27.785+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:11:27.787+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:11:27.787+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:11:27.833+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:11:27.851+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:11:27.850+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:11:27.872+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:11:27.871+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:11:27.906+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.129 seconds
+[2023-12-11T23:11:58.119+0800] {processor.py:157} INFO - Started process (PID=100243) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:11:58.120+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:11:58.122+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:11:58.122+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:11:58.168+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:11:58.175+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:11:58.175+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:11:58.197+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:11:58.197+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:11:58.246+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.131 seconds
+[2023-12-11T23:12:28.452+0800] {processor.py:157} INFO - Started process (PID=100267) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:12:28.453+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:12:28.456+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:12:28.455+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:12:28.500+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:12:28.589+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:12:28.589+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:12:28.605+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:12:28.605+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:12:28.627+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.178 seconds
+[2023-12-11T23:12:58.790+0800] {processor.py:157} INFO - Started process (PID=100297) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:12:58.792+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:12:58.794+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:12:58.794+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:12:58.838+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:12:58.855+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:12:58.855+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:12:58.874+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:12:58.874+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:12:58.898+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.112 seconds
+[2023-12-11T23:13:29.120+0800] {processor.py:157} INFO - Started process (PID=100321) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:13:29.121+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:13:29.123+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:13:29.123+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:13:29.166+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:13:29.174+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:13:29.173+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:13:29.192+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:13:29.192+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:13:29.221+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.105 seconds
+[2023-12-11T23:13:59.339+0800] {processor.py:157} INFO - Started process (PID=100351) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:13:59.344+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:13:59.345+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:13:59.345+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:13:59.392+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:13:59.484+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:13:59.484+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:13:59.498+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:13:59.498+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:13:59.529+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.193 seconds
+[2023-12-11T23:14:29.677+0800] {processor.py:157} INFO - Started process (PID=100381) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:14:29.682+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:14:29.685+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:14:29.684+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:14:29.729+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:14:29.747+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:14:29.747+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:14:29.768+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:14:29.767+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:14:29.795+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.121 seconds
+[2023-12-11T23:15:00.054+0800] {processor.py:157} INFO - Started process (PID=100405) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:15:00.056+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:15:00.059+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:15:00.059+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:15:00.128+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:15:00.137+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:15:00.136+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:15:00.157+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:15:00.157+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:15:00.181+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.131 seconds
+[2023-12-11T23:15:30.375+0800] {processor.py:157} INFO - Started process (PID=100435) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:15:30.380+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:15:30.382+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:15:30.382+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:15:30.427+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:15:30.515+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:15:30.515+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:15:30.531+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:15:30.531+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:15:30.561+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.189 seconds
+[2023-12-11T23:16:00.709+0800] {processor.py:157} INFO - Started process (PID=100459) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:16:00.710+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:16:00.712+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:16:00.712+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:16:00.756+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:16:00.773+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:16:00.773+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:16:00.797+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:16:00.797+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:16:00.821+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.116 seconds
+[2023-12-11T23:16:31.046+0800] {processor.py:157} INFO - Started process (PID=100489) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:16:31.050+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:16:31.053+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:16:31.052+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:16:31.104+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:16:31.112+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:16:31.111+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:16:31.132+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:16:31.131+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:16:31.159+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.117 seconds
+[2023-12-11T23:17:01.372+0800] {processor.py:157} INFO - Started process (PID=100513) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:17:01.374+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:17:01.376+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:17:01.375+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:17:01.425+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:17:01.523+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:17:01.523+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:17:01.538+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:17:01.538+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:17:01.565+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.196 seconds
+[2023-12-11T23:17:31.814+0800] {processor.py:157} INFO - Started process (PID=100546) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:17:31.816+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:17:31.818+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:17:31.818+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:17:31.861+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:17:31.878+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:17:31.878+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:17:31.898+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:17:31.897+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:17:31.927+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.116 seconds
+[2023-12-11T23:18:02.151+0800] {processor.py:157} INFO - Started process (PID=100570) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:18:02.153+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:18:02.155+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:18:02.155+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:18:02.211+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:18:02.218+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:18:02.218+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:18:02.239+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:18:02.238+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:18:02.264+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.117 seconds
+[2023-12-11T23:18:32.475+0800] {processor.py:157} INFO - Started process (PID=100600) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:18:32.479+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:18:32.481+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:18:32.481+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:18:32.525+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:18:32.613+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:18:32.612+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:18:32.760+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:18:32.760+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:18:32.787+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.315 seconds
+[2023-12-11T23:19:03.026+0800] {processor.py:157} INFO - Started process (PID=100624) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:19:03.028+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:19:03.030+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:19:03.030+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:19:03.075+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:19:03.093+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:19:03.093+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:19:03.115+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:19:03.114+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:19:03.139+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.116 seconds
+[2023-12-11T23:19:33.365+0800] {processor.py:157} INFO - Started process (PID=100654) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:19:33.370+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:19:33.372+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:19:33.371+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:19:33.416+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:19:33.423+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:19:33.423+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:19:33.443+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:19:33.443+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:19:33.472+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.110 seconds
+[2023-12-11T23:20:03.700+0800] {processor.py:157} INFO - Started process (PID=100678) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:20:03.704+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:20:03.706+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:20:03.706+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:20:03.750+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:20:03.980+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:20:03.980+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:20:03.998+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:20:03.998+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:20:04.036+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.340 seconds
+[2023-12-11T23:20:34.234+0800] {processor.py:157} INFO - Started process (PID=100708) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:20:34.235+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:20:34.238+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:20:34.237+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:20:34.283+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:20:34.304+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:20:34.303+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:20:34.323+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:20:34.323+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:20:34.349+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.118 seconds
+[2023-12-11T23:21:04.566+0800] {processor.py:157} INFO - Started process (PID=100732) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:21:04.571+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:21:04.574+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:21:04.573+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:21:04.640+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:21:04.652+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:21:04.651+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:21:04.681+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:21:04.681+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:21:04.717+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.155 seconds
+[2023-12-11T23:21:34.912+0800] {processor.py:157} INFO - Started process (PID=100762) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:21:34.917+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:21:34.919+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:21:34.918+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:21:34.963+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:21:35.204+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:21:35.204+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:21:35.219+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:21:35.219+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:21:35.249+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.340 seconds
+[2023-12-11T23:22:05.447+0800] {processor.py:157} INFO - Started process (PID=100788) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:22:05.448+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:22:05.450+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:22:05.450+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:22:05.494+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:22:05.511+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:22:05.511+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:22:05.683+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:22:05.682+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:22:05.707+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.263 seconds
+[2023-12-11T23:22:35.879+0800] {processor.py:157} INFO - Started process (PID=100818) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:22:35.880+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:22:35.883+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:22:35.882+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:22:35.926+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:22:35.933+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:22:35.933+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:22:35.953+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:22:35.953+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:22:35.983+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.107 seconds
+[2023-12-11T23:23:06.212+0800] {processor.py:157} INFO - Started process (PID=100842) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:23:06.214+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:23:06.216+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:23:06.216+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:23:06.261+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:23:06.488+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:23:06.487+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:23:06.501+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:23:06.501+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:23:06.529+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.320 seconds
+[2023-12-11T23:23:36.744+0800] {processor.py:157} INFO - Started process (PID=100872) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:23:36.746+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:23:36.749+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:23:36.748+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:23:36.792+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:23:36.810+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:23:36.810+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:23:36.829+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:23:36.829+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:23:36.855+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.114 seconds
+[2023-12-11T23:24:07.080+0800] {processor.py:157} INFO - Started process (PID=100896) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:24:07.081+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:24:07.083+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:24:07.082+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:24:07.130+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:24:07.280+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:24:07.136+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:24:07.298+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:24:07.298+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:24:07.324+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.248 seconds
+[2023-12-11T23:24:37.515+0800] {processor.py:157} INFO - Started process (PID=100926) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:24:37.520+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:24:37.522+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:24:37.522+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:24:37.566+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:24:37.802+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:24:37.801+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:24:37.816+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:24:37.816+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:24:37.843+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.331 seconds
+[2023-12-11T23:25:08.055+0800] {processor.py:157} INFO - Started process (PID=100950) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:25:08.058+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:25:08.060+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:25:08.059+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:25:08.229+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:25:08.243+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:25:08.243+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:25:08.258+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:25:08.258+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:25:08.285+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.233 seconds
+[2023-12-11T23:25:38.499+0800] {processor.py:157} INFO - Started process (PID=100980) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:25:38.504+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:25:38.506+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:25:38.506+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:25:38.551+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:25:38.559+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:25:38.558+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:25:38.585+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:25:38.585+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:25:38.613+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.118 seconds
+[2023-12-11T23:26:09.011+0800] {processor.py:157} INFO - Started process (PID=101010) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:26:09.016+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:26:09.018+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:26:09.017+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:26:09.067+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:26:09.154+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:26:09.153+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:26:09.170+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:26:09.170+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:26:09.195+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.188 seconds
+[2023-12-11T23:26:39.417+0800] {processor.py:157} INFO - Started process (PID=101034) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:26:39.421+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:26:39.423+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:26:39.423+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:26:39.468+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:26:39.485+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:26:39.485+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:26:39.504+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:26:39.504+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:26:39.528+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.114 seconds
+[2023-12-11T23:27:09.636+0800] {processor.py:157} INFO - Started process (PID=101064) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:27:09.641+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:27:09.643+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:27:09.642+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:27:09.686+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:27:09.694+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:27:09.693+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:27:09.712+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:27:09.712+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:27:09.738+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.105 seconds
+[2023-12-11T23:27:39.942+0800] {processor.py:157} INFO - Started process (PID=101088) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:27:39.947+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:27:39.949+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:27:39.949+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:27:39.993+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:27:40.086+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:27:40.085+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:27:40.100+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:27:40.099+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:27:40.130+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.191 seconds
+[2023-12-11T23:28:10.275+0800] {processor.py:157} INFO - Started process (PID=101118) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:28:10.276+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:28:10.279+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:28:10.278+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:28:10.326+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:28:10.343+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:28:10.342+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:28:10.363+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:28:10.363+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:28:10.388+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.116 seconds
+[2023-12-11T23:28:40.669+0800] {processor.py:157} INFO - Started process (PID=101142) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:28:40.671+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:28:40.673+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:28:40.673+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:28:40.719+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:28:40.726+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:28:40.726+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:28:40.744+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:28:40.744+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:28:40.771+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.105 seconds
+[2023-12-11T23:29:10.997+0800] {processor.py:157} INFO - Started process (PID=101172) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:29:10.999+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:29:11.001+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:29:11.000+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:29:11.047+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:29:11.144+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:29:11.144+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:29:11.158+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:29:11.158+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:29:11.187+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.194 seconds
+[2023-12-11T23:29:41.292+0800] {processor.py:157} INFO - Started process (PID=101196) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:29:41.297+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:29:41.299+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:29:41.299+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:29:41.345+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:29:41.362+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:29:41.362+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:29:41.383+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:29:41.383+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:29:41.408+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.119 seconds
+[2023-12-11T23:30:11.600+0800] {processor.py:157} INFO - Started process (PID=101226) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:30:11.605+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:30:11.607+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:30:11.607+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:30:11.651+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:30:11.659+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:30:11.658+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:30:11.679+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:30:11.679+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:30:11.706+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.110 seconds
+[2023-12-11T23:30:42.017+0800] {processor.py:157} INFO - Started process (PID=101250) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:30:42.022+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:30:42.024+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:30:42.024+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:30:42.069+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:30:42.173+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:30:42.172+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:30:42.202+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:30:42.201+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:30:42.240+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.226 seconds
+[2023-12-11T23:31:12.463+0800] {processor.py:157} INFO - Started process (PID=101280) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:31:12.468+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:31:12.470+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:31:12.469+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:31:12.516+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:31:12.534+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:31:12.533+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:31:12.552+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:31:12.552+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:31:12.577+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.118 seconds
+[2023-12-11T23:31:42.800+0800] {processor.py:157} INFO - Started process (PID=101304) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:31:42.804+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:31:42.807+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:31:42.806+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:31:42.851+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:31:42.858+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:31:42.857+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:31:42.877+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:31:42.877+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:31:42.902+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.106 seconds
+[2023-12-11T23:32:13.138+0800] {processor.py:157} INFO - Started process (PID=101334) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:32:13.143+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:32:13.144+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:32:13.144+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:32:13.189+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:32:13.279+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:32:13.279+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:32:13.297+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:32:13.297+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:32:13.326+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.192 seconds
+[2023-12-11T23:32:43.491+0800] {processor.py:157} INFO - Started process (PID=101358) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:32:43.509+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:32:43.511+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:32:43.510+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:32:43.556+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:32:43.576+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:32:43.576+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:32:43.595+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:32:43.594+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:32:43.620+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.133 seconds
+[2023-12-11T23:33:13.820+0800] {processor.py:157} INFO - Started process (PID=101388) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:33:13.826+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:33:13.829+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:33:13.829+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:33:13.889+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:33:13.900+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:33:13.900+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:33:13.930+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:33:13.929+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:33:13.968+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.151 seconds
+[2023-12-11T23:33:44.144+0800] {processor.py:157} INFO - Started process (PID=101412) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:33:44.147+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:33:44.149+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:33:44.148+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:33:44.194+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:33:44.282+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:33:44.282+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:33:44.300+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:33:44.299+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:33:44.326+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.185 seconds
+[2023-12-11T23:34:14.489+0800] {processor.py:157} INFO - Started process (PID=101442) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:34:14.494+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:34:14.496+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:34:14.496+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:34:14.540+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:34:14.558+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:34:14.557+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:34:14.578+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:34:14.578+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:34:14.603+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.117 seconds
+[2023-12-11T23:34:44.830+0800] {processor.py:157} INFO - Started process (PID=101466) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:34:44.835+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:34:44.838+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:34:44.838+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:34:44.882+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:34:44.889+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:34:44.889+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:34:44.907+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:34:44.907+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:34:44.941+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.114 seconds
+[2023-12-11T23:35:15.380+0800] {processor.py:157} INFO - Started process (PID=101496) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:35:15.385+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:35:15.387+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:35:15.387+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:35:15.432+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:35:15.524+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:35:15.523+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:35:15.539+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:35:15.538+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:35:15.570+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.193 seconds
+[2023-12-11T23:35:45.935+0800] {processor.py:157} INFO - Started process (PID=101520) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:35:45.941+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:35:45.943+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:35:45.942+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:35:45.990+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:35:46.008+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:35:46.007+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:35:46.029+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:35:46.029+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:35:46.054+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.122 seconds
+[2023-12-11T23:36:16.465+0800] {processor.py:157} INFO - Started process (PID=101550) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:36:16.470+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:36:16.473+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:36:16.473+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:36:16.531+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:36:16.540+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:36:16.539+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:36:16.572+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:36:16.572+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:36:16.612+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.151 seconds
+[2023-12-11T23:36:46.984+0800] {processor.py:157} INFO - Started process (PID=101580) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:36:46.987+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:36:46.989+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:36:46.988+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:36:47.036+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:36:47.126+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:36:47.125+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:36:47.141+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:36:47.141+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:36:47.170+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.189 seconds
+[2023-12-11T23:37:17.511+0800] {processor.py:157} INFO - Started process (PID=101604) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:37:17.516+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:37:17.519+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:37:17.518+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:37:17.569+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:37:17.586+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:37:17.585+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:37:17.606+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:37:17.606+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:37:17.632+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.124 seconds
+[2023-12-11T23:37:48.038+0800] {processor.py:157} INFO - Started process (PID=101634) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:37:48.040+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:37:48.042+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:37:48.041+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:37:48.093+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:37:48.101+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:37:48.100+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:37:48.121+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:37:48.121+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:37:48.145+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.111 seconds
+[2023-12-11T23:38:18.616+0800] {processor.py:157} INFO - Started process (PID=101658) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:38:18.618+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:38:18.620+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:38:18.620+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:38:18.668+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:38:18.761+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:38:18.760+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:38:18.776+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:38:18.776+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:38:18.805+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.192 seconds
+[2023-12-11T23:38:49.142+0800] {processor.py:157} INFO - Started process (PID=101688) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:38:49.143+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:38:49.145+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:38:49.145+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:38:49.204+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:38:49.221+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:38:49.221+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:38:49.239+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:38:49.239+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:38:49.263+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.124 seconds
+[2023-12-11T23:39:19.689+0800] {processor.py:157} INFO - Started process (PID=101712) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:39:19.694+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:39:19.697+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:39:19.696+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:39:19.742+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:39:19.750+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:39:19.749+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:39:19.769+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:39:19.769+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:39:19.793+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.107 seconds
+[2023-12-11T23:39:50.246+0800] {processor.py:157} INFO - Started process (PID=101742) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:39:50.247+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:39:50.249+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:39:50.249+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:39:50.296+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:39:50.386+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:39:50.386+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:39:50.400+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:39:50.400+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:39:50.427+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.185 seconds
+[2023-12-11T23:40:20.793+0800] {processor.py:157} INFO - Started process (PID=101766) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:40:20.798+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:40:20.800+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:40:20.800+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:40:20.846+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:40:20.865+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:40:20.864+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:40:20.886+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:40:20.886+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:40:20.913+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.123 seconds
+[2023-12-11T23:40:51.343+0800] {processor.py:157} INFO - Started process (PID=101796) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:40:51.344+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:40:51.346+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:40:51.346+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:40:51.390+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:40:51.398+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:40:51.397+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:40:51.416+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:40:51.416+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:40:51.442+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.103 seconds
+[2023-12-11T23:41:21.869+0800] {processor.py:157} INFO - Started process (PID=101820) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:41:21.875+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:41:21.879+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:41:21.879+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:41:21.939+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:41:22.035+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:41:22.035+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:41:22.051+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:41:22.051+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:41:22.083+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.220 seconds
+[2023-12-11T23:41:52.439+0800] {processor.py:157} INFO - Started process (PID=101850) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:41:52.443+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:41:52.445+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:41:52.445+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:41:52.489+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:41:52.506+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:41:52.506+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:41:52.527+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:41:52.527+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:41:52.555+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.120 seconds
+[2023-12-11T23:42:22.954+0800] {processor.py:157} INFO - Started process (PID=101874) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:42:22.958+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:42:22.960+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:42:22.960+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:42:23.005+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:42:23.012+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:42:23.012+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:42:23.035+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:42:23.035+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:42:23.064+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.113 seconds
+[2023-12-11T23:42:53.486+0800] {processor.py:157} INFO - Started process (PID=101904) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:42:53.492+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:42:53.495+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:42:53.494+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:42:53.550+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:42:53.687+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:42:53.686+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:42:53.711+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:42:53.711+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:42:53.743+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.261 seconds
+[2023-12-11T23:43:24.018+0800] {processor.py:157} INFO - Started process (PID=101928) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:43:24.020+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:43:24.022+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:43:24.021+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:43:24.077+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:43:24.098+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:43:24.098+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:43:24.118+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:43:24.118+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:43:24.145+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.131 seconds
+[2023-12-11T23:43:54.539+0800] {processor.py:157} INFO - Started process (PID=101958) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:43:54.541+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:43:54.544+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:43:54.543+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:43:54.588+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:43:54.596+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:43:54.595+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:43:54.614+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:43:54.614+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:43:54.641+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.105 seconds
+[2023-12-11T23:44:25.065+0800] {processor.py:157} INFO - Started process (PID=101982) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:44:25.068+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:44:25.070+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:44:25.070+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:44:25.133+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:44:25.256+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:44:25.256+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:44:25.279+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:44:25.279+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:44:25.313+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.251 seconds
+[2023-12-11T23:44:55.614+0800] {processor.py:157} INFO - Started process (PID=102012) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:44:55.616+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:44:55.618+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:44:55.618+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:44:55.666+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:44:55.684+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:44:55.684+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:44:55.705+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:44:55.704+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:44:55.732+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.121 seconds
+[2023-12-11T23:45:26.161+0800] {processor.py:157} INFO - Started process (PID=102042) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:45:26.162+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:45:26.164+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:45:26.164+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:45:26.212+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:45:26.219+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:45:26.219+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:45:26.239+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:45:26.238+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:45:26.268+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.110 seconds
+[2023-12-11T23:45:56.719+0800] {processor.py:157} INFO - Started process (PID=102066) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:45:56.721+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:45:56.723+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:45:56.723+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:45:56.769+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:45:56.862+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:45:56.862+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:45:56.880+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:45:56.880+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:45:56.907+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.193 seconds
+[2023-12-11T23:46:27.261+0800] {processor.py:157} INFO - Started process (PID=102096) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:46:27.262+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:46:27.265+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:46:27.264+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:46:27.325+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:46:27.351+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:46:27.351+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:46:27.373+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:46:27.372+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:46:27.409+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.153 seconds
+[2023-12-11T23:46:57.799+0800] {processor.py:157} INFO - Started process (PID=102120) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:46:57.801+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:46:57.803+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:46:57.803+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:46:57.853+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:46:57.861+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:46:57.861+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:46:57.880+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:46:57.880+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:46:57.908+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.112 seconds
+[2023-12-11T23:47:28.359+0800] {processor.py:157} INFO - Started process (PID=102150) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:47:28.360+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:47:28.363+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:47:28.362+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:47:28.408+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:47:28.499+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:47:28.499+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:47:28.515+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:47:28.515+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:47:28.546+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.190 seconds
+[2023-12-11T23:47:58.906+0800] {processor.py:157} INFO - Started process (PID=102174) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:47:58.910+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:47:58.913+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:47:58.912+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:47:58.964+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:47:58.981+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:47:58.980+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:47:59.005+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:47:59.005+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:47:59.036+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.134 seconds
+[2023-12-11T23:48:29.420+0800] {processor.py:157} INFO - Started process (PID=102204) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:48:29.421+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:48:29.423+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:48:29.423+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:48:29.471+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:48:29.480+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:48:29.479+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:48:29.499+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:48:29.499+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:48:29.526+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.110 seconds
+[2023-12-11T23:48:59.795+0800] {processor.py:157} INFO - Started process (PID=102228) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:48:59.800+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:48:59.802+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:48:59.801+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:48:59.853+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:48:59.944+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:48:59.944+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:48:59.959+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:48:59.959+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:48:59.992+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.201 seconds
+[2023-12-11T23:49:30.376+0800] {processor.py:157} INFO - Started process (PID=102258) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:49:30.377+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:49:30.380+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:49:30.379+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:49:30.424+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:49:30.442+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:49:30.441+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:49:30.460+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:49:30.460+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:49:30.489+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.117 seconds
+[2023-12-11T23:50:00.920+0800] {processor.py:157} INFO - Started process (PID=102282) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:50:00.925+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:50:00.929+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:50:00.928+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:50:00.986+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:50:00.995+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:50:00.993+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:50:01.014+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:50:01.013+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:50:01.038+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.124 seconds
+[2023-12-11T23:50:31.481+0800] {processor.py:157} INFO - Started process (PID=102312) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:50:31.483+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:50:31.486+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:50:31.485+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:50:31.551+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:50:31.677+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:50:31.677+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:50:31.704+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:50:31.703+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:50:31.737+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.260 seconds
+[2023-12-11T23:51:01.906+0800] {processor.py:157} INFO - Started process (PID=102336) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:51:01.908+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:51:01.910+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:51:01.910+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:51:01.965+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:51:01.996+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:51:01.995+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:51:02.019+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:51:02.018+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:51:02.049+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.147 seconds
+[2023-12-11T23:51:32.447+0800] {processor.py:157} INFO - Started process (PID=102366) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:51:32.448+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:51:32.451+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:51:32.451+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:51:32.518+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:51:32.529+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:51:32.527+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:51:32.556+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:51:32.555+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:51:32.586+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.142 seconds
+[2023-12-11T23:52:03.011+0800] {processor.py:157} INFO - Started process (PID=102390) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:52:03.013+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:52:03.015+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:52:03.015+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:52:03.070+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:52:03.196+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:52:03.196+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:52:03.225+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:52:03.225+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:52:03.260+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.254 seconds
+[2023-12-11T23:52:33.562+0800] {processor.py:157} INFO - Started process (PID=102420) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:52:33.580+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:52:33.582+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:52:33.582+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:52:33.629+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:52:33.650+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:52:33.650+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:52:33.674+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:52:33.673+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:52:33.702+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.143 seconds
+[2023-12-11T23:53:04.029+0800] {processor.py:157} INFO - Started process (PID=102444) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:53:04.031+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:53:04.034+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:53:04.033+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:53:04.086+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:53:04.097+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:53:04.096+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:53:04.127+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:53:04.126+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:53:04.156+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.132 seconds
+[2023-12-11T23:53:34.703+0800] {processor.py:157} INFO - Started process (PID=102474) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:53:34.708+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:53:34.710+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:53:34.710+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:53:34.756+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:53:34.848+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:53:34.848+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:53:34.863+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:53:34.863+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:53:34.895+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.195 seconds
+[2023-12-11T23:54:05.425+0800] {processor.py:157} INFO - Started process (PID=102504) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:54:05.430+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:54:05.432+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:54:05.431+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:54:05.480+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:54:05.497+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:54:05.497+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:54:05.517+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:54:05.517+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:54:05.542+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.121 seconds
+[2023-12-11T23:54:35.987+0800] {processor.py:157} INFO - Started process (PID=102528) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:54:35.992+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:54:35.994+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:54:35.994+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:54:36.038+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:54:36.045+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:54:36.045+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:54:36.064+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:54:36.063+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:54:36.090+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.107 seconds
+[2023-12-11T23:55:06.516+0800] {processor.py:157} INFO - Started process (PID=102558) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:55:06.518+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:55:06.520+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:55:06.520+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:55:06.564+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:55:06.654+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:55:06.654+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:55:06.670+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:55:06.670+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:55:06.701+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.188 seconds
+[2023-12-11T23:55:37.057+0800] {processor.py:157} INFO - Started process (PID=102582) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:55:37.062+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:55:37.064+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:55:37.063+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:55:37.109+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:55:37.130+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:55:37.130+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:55:37.154+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:55:37.154+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:55:37.180+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.126 seconds
+[2023-12-11T23:56:07.623+0800] {processor.py:157} INFO - Started process (PID=102612) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:56:07.628+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:56:07.630+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:56:07.630+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:56:07.677+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:56:07.683+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:56:07.682+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:56:07.699+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:56:07.699+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:56:07.723+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.103 seconds
+[2023-12-11T23:56:38.148+0800] {processor.py:157} INFO - Started process (PID=102636) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:56:38.149+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:56:38.151+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:56:38.151+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:56:38.194+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:56:38.283+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:56:38.282+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:56:38.300+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:56:38.300+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:56:38.331+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.187 seconds
+[2023-12-11T23:57:08.684+0800] {processor.py:157} INFO - Started process (PID=102666) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:57:08.690+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:57:08.692+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:57:08.692+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:57:08.757+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:57:08.785+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:57:08.784+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:57:08.814+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:57:08.814+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:57:08.847+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.167 seconds
+[2023-12-11T23:57:39.209+0800] {processor.py:157} INFO - Started process (PID=102690) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:57:39.210+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:57:39.211+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:57:39.211+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:57:39.255+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:57:39.263+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:57:39.262+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:57:39.282+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:57:39.282+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:57:39.307+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.102 seconds
+[2023-12-11T23:58:09.717+0800] {processor.py:157} INFO - Started process (PID=102720) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:58:09.722+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:58:09.724+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:58:09.724+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:58:09.769+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:58:09.860+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:58:09.860+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:58:09.875+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:58:09.875+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:58:09.908+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.194 seconds
+[2023-12-11T23:58:40.272+0800] {processor.py:157} INFO - Started process (PID=102744) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:58:40.273+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:58:40.275+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:58:40.274+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:58:40.319+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:58:40.337+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:58:40.336+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:58:40.356+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:58:40.356+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:58:40.380+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.112 seconds
+[2023-12-11T23:59:10.802+0800] {processor.py:157} INFO - Started process (PID=102774) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:59:10.808+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:59:10.810+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:59:10.809+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:59:10.854+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:59:10.862+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:59:10.861+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:59:10.880+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:59:10.880+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:59:10.906+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.107 seconds
+[2023-12-11T23:59:41.333+0800] {processor.py:157} INFO - Started process (PID=102798) to work on /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:59:41.334+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py for tasks to queue
+[2023-12-11T23:59:41.336+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:59:41.336+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:59:41.379+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py
+[2023-12-11T23:59:41.512+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:59:41.511+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-11T23:59:41.531+0800] {logging_mixin.py:154} INFO - [2023-12-11T23:59:41.531+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-11T01:38:30.323351+00:00, run_after=2023-12-12T01:38:30.323351+00:00
+[2023-12-11T23:59:41.559+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/data_transformation_dag.py took 0.229 seconds

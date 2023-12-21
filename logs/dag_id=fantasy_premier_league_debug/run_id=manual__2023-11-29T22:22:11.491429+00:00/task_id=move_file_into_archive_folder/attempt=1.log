@@ -1,0 +1,40 @@
+[2023-11-30T06:22:15.679+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.move_file_into_archive_folder manual__2023-11-29T22:22:11.491429+00:00 [queued]>
+[2023-11-30T06:22:15.688+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.move_file_into_archive_folder manual__2023-11-29T22:22:11.491429+00:00 [queued]>
+[2023-11-30T06:22:15.689+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-30T06:22:15.710+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): move_file_into_archive_folder> on 2023-11-29 22:22:11.491429+00:00
+[2023-11-30T06:22:15.714+0800] {standard_task_runner.py:57} INFO - Started process 27355 to run task
+[2023-11-30T06:22:15.718+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'move_file_into_archive_folder', 'manual__2023-11-29T22:22:11.491429+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmpug0vsmoz']
+[2023-11-30T06:22:15.720+0800] {standard_task_runner.py:85} INFO - Job 43: Subtask move_file_into_archive_folder
+[2023-11-30T06:22:15.778+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.move_file_into_archive_folder manual__2023-11-29T22:22:11.491429+00:00 [running]> on host azfartitu.
+[2023-11-30T06:22:15.918+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='move_file_into_archive_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-11-29T22:22:11.491429+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-29T22:22:11.491429+00:00'
+[2023-11-30T06:22:15.960+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T06:22:16.825+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T06:22:16.826+0800] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py", line 47, in move_file_into_archive_folder
+    az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=blob_path)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/wasb.py", line 391, in get_file
+    stream = self.download(container_name=container_name, blob_name=blob_name, **kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/wasb.py", line 445, in download
+    blob_client = self._get_blob_client(container_name, blob_name)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/wasb.py", line 245, in _get_blob_client
+    return self.blob_service_client.get_blob_client(container=container_name, blob=blob_name)
+  File "/usr/lib/python3.10/functools.py", line 981, in __get__
+    val = self.func(instance)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/wasb.py", line 156, in blob_service_client
+    return self.get_conn()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/wasb.py", line 167, in get_conn
+    return BlobServiceClient.from_connection_string(connection_string, **extra)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_blob_service_client.py", line 190, in from_connection_string
+    account_url, secondary, credential = parse_connection_str(conn_str, credential, 'blob')
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_shared/base_client.py", line 371, in parse_connection_str
+    raise ValueError("Connection string is either blank or malformed.")
+ValueError: Connection string is either blank or malformed.
+[2023-11-30T06:22:16.851+0800] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fantasy_premier_league_debug, task_id=move_file_into_archive_folder, execution_date=20231129T222211, start_date=20231129T222215, end_date=20231129T222216
+[2023-11-30T06:22:16.916+0800] {standard_task_runner.py:104} ERROR - Failed to execute job 43 for task move_file_into_archive_folder (Connection string is either blank or malformed.; 27355)
+[2023-11-30T06:22:16.979+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-30T06:22:17.031+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

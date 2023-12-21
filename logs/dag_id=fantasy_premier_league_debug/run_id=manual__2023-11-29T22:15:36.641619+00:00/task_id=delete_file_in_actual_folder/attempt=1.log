@@ -1,0 +1,30 @@
+[2023-11-30T06:15:54.146+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-29T22:15:36.641619+00:00 [queued]>
+[2023-11-30T06:15:54.153+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-29T22:15:36.641619+00:00 [queued]>
+[2023-11-30T06:15:54.153+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-30T06:15:54.173+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): delete_file_in_actual_folder> on 2023-11-29 22:15:36.641619+00:00
+[2023-11-30T06:15:54.180+0800] {standard_task_runner.py:57} INFO - Started process 27195 to run task
+[2023-11-30T06:15:54.194+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'delete_file_in_actual_folder', 'manual__2023-11-29T22:15:36.641619+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmpb9we9zm6']
+[2023-11-30T06:15:54.200+0800] {standard_task_runner.py:85} INFO - Job 42: Subtask delete_file_in_actual_folder
+[2023-11-30T06:15:54.256+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-29T22:15:36.641619+00:00 [running]> on host azfartitu.
+[2023-11-30T06:15:54.331+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='delete_file_in_actual_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-11-29T22:15:36.641619+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-29T22:15:36.641619+00:00'
+[2023-11-30T06:15:54.337+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T06:15:54.879+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T06:15:55.933+0800] {wasb.py:504} INFO - Deleted blobs: ('current_season_history/28112023/current_season_history_28112023.json',)
+[2023-11-30T06:15:55.934+0800] {logging_mixin.py:154} INFO - File is deleted
+[2023-11-30T06:15:55.934+0800] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py", line 73, in delete_file_in_actual_folder
+    blob_service_client = BlobServiceClient.from_connection_string(AZURE_BLOB_CONN_ID)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_blob_service_client.py", line 190, in from_connection_string
+    account_url, secondary, credential = parse_connection_str(conn_str, credential, 'blob')
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_shared/base_client.py", line 371, in parse_connection_str
+    raise ValueError("Connection string is either blank or malformed.")
+ValueError: Connection string is either blank or malformed.
+[2023-11-30T06:15:55.957+0800] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fantasy_premier_league_debug, task_id=delete_file_in_actual_folder, execution_date=20231129T221536, start_date=20231129T221554, end_date=20231129T221555
+[2023-11-30T06:15:56.018+0800] {standard_task_runner.py:104} ERROR - Failed to execute job 42 for task delete_file_in_actual_folder (Connection string is either blank or malformed.; 27195)
+[2023-11-30T06:15:56.044+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-30T06:15:56.067+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

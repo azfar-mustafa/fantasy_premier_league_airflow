@@ -1,0 +1,32 @@
+[2023-11-24T17:47:31.308+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test manual__2023-11-24T09:47:27.203762+00:00 [queued]>
+[2023-11-24T17:47:31.315+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test manual__2023-11-24T09:47:27.203762+00:00 [queued]>
+[2023-11-24T17:47:31.316+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-24T17:47:31.338+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): download_file_from_blob_test> on 2023-11-24 09:47:27.203762+00:00
+[2023-11-24T17:47:31.342+0800] {standard_task_runner.py:57} INFO - Started process 99141 to run task
+[2023-11-24T17:47:31.348+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'download_file_from_blob_test', 'manual__2023-11-24T09:47:27.203762+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmpl4qmjmg6']
+[2023-11-24T17:47:31.349+0800] {standard_task_runner.py:85} INFO - Job 5: Subtask download_file_from_blob_test
+[2023-11-24T17:47:31.394+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test manual__2023-11-24T09:47:27.203762+00:00 [running]> on host azfartitu.
+[2023-11-24T17:47:31.459+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='download_file_from_blob_test' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T09:47:27.203762+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-24T09:47:27.203762+00:00'
+[2023-11-24T17:47:31.489+0800] {logging_mixin.py:154} INFO - Temporary directory created: /tmp/tmps4a34cek
+[2023-11-24T17:47:31.494+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T17:47:32.061+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T17:47:34.358+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmps4a34cek
+[2023-11-24T17:47:34.382+0800] {logging_mixin.py:154} INFO - <class 'list'>
+[2023-11-24T17:47:34.383+0800] {logging_mixin.py:154} INFO - File is deleted in /tmp/tmps4a34cek
+[2023-11-24T17:47:34.733+0800] {logging_mixin.py:154} INFO - /tmp/tmps4a34cek/100_24112023.json is created
+[2023-11-24T17:47:34.737+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T17:47:34.744+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T17:47:36.495+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmps4a34cek
+[2023-11-24T17:47:36.495+0800] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py", line 83, in download_file_from_blob_test
+    os.remove(temp_file_path)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmps4a34cek/player_metadata_24112023.json'
+[2023-11-24T17:47:36.502+0800] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fantasy_premier_league_debug, task_id=download_file_from_blob_test, execution_date=20231124T094727, start_date=20231124T094731, end_date=20231124T094736
+[2023-11-24T17:47:36.520+0800] {standard_task_runner.py:104} ERROR - Failed to execute job 5 for task download_file_from_blob_test ([Errno 2] No such file or directory: '/tmp/tmps4a34cek/player_metadata_24112023.json'; 99141)
+[2023-11-24T17:47:36.534+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-24T17:47:36.546+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

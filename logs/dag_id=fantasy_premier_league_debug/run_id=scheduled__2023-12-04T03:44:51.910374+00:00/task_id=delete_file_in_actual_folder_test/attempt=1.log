@@ -1,0 +1,44 @@
+[2023-12-05T23:51:33.053+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder_test scheduled__2023-12-04T03:44:51.910374+00:00 [queued]>
+[2023-12-05T23:51:33.061+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder_test scheduled__2023-12-04T03:44:51.910374+00:00 [queued]>
+[2023-12-05T23:51:33.062+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-05T23:51:33.084+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): delete_file_in_actual_folder_test> on 2023-12-04 03:44:51.910374+00:00
+[2023-12-05T23:51:33.087+0800] {standard_task_runner.py:57} INFO - Started process 42144 to run task
+[2023-12-05T23:51:33.091+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'delete_file_in_actual_folder_test', 'scheduled__2023-12-04T03:44:51.910374+00:00', '--job-id', '141', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmp4fjbao3f']
+[2023-12-05T23:51:33.093+0800] {standard_task_runner.py:85} INFO - Job 141: Subtask delete_file_in_actual_folder_test
+[2023-12-05T23:51:33.127+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder_test scheduled__2023-12-04T03:44:51.910374+00:00 [running]> on host azfartitu.
+[2023-12-05T23:51:33.200+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='delete_file_in_actual_folder_test' AIRFLOW_CTX_EXECUTION_DATE='2023-12-04T03:44:51.910374+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-04T03:44:51.910374+00:00'
+[2023-12-05T23:51:33.212+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:34.217+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-12-05T23:51:34.222+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:35.187+0800] {logging_mixin.py:154} INFO - Fail to delete because of The specified path does not exist.
+RequestId:73359adc-301f-0023-6592-278808000000
+Time:2023-12-05T15:51:31.3828501Z
+ErrorCode:PathNotFound
+[2023-12-05T23:51:35.187+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-12-05T23:51:35.191+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:36.038+0800] {logging_mixin.py:154} INFO - Fail to delete because of The specified path does not exist.
+RequestId:2c2d02b1-e01f-0020-2e92-27696c000000
+Time:2023-12-05T15:51:32.2379854Z
+ErrorCode:PathNotFound
+[2023-12-05T23:51:36.038+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-12-05T23:51:36.041+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:36.958+0800] {logging_mixin.py:154} INFO - Fail to delete because of The specified path does not exist.
+RequestId:1db38402-b01f-0060-2292-276e54000000
+Time:2023-12-05T15:51:33.1478163Z
+ErrorCode:PathNotFound
+[2023-12-05T23:51:36.959+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-12-05T23:51:36.965+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:37.848+0800] {logging_mixin.py:154} INFO - Fail to delete because of The specified path does not exist.
+RequestId:810a5c57-601f-003e-4792-2785b4000000
+Time:2023-12-05T15:51:34.0459964Z
+ErrorCode:PathNotFound
+[2023-12-05T23:51:37.849+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-12-05T23:51:37.852+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-05T23:51:38.768+0800] {logging_mixin.py:154} INFO - Fail to delete because of The specified path does not exist.
+RequestId:a6eca942-301f-0051-5792-278f47000000
+Time:2023-12-05T15:51:34.9605668Z
+ErrorCode:PathNotFound
+[2023-12-05T23:51:38.768+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-05T23:51:38.777+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=delete_file_in_actual_folder_test, execution_date=20231204T034451, start_date=20231205T155133, end_date=20231205T155138
+[2023-12-05T23:51:38.799+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-05T23:51:38.813+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

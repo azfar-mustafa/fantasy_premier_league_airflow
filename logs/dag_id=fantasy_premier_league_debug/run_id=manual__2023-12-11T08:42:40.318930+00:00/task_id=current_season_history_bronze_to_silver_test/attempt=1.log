@@ -1,0 +1,25 @@
+[2023-12-11T16:42:49.365+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.current_season_history_bronze_to_silver_test manual__2023-12-11T08:42:40.318930+00:00 [queued]>
+[2023-12-11T16:42:49.372+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.current_season_history_bronze_to_silver_test manual__2023-12-11T08:42:40.318930+00:00 [queued]>
+[2023-12-11T16:42:49.372+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-11T16:42:49.399+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): current_season_history_bronze_to_silver_test> on 2023-12-11 08:42:40.318930+00:00
+[2023-12-11T16:42:49.401+0800] {standard_task_runner.py:57} INFO - Started process 77212 to run task
+[2023-12-11T16:42:49.410+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'current_season_history_bronze_to_silver_test', 'manual__2023-12-11T08:42:40.318930+00:00', '--job-id', '184', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmpz8jnm7vy']
+[2023-12-11T16:42:49.413+0800] {standard_task_runner.py:85} INFO - Job 184: Subtask current_season_history_bronze_to_silver_test
+[2023-12-11T16:42:49.474+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.current_season_history_bronze_to_silver_test manual__2023-12-11T08:42:40.318930+00:00 [running]> on host azfartitu.
+[2023-12-11T16:42:49.588+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='current_season_history_bronze_to_silver_test' AIRFLOW_CTX_EXECUTION_DATE='2023-12-11T08:42:40.318930+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-11T08:42:40.318930+00:00'
+[2023-12-11T16:42:49.656+0800] {logging_mixin.py:154} INFO - Temporary directory is created: /tmp/tmphadv1wmk
+[2023-12-11T16:42:49.665+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T16:42:50.466+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T16:42:56.483+0800] {logging_mixin.py:154} INFO - current_season_history_11122023.json is downloaded at /tmp/tmphadv1wmk from current_season_history/current/11122023
+[2023-12-11T16:42:58.014+0800] {logging_mixin.py:154} INFO - Table current_season_history is created
+[2023-12-11T16:42:58.294+0800] {logging_mixin.py:154} INFO - Copy data from table current_season_history into file current_season_history_11122023.parquet
+[2023-12-11T16:42:58.309+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T16:42:58.335+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T16:43:02.118+0800] {logging_mixin.py:154} INFO - File current_season_history_11122023.parquet is uploaded into silver container
+[2023-12-11T16:43:02.236+0800] {logging_mixin.py:154} INFO - /tmp/tmphadv1wmk/current_season_history_11122023.parquet is removed
+[2023-12-11T16:43:02.938+0800] {logging_mixin.py:154} INFO - /tmp/tmphadv1wmk/current_season_history_11122023.json is removed
+[2023-12-11T16:43:03.028+0800] {logging_mixin.py:154} INFO - /tmp/tmphadv1wmk is removed
+[2023-12-11T16:43:03.034+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-11T16:43:04.012+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=current_season_history_bronze_to_silver_test, execution_date=20231211T084240, start_date=20231211T084249, end_date=20231211T084304
+[2023-12-11T16:43:07.546+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-11T16:43:07.651+0800] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

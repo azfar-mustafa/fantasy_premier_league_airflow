@@ -1,0 +1,45 @@
+[2023-11-30T13:37:36.866+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-30T05:37:17.595066+00:00 [queued]>
+[2023-11-30T13:37:36.875+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-30T05:37:17.595066+00:00 [queued]>
+[2023-11-30T13:37:36.876+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-30T13:37:36.897+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): delete_file_in_actual_folder> on 2023-11-30 05:37:17.595066+00:00
+[2023-11-30T13:37:36.900+0800] {standard_task_runner.py:57} INFO - Started process 34239 to run task
+[2023-11-30T13:37:36.906+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'delete_file_in_actual_folder', 'manual__2023-11-30T05:37:17.595066+00:00', '--job-id', '64', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmp29a8yjie']
+[2023-11-30T13:37:36.909+0800] {standard_task_runner.py:85} INFO - Job 64: Subtask delete_file_in_actual_folder
+[2023-11-30T13:37:36.951+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-30T05:37:17.595066+00:00 [running]> on host azfartitu.
+[2023-11-30T13:37:37.026+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='delete_file_in_actual_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-11-30T05:37:17.595066+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-30T05:37:17.595066+00:00'
+[2023-11-30T13:37:37.032+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T13:37:37.496+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T13:37:38.611+0800] {wasb.py:504} INFO - Deleted blobs: ('current_season_history/28112023/current_season_history_28112023.json',)
+[2023-11-30T13:37:38.611+0800] {logging_mixin.py:154} INFO - File is deleted
+[2023-11-30T13:37:38.612+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-11-30T13:37:38.614+0800] {data_lake.py:399} INFO - Error while attempting to get file system 'bronze': The conn_id `DefaultEndpointsProtocol=https;AccountName=azfarsadev;AccountKey=sFyIWPRQZbFGnp30v1X40G3rFjqvzvAiEVU+/4AP4LNrkN25mlsVv+ha1VWJGLGUZIv53G0oUyjR+AStSV29wg==;EndpointSuffix=core.windows.net` isn't defined
+[2023-11-30T13:37:38.615+0800] {data_lake.py:433} INFO - The conn_id `DefaultEndpointsProtocol=https;AccountName=azfarsadev;AccountKey=sFyIWPRQZbFGnp30v1X40G3rFjqvzvAiEVU+/4AP4LNrkN25mlsVv+ha1VWJGLGUZIv53G0oUyjR+AStSV29wg==;EndpointSuffix=core.windows.net` isn't defined
+[2023-11-30T13:37:38.620+0800] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py", line 82, in delete_file_in_actual_folder
+    adls_hook.delete_directory(file_system_name, directory_to_delete)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/data_lake.py", line 539, in delete_directory
+    directory_client = self.get_directory_client(file_system_name, directory_name)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/data_lake.py", line 425, in get_directory_client
+    directory_client = self.get_file_system(file_system_name).get_directory_client(directory_name)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/data_lake.py", line 393, in get_file_system
+    file_system_client = self.service_client.get_file_system_client(file_system=file_system)
+  File "/usr/lib/python3.10/functools.py", line 981, in __get__
+    val = self.func(instance)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/data_lake.py", line 333, in service_client
+    return self.get_conn()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/data_lake.py", line 337, in get_conn
+    conn = self.get_connection(self.conn_id)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/models/connection.py", line 477, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `DefaultEndpointsProtocol=https;AccountName=azfarsadev;AccountKey=sFyIWPRQZbFGnp30v1X40G3rFjqvzvAiEVU+/4AP4LNrkN25mlsVv+ha1VWJGLGUZIv53G0oUyjR+AStSV29wg==;EndpointSuffix=core.windows.net` isn't defined
+[2023-11-30T13:37:38.627+0800] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fantasy_premier_league_debug, task_id=delete_file_in_actual_folder, execution_date=20231130T053717, start_date=20231130T053736, end_date=20231130T053738
+[2023-11-30T13:37:38.650+0800] {standard_task_runner.py:104} ERROR - Failed to execute job 64 for task delete_file_in_actual_folder (The conn_id `DefaultEndpointsProtocol=https;AccountName=azfarsadev;AccountKey=sFyIWPRQZbFGnp30v1X40G3rFjqvzvAiEVU+/4AP4LNrkN25mlsVv+ha1VWJGLGUZIv53G0oUyjR+AStSV29wg==;EndpointSuffix=core.windows.net` isn't defined; 34239)
+[2023-11-30T13:37:38.685+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-30T13:37:38.704+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,1511 @@
+[2023-11-24T18:34:25.895+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test manual__2023-11-24T10:34:22.364106+00:00 [queued]>
+[2023-11-24T18:34:25.903+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test manual__2023-11-24T10:34:22.364106+00:00 [queued]>
+[2023-11-24T18:34:25.904+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-24T18:34:25.927+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): download_file_from_blob_test> on 2023-11-24 10:34:22.364106+00:00
+[2023-11-24T18:34:25.929+0800] {standard_task_runner.py:57} INFO - Started process 101004 to run task
+[2023-11-24T18:34:25.933+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'download_file_from_blob_test', 'manual__2023-11-24T10:34:22.364106+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmpvvfx8d0c']
+[2023-11-24T18:34:25.935+0800] {standard_task_runner.py:85} INFO - Job 12: Subtask download_file_from_blob_test
+[2023-11-24T18:34:25.976+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.download_file_from_blob_test manual__2023-11-24T10:34:22.364106+00:00 [running]> on host azfartitu.
+[2023-11-24T18:34:26.107+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='download_file_from_blob_test' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T10:34:22.364106+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-24T10:34:22.364106+00:00'
+[2023-11-24T18:34:26.123+0800] {logging_mixin.py:154} INFO - Temporary directory created: /tmp/tmprrki8m7o
+[2023-11-24T18:34:26.129+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T18:34:26.571+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T18:34:29.081+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmprrki8m7o
+[2023-11-24T18:34:29.139+0800] {logging_mixin.py:154} INFO - <class 'list'>
+[2023-11-24T18:34:29.140+0800] {logging_mixin.py:154} INFO - File is deleted in /tmp/tmprrki8m7o
+[2023-11-24T18:34:29.333+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:29.333+0800] {logging_mixin.py:154} INFO - Added player id 1 in dictionary.
+[2023-11-24T18:34:29.688+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:29.689+0800] {logging_mixin.py:154} INFO - Added player id 2 in dictionary.
+[2023-11-24T18:34:30.117+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:30.117+0800] {logging_mixin.py:154} INFO - Added player id 3 in dictionary.
+[2023-11-24T18:34:30.452+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:30.453+0800] {logging_mixin.py:154} INFO - Added player id 4 in dictionary.
+[2023-11-24T18:34:30.637+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:30.637+0800] {logging_mixin.py:154} INFO - Added player id 5 in dictionary.
+[2023-11-24T18:34:30.972+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:30.972+0800] {logging_mixin.py:154} INFO - Added player id 6 in dictionary.
+[2023-11-24T18:34:31.151+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:31.151+0800] {logging_mixin.py:154} INFO - Added player id 8 in dictionary.
+[2023-11-24T18:34:31.518+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:31.518+0800] {logging_mixin.py:154} INFO - Added player id 9 in dictionary.
+[2023-11-24T18:34:31.736+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:31.737+0800] {logging_mixin.py:154} INFO - Added player id 10 in dictionary.
+[2023-11-24T18:34:31.926+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:31.926+0800] {logging_mixin.py:154} INFO - Added player id 11 in dictionary.
+[2023-11-24T18:34:32.293+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:32.293+0800] {logging_mixin.py:154} INFO - Added player id 12 in dictionary.
+[2023-11-24T18:34:32.502+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:32.502+0800] {logging_mixin.py:154} INFO - Added player id 13 in dictionary.
+[2023-11-24T18:34:32.700+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:32.701+0800] {logging_mixin.py:154} INFO - Added player id 14 in dictionary.
+[2023-11-24T18:34:33.050+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:33.051+0800] {logging_mixin.py:154} INFO - Added player id 15 in dictionary.
+[2023-11-24T18:34:33.399+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:33.399+0800] {logging_mixin.py:154} INFO - Added player id 16 in dictionary.
+[2023-11-24T18:34:33.621+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:33.621+0800] {logging_mixin.py:154} INFO - Added player id 17 in dictionary.
+[2023-11-24T18:34:33.787+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:33.787+0800] {logging_mixin.py:154} INFO - Added player id 18 in dictionary.
+[2023-11-24T18:34:34.117+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:34.118+0800] {logging_mixin.py:154} INFO - Added player id 19 in dictionary.
+[2023-11-24T18:34:34.283+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:34.283+0800] {logging_mixin.py:154} INFO - Added player id 20 in dictionary.
+[2023-11-24T18:34:34.632+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:34.632+0800] {logging_mixin.py:154} INFO - Added player id 22 in dictionary.
+[2023-11-24T18:34:34.796+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:34.796+0800] {logging_mixin.py:154} INFO - Added player id 24 in dictionary.
+[2023-11-24T18:34:35.132+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:35.132+0800] {logging_mixin.py:154} INFO - Added player id 25 in dictionary.
+[2023-11-24T18:34:35.290+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:35.290+0800] {logging_mixin.py:154} INFO - Added player id 26 in dictionary.
+[2023-11-24T18:34:35.464+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:35.464+0800] {logging_mixin.py:154} INFO - Added player id 29 in dictionary.
+[2023-11-24T18:34:35.632+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:35.632+0800] {logging_mixin.py:154} INFO - Added player id 30 in dictionary.
+[2023-11-24T18:34:35.805+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:35.805+0800] {logging_mixin.py:154} INFO - Added player id 31 in dictionary.
+[2023-11-24T18:34:36.003+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:36.004+0800] {logging_mixin.py:154} INFO - Added player id 113 in dictionary.
+[2023-11-24T18:34:36.186+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:36.186+0800] {logging_mixin.py:154} INFO - Added player id 540 in dictionary.
+[2023-11-24T18:34:36.541+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:36.542+0800] {logging_mixin.py:154} INFO - Added player id 578 in dictionary.
+[2023-11-24T18:34:36.697+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:36.697+0800] {logging_mixin.py:154} INFO - Added player id 585 in dictionary.
+[2023-11-24T18:34:36.871+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:36.871+0800] {logging_mixin.py:154} INFO - Added player id 646 in dictionary.
+[2023-11-24T18:34:37.030+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:37.031+0800] {logging_mixin.py:154} INFO - Added player id 735 in dictionary.
+[2023-11-24T18:34:37.189+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:37.190+0800] {logging_mixin.py:154} INFO - Added player id 736 in dictionary.
+[2023-11-24T18:34:37.347+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:37.347+0800] {logging_mixin.py:154} INFO - Added player id 737 in dictionary.
+[2023-11-24T18:34:37.502+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:37.502+0800] {logging_mixin.py:154} INFO - Added player id 32 in dictionary.
+[2023-11-24T18:34:37.653+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:37.653+0800] {logging_mixin.py:154} INFO - Added player id 34 in dictionary.
+[2023-11-24T18:34:37.811+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:37.812+0800] {logging_mixin.py:154} INFO - Added player id 35 in dictionary.
+[2023-11-24T18:34:37.997+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:37.997+0800] {logging_mixin.py:154} INFO - Added player id 36 in dictionary.
+[2023-11-24T18:34:38.360+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:38.361+0800] {logging_mixin.py:154} INFO - Added player id 37 in dictionary.
+[2023-11-24T18:34:38.577+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:38.578+0800] {logging_mixin.py:154} INFO - Added player id 38 in dictionary.
+[2023-11-24T18:34:38.738+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:38.738+0800] {logging_mixin.py:154} INFO - Added player id 39 in dictionary.
+[2023-11-24T18:34:38.916+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:38.916+0800] {logging_mixin.py:154} INFO - Added player id 40 in dictionary.
+[2023-11-24T18:34:39.111+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:39.112+0800] {logging_mixin.py:154} INFO - Added player id 41 in dictionary.
+[2023-11-24T18:34:39.267+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:39.268+0800] {logging_mixin.py:154} INFO - Added player id 42 in dictionary.
+[2023-11-24T18:34:39.444+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:39.444+0800] {logging_mixin.py:154} INFO - Added player id 43 in dictionary.
+[2023-11-24T18:34:39.621+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:39.622+0800] {logging_mixin.py:154} INFO - Added player id 44 in dictionary.
+[2023-11-24T18:34:39.795+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:39.796+0800] {logging_mixin.py:154} INFO - Added player id 45 in dictionary.
+[2023-11-24T18:34:39.964+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:39.965+0800] {logging_mixin.py:154} INFO - Added player id 46 in dictionary.
+[2023-11-24T18:34:40.319+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:40.319+0800] {logging_mixin.py:154} INFO - Added player id 47 in dictionary.
+[2023-11-24T18:34:40.510+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:40.511+0800] {logging_mixin.py:154} INFO - Added player id 48 in dictionary.
+[2023-11-24T18:34:40.699+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:40.700+0800] {logging_mixin.py:154} INFO - Added player id 49 in dictionary.
+[2023-11-24T18:34:40.870+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:40.870+0800] {logging_mixin.py:154} INFO - Added player id 50 in dictionary.
+[2023-11-24T18:34:41.042+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:41.043+0800] {logging_mixin.py:154} INFO - Added player id 51 in dictionary.
+[2023-11-24T18:34:41.218+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:41.219+0800] {logging_mixin.py:154} INFO - Added player id 53 in dictionary.
+[2023-11-24T18:34:41.535+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:41.536+0800] {logging_mixin.py:154} INFO - Added player id 54 in dictionary.
+[2023-11-24T18:34:41.876+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:41.876+0800] {logging_mixin.py:154} INFO - Added player id 55 in dictionary.
+[2023-11-24T18:34:42.052+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:42.052+0800] {logging_mixin.py:154} INFO - Added player id 56 in dictionary.
+[2023-11-24T18:34:42.227+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:42.228+0800] {logging_mixin.py:154} INFO - Added player id 57 in dictionary.
+[2023-11-24T18:34:42.613+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:42.614+0800] {logging_mixin.py:154} INFO - Added player id 58 in dictionary.
+[2023-11-24T18:34:42.797+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:42.797+0800] {logging_mixin.py:154} INFO - Added player id 59 in dictionary.
+[2023-11-24T18:34:43.003+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:43.003+0800] {logging_mixin.py:154} INFO - Added player id 60 in dictionary.
+[2023-11-24T18:34:43.227+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:43.227+0800] {logging_mixin.py:154} INFO - Added player id 61 in dictionary.
+[2023-11-24T18:34:43.411+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:43.411+0800] {logging_mixin.py:154} INFO - Added player id 584 in dictionary.
+[2023-11-24T18:34:43.601+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:43.601+0800] {logging_mixin.py:154} INFO - Added player id 599 in dictionary.
+[2023-11-24T18:34:43.785+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:43.786+0800] {logging_mixin.py:154} INFO - Added player id 618 in dictionary.
+[2023-11-24T18:34:43.983+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:43.983+0800] {logging_mixin.py:154} INFO - Added player id 670 in dictionary.
+[2023-11-24T18:34:44.375+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:44.376+0800] {logging_mixin.py:154} INFO - Added player id 672 in dictionary.
+[2023-11-24T18:34:44.579+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:44.580+0800] {logging_mixin.py:154} INFO - Added player id 686 in dictionary.
+[2023-11-24T18:34:44.779+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:44.780+0800] {logging_mixin.py:154} INFO - Added player id 699 in dictionary.
+[2023-11-24T18:34:44.963+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:44.963+0800] {logging_mixin.py:154} INFO - Added player id 62 in dictionary.
+[2023-11-24T18:34:45.294+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:45.295+0800] {logging_mixin.py:154} INFO - Added player id 63 in dictionary.
+[2023-11-24T18:34:45.621+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:45.621+0800] {logging_mixin.py:154} INFO - Added player id 64 in dictionary.
+[2023-11-24T18:34:45.977+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:45.977+0800] {logging_mixin.py:154} INFO - Added player id 65 in dictionary.
+[2023-11-24T18:34:46.322+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:46.322+0800] {logging_mixin.py:154} INFO - Added player id 66 in dictionary.
+[2023-11-24T18:34:46.511+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:46.511+0800] {logging_mixin.py:154} INFO - Added player id 67 in dictionary.
+[2023-11-24T18:34:46.695+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:46.696+0800] {logging_mixin.py:154} INFO - Added player id 68 in dictionary.
+[2023-11-24T18:34:46.884+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:46.884+0800] {logging_mixin.py:154} INFO - Added player id 69 in dictionary.
+[2023-11-24T18:34:47.224+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:47.225+0800] {logging_mixin.py:154} INFO - Added player id 70 in dictionary.
+[2023-11-24T18:34:47.392+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:47.392+0800] {logging_mixin.py:154} INFO - Added player id 71 in dictionary.
+[2023-11-24T18:34:47.552+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:47.552+0800] {logging_mixin.py:154} INFO - Added player id 72 in dictionary.
+[2023-11-24T18:34:47.708+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:47.708+0800] {logging_mixin.py:154} INFO - Added player id 73 in dictionary.
+[2023-11-24T18:34:47.871+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:47.872+0800] {logging_mixin.py:154} INFO - Added player id 74 in dictionary.
+[2023-11-24T18:34:48.178+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:48.178+0800] {logging_mixin.py:154} INFO - Added player id 75 in dictionary.
+[2023-11-24T18:34:48.542+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:48.542+0800] {logging_mixin.py:154} INFO - Added player id 76 in dictionary.
+[2023-11-24T18:34:48.717+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:48.717+0800] {logging_mixin.py:154} INFO - Added player id 77 in dictionary.
+[2023-11-24T18:34:49.055+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:49.055+0800] {logging_mixin.py:154} INFO - Added player id 78 in dictionary.
+[2023-11-24T18:34:49.211+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:49.211+0800] {logging_mixin.py:154} INFO - Added player id 79 in dictionary.
+[2023-11-24T18:34:49.404+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:49.405+0800] {logging_mixin.py:154} INFO - Added player id 80 in dictionary.
+[2023-11-24T18:34:49.747+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:49.747+0800] {logging_mixin.py:154} INFO - Added player id 81 in dictionary.
+[2023-11-24T18:34:49.910+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:49.910+0800] {logging_mixin.py:154} INFO - Added player id 82 in dictionary.
+[2023-11-24T18:34:50.083+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:50.084+0800] {logging_mixin.py:154} INFO - Added player id 83 in dictionary.
+[2023-11-24T18:34:50.448+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:50.449+0800] {logging_mixin.py:154} INFO - Added player id 84 in dictionary.
+[2023-11-24T18:34:50.625+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:50.626+0800] {logging_mixin.py:154} INFO - Added player id 85 in dictionary.
+[2023-11-24T18:34:51.007+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:51.008+0800] {logging_mixin.py:154} INFO - Added player id 86 in dictionary.
+[2023-11-24T18:34:51.334+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:51.335+0800] {logging_mixin.py:154} INFO - Added player id 87 in dictionary.
+[2023-11-24T18:34:51.504+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:51.504+0800] {logging_mixin.py:154} INFO - Added player id 88 in dictionary.
+[2023-11-24T18:34:51.834+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:51.834+0800] {logging_mixin.py:154} INFO - Added player id 89 in dictionary.
+[2023-11-24T18:34:52.004+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:52.005+0800] {logging_mixin.py:154} INFO - Added player id 595 in dictionary.
+[2023-11-24T18:34:52.344+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:52.345+0800] {logging_mixin.py:154} INFO - Added player id 607 in dictionary.
+[2023-11-24T18:34:53.554+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:53.554+0800] {logging_mixin.py:154} INFO - Added player id 619 in dictionary.
+[2023-11-24T18:34:53.721+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:53.721+0800] {logging_mixin.py:154} INFO - Added player id 643 in dictionary.
+[2023-11-24T18:34:53.900+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:53.900+0800] {logging_mixin.py:154} INFO - Added player id 644 in dictionary.
+[2023-11-24T18:34:54.067+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:54.067+0800] {logging_mixin.py:154} INFO - Added player id 673 in dictionary.
+[2023-11-24T18:34:54.220+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:54.220+0800] {logging_mixin.py:154} INFO - Added player id 705 in dictionary.
+[2023-11-24T18:34:54.385+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:54.386+0800] {logging_mixin.py:154} INFO - Added player id 90 in dictionary.
+[2023-11-24T18:34:54.542+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:54.543+0800] {logging_mixin.py:154} INFO - Added player id 91 in dictionary.
+[2023-11-24T18:34:54.725+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:54.725+0800] {logging_mixin.py:154} INFO - Added player id 92 in dictionary.
+[2023-11-24T18:34:54.883+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:54.883+0800] {logging_mixin.py:154} INFO - Added player id 93 in dictionary.
+[2023-11-24T18:34:55.042+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:55.042+0800] {logging_mixin.py:154} INFO - Added player id 94 in dictionary.
+[2023-11-24T18:34:55.201+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:55.201+0800] {logging_mixin.py:154} INFO - Added player id 95 in dictionary.
+[2023-11-24T18:34:55.349+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:55.350+0800] {logging_mixin.py:154} INFO - Added player id 96 in dictionary.
+[2023-11-24T18:34:55.510+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:55.510+0800] {logging_mixin.py:154} INFO - Added player id 97 in dictionary.
+[2023-11-24T18:34:55.680+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:55.680+0800] {logging_mixin.py:154} INFO - Added player id 98 in dictionary.
+[2023-11-24T18:34:55.844+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:55.844+0800] {logging_mixin.py:154} INFO - Added player id 99 in dictionary.
+[2023-11-24T18:34:56.015+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:56.016+0800] {logging_mixin.py:154} INFO - Added player id 100 in dictionary.
+[2023-11-24T18:34:56.213+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:56.213+0800] {logging_mixin.py:154} INFO - Added player id 101 in dictionary.
+[2023-11-24T18:34:56.417+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:56.417+0800] {logging_mixin.py:154} INFO - Added player id 102 in dictionary.
+[2023-11-24T18:34:56.621+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:56.621+0800] {logging_mixin.py:154} INFO - Added player id 103 in dictionary.
+[2023-11-24T18:34:56.807+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:56.807+0800] {logging_mixin.py:154} INFO - Added player id 104 in dictionary.
+[2023-11-24T18:34:56.986+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:56.987+0800] {logging_mixin.py:154} INFO - Added player id 105 in dictionary.
+[2023-11-24T18:34:57.201+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:57.201+0800] {logging_mixin.py:154} INFO - Added player id 106 in dictionary.
+[2023-11-24T18:34:57.380+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:57.381+0800] {logging_mixin.py:154} INFO - Added player id 107 in dictionary.
+[2023-11-24T18:34:57.561+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:57.562+0800] {logging_mixin.py:154} INFO - Added player id 108 in dictionary.
+[2023-11-24T18:34:57.911+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:57.911+0800] {logging_mixin.py:154} INFO - Added player id 109 in dictionary.
+[2023-11-24T18:34:58.109+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:58.110+0800] {logging_mixin.py:154} INFO - Added player id 110 in dictionary.
+[2023-11-24T18:34:58.479+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:58.480+0800] {logging_mixin.py:154} INFO - Added player id 111 in dictionary.
+[2023-11-24T18:34:58.656+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:58.657+0800] {logging_mixin.py:154} INFO - Added player id 112 in dictionary.
+[2023-11-24T18:34:58.832+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:58.833+0800] {logging_mixin.py:154} INFO - Added player id 114 in dictionary.
+[2023-11-24T18:34:59.171+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:59.171+0800] {logging_mixin.py:154} INFO - Added player id 115 in dictionary.
+[2023-11-24T18:34:59.334+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:59.335+0800] {logging_mixin.py:154} INFO - Added player id 116 in dictionary.
+[2023-11-24T18:34:59.536+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:59.658+0800] {logging_mixin.py:154} INFO - Added player id 117 in dictionary.
+[2023-11-24T18:34:59.849+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:34:59.849+0800] {logging_mixin.py:154} INFO - Added player id 118 in dictionary.
+[2023-11-24T18:35:00.020+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:00.020+0800] {logging_mixin.py:154} INFO - Added player id 119 in dictionary.
+[2023-11-24T18:35:00.245+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:00.245+0800] {logging_mixin.py:154} INFO - Added player id 120 in dictionary.
+[2023-11-24T18:35:00.566+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:00.567+0800] {logging_mixin.py:154} INFO - Added player id 121 in dictionary.
+[2023-11-24T18:35:00.745+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:00.745+0800] {logging_mixin.py:154} INFO - Added player id 258 in dictionary.
+[2023-11-24T18:35:01.063+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:01.063+0800] {logging_mixin.py:154} INFO - Added player id 620 in dictionary.
+[2023-11-24T18:35:01.433+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:01.433+0800] {logging_mixin.py:154} INFO - Added player id 684 in dictionary.
+[2023-11-24T18:35:01.610+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:01.610+0800] {logging_mixin.py:154} INFO - Added player id 701 in dictionary.
+[2023-11-24T18:35:01.951+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:01.952+0800] {logging_mixin.py:154} INFO - Added player id 725 in dictionary.
+[2023-11-24T18:35:02.292+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:02.292+0800] {logging_mixin.py:154} INFO - Added player id 733 in dictionary.
+[2023-11-24T18:35:02.615+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:02.615+0800] {logging_mixin.py:154} INFO - Added player id 744 in dictionary.
+[2023-11-24T18:35:02.791+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:02.791+0800] {logging_mixin.py:154} INFO - Added player id 122 in dictionary.
+[2023-11-24T18:35:03.172+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:03.172+0800] {logging_mixin.py:154} INFO - Added player id 123 in dictionary.
+[2023-11-24T18:35:03.513+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:03.513+0800] {logging_mixin.py:154} INFO - Added player id 124 in dictionary.
+[2023-11-24T18:35:03.877+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:03.877+0800] {logging_mixin.py:154} INFO - Added player id 125 in dictionary.
+[2023-11-24T18:35:04.201+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:04.201+0800] {logging_mixin.py:154} INFO - Added player id 127 in dictionary.
+[2023-11-24T18:35:04.374+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:04.374+0800] {logging_mixin.py:154} INFO - Added player id 128 in dictionary.
+[2023-11-24T18:35:04.542+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:04.542+0800] {logging_mixin.py:154} INFO - Added player id 129 in dictionary.
+[2023-11-24T18:35:04.883+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:04.883+0800] {logging_mixin.py:154} INFO - Added player id 130 in dictionary.
+[2023-11-24T18:35:05.040+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:05.040+0800] {logging_mixin.py:154} INFO - Added player id 131 in dictionary.
+[2023-11-24T18:35:05.207+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:05.207+0800] {logging_mixin.py:154} INFO - Added player id 132 in dictionary.
+[2023-11-24T18:35:05.377+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:05.377+0800] {logging_mixin.py:154} INFO - Added player id 133 in dictionary.
+[2023-11-24T18:35:05.540+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:05.540+0800] {logging_mixin.py:154} INFO - Added player id 134 in dictionary.
+[2023-11-24T18:35:05.697+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:05.697+0800] {logging_mixin.py:154} INFO - Added player id 135 in dictionary.
+[2023-11-24T18:35:06.039+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:06.039+0800] {logging_mixin.py:154} INFO - Added player id 136 in dictionary.
+[2023-11-24T18:35:06.373+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:06.373+0800] {logging_mixin.py:154} INFO - Added player id 137 in dictionary.
+[2023-11-24T18:35:06.748+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:06.748+0800] {logging_mixin.py:154} INFO - Added player id 138 in dictionary.
+[2023-11-24T18:35:06.921+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:06.922+0800] {logging_mixin.py:154} INFO - Added player id 139 in dictionary.
+[2023-11-24T18:35:07.099+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:07.099+0800] {logging_mixin.py:154} INFO - Added player id 140 in dictionary.
+[2023-11-24T18:35:07.444+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:07.444+0800] {logging_mixin.py:154} INFO - Added player id 141 in dictionary.
+[2023-11-24T18:35:07.768+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:07.768+0800] {logging_mixin.py:154} INFO - Added player id 142 in dictionary.
+[2023-11-24T18:35:07.954+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:07.955+0800] {logging_mixin.py:154} INFO - Added player id 143 in dictionary.
+[2023-11-24T18:35:08.336+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:08.336+0800] {logging_mixin.py:154} INFO - Added player id 144 in dictionary.
+[2023-11-24T18:35:08.753+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:08.753+0800] {logging_mixin.py:154} INFO - Added player id 146 in dictionary.
+[2023-11-24T18:35:09.076+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:09.076+0800] {logging_mixin.py:154} INFO - Added player id 147 in dictionary.
+[2023-11-24T18:35:09.241+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:09.241+0800] {logging_mixin.py:154} INFO - Added player id 148 in dictionary.
+[2023-11-24T18:35:09.597+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:09.597+0800] {logging_mixin.py:154} INFO - Added player id 149 in dictionary.
+[2023-11-24T18:35:09.759+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:09.759+0800] {logging_mixin.py:154} INFO - Added player id 150 in dictionary.
+[2023-11-24T18:35:10.112+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:10.112+0800] {logging_mixin.py:154} INFO - Added player id 151 in dictionary.
+[2023-11-24T18:35:10.443+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:10.443+0800] {logging_mixin.py:154} INFO - Added player id 152 in dictionary.
+[2023-11-24T18:35:10.787+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:10.788+0800] {logging_mixin.py:154} INFO - Added player id 153 in dictionary.
+[2023-11-24T18:35:11.132+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:11.133+0800] {logging_mixin.py:154} INFO - Added player id 154 in dictionary.
+[2023-11-24T18:35:11.467+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:11.468+0800] {logging_mixin.py:154} INFO - Added player id 155 in dictionary.
+[2023-11-24T18:35:11.788+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:11.788+0800] {logging_mixin.py:154} INFO - Added player id 606 in dictionary.
+[2023-11-24T18:35:12.107+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:12.108+0800] {logging_mixin.py:154} INFO - Added player id 621 in dictionary.
+[2023-11-24T18:35:12.432+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:12.432+0800] {logging_mixin.py:154} INFO - Added player id 690 in dictionary.
+[2023-11-24T18:35:12.772+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:12.772+0800] {logging_mixin.py:154} INFO - Added player id 700 in dictionary.
+[2023-11-24T18:35:13.116+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:13.116+0800] {logging_mixin.py:154} INFO - Added player id 741 in dictionary.
+[2023-11-24T18:35:13.437+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:13.438+0800] {logging_mixin.py:154} INFO - Added player id 742 in dictionary.
+[2023-11-24T18:35:13.621+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:13.621+0800] {logging_mixin.py:154} INFO - Added player id 156 in dictionary.
+[2023-11-24T18:35:13.801+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:13.802+0800] {logging_mixin.py:154} INFO - Added player id 157 in dictionary.
+[2023-11-24T18:35:14.123+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:14.123+0800] {logging_mixin.py:154} INFO - Added player id 158 in dictionary.
+[2023-11-24T18:35:14.457+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:14.458+0800] {logging_mixin.py:154} INFO - Added player id 159 in dictionary.
+[2023-11-24T18:35:14.641+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:14.642+0800] {logging_mixin.py:154} INFO - Added player id 160 in dictionary.
+[2023-11-24T18:35:14.832+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:14.833+0800] {logging_mixin.py:154} INFO - Added player id 161 in dictionary.
+[2023-11-24T18:35:15.154+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:15.154+0800] {logging_mixin.py:154} INFO - Added player id 162 in dictionary.
+[2023-11-24T18:35:15.499+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:15.499+0800] {logging_mixin.py:154} INFO - Added player id 163 in dictionary.
+[2023-11-24T18:35:15.898+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:15.898+0800] {logging_mixin.py:154} INFO - Added player id 164 in dictionary.
+[2023-11-24T18:35:16.257+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:16.258+0800] {logging_mixin.py:154} INFO - Added player id 165 in dictionary.
+[2023-11-24T18:35:16.468+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:16.469+0800] {logging_mixin.py:154} INFO - Added player id 166 in dictionary.
+[2023-11-24T18:35:16.833+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:16.833+0800] {logging_mixin.py:154} INFO - Added player id 167 in dictionary.
+[2023-11-24T18:35:17.016+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:17.016+0800] {logging_mixin.py:154} INFO - Added player id 168 in dictionary.
+[2023-11-24T18:35:17.375+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:17.375+0800] {logging_mixin.py:154} INFO - Added player id 169 in dictionary.
+[2023-11-24T18:35:17.701+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:17.701+0800] {logging_mixin.py:154} INFO - Added player id 170 in dictionary.
+[2023-11-24T18:35:18.036+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:18.036+0800] {logging_mixin.py:154} INFO - Added player id 171 in dictionary.
+[2023-11-24T18:35:18.383+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:18.384+0800] {logging_mixin.py:154} INFO - Added player id 172 in dictionary.
+[2023-11-24T18:35:19.111+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:19.112+0800] {logging_mixin.py:154} INFO - Added player id 173 in dictionary.
+[2023-11-24T18:35:19.454+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:19.454+0800] {logging_mixin.py:154} INFO - Added player id 174 in dictionary.
+[2023-11-24T18:35:20.869+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:20.870+0800] {logging_mixin.py:154} INFO - Added player id 175 in dictionary.
+[2023-11-24T18:35:21.208+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:21.208+0800] {logging_mixin.py:154} INFO - Added player id 176 in dictionary.
+[2023-11-24T18:35:21.367+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:21.368+0800] {logging_mixin.py:154} INFO - Added player id 177 in dictionary.
+[2023-11-24T18:35:21.529+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:21.529+0800] {logging_mixin.py:154} INFO - Added player id 178 in dictionary.
+[2023-11-24T18:35:21.873+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:21.874+0800] {logging_mixin.py:154} INFO - Added player id 179 in dictionary.
+[2023-11-24T18:35:22.226+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:22.226+0800] {logging_mixin.py:154} INFO - Added player id 180 in dictionary.
+[2023-11-24T18:35:22.557+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:22.557+0800] {logging_mixin.py:154} INFO - Added player id 181 in dictionary.
+[2023-11-24T18:35:22.901+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:22.902+0800] {logging_mixin.py:154} INFO - Added player id 182 in dictionary.
+[2023-11-24T18:35:23.223+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:23.223+0800] {logging_mixin.py:154} INFO - Added player id 183 in dictionary.
+[2023-11-24T18:35:23.564+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:23.564+0800] {logging_mixin.py:154} INFO - Added player id 184 in dictionary.
+[2023-11-24T18:35:23.890+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:23.891+0800] {logging_mixin.py:154} INFO - Added player id 475 in dictionary.
+[2023-11-24T18:35:24.246+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:24.246+0800] {logging_mixin.py:154} INFO - Added player id 594 in dictionary.
+[2023-11-24T18:35:24.415+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:24.416+0800] {logging_mixin.py:154} INFO - Added player id 596 in dictionary.
+[2023-11-24T18:35:24.750+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:24.751+0800] {logging_mixin.py:154} INFO - Added player id 600 in dictionary.
+[2023-11-24T18:35:25.072+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:25.072+0800] {logging_mixin.py:154} INFO - Added player id 605 in dictionary.
+[2023-11-24T18:35:25.387+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:25.388+0800] {logging_mixin.py:154} INFO - Added player id 608 in dictionary.
+[2023-11-24T18:35:25.704+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:25.704+0800] {logging_mixin.py:154} INFO - Added player id 622 in dictionary.
+[2023-11-24T18:35:25.862+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:25.863+0800] {logging_mixin.py:154} INFO - Added player id 660 in dictionary.
+[2023-11-24T18:35:26.177+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:26.178+0800] {logging_mixin.py:154} INFO - Added player id 674 in dictionary.
+[2023-11-24T18:35:26.512+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:26.512+0800] {logging_mixin.py:154} INFO - Added player id 675 in dictionary.
+[2023-11-24T18:35:26.842+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:26.842+0800] {logging_mixin.py:154} INFO - Added player id 694 in dictionary.
+[2023-11-24T18:35:27.146+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:27.147+0800] {logging_mixin.py:154} INFO - Added player id 706 in dictionary.
+[2023-11-24T18:35:27.498+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:27.499+0800] {logging_mixin.py:154} INFO - Added player id 126 in dictionary.
+[2023-11-24T18:35:27.662+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:27.663+0800] {logging_mixin.py:154} INFO - Added player id 145 in dictionary.
+[2023-11-24T18:35:28.006+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:28.006+0800] {logging_mixin.py:154} INFO - Added player id 185 in dictionary.
+[2023-11-24T18:35:28.369+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:28.369+0800] {logging_mixin.py:154} INFO - Added player id 187 in dictionary.
+[2023-11-24T18:35:28.709+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:28.709+0800] {logging_mixin.py:154} INFO - Added player id 188 in dictionary.
+[2023-11-24T18:35:29.055+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:29.056+0800] {logging_mixin.py:154} INFO - Added player id 189 in dictionary.
+[2023-11-24T18:35:29.423+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:29.423+0800] {logging_mixin.py:154} INFO - Added player id 190 in dictionary.
+[2023-11-24T18:35:29.768+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:29.768+0800] {logging_mixin.py:154} INFO - Added player id 191 in dictionary.
+[2023-11-24T18:35:30.105+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:30.106+0800] {logging_mixin.py:154} INFO - Added player id 192 in dictionary.
+[2023-11-24T18:35:30.449+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:30.449+0800] {logging_mixin.py:154} INFO - Added player id 193 in dictionary.
+[2023-11-24T18:35:30.786+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:30.786+0800] {logging_mixin.py:154} INFO - Added player id 194 in dictionary.
+[2023-11-24T18:35:31.140+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:31.141+0800] {logging_mixin.py:154} INFO - Added player id 195 in dictionary.
+[2023-11-24T18:35:31.305+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:31.305+0800] {logging_mixin.py:154} INFO - Added player id 196 in dictionary.
+[2023-11-24T18:35:31.464+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:31.464+0800] {logging_mixin.py:154} INFO - Added player id 197 in dictionary.
+[2023-11-24T18:35:31.793+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:31.793+0800] {logging_mixin.py:154} INFO - Added player id 198 in dictionary.
+[2023-11-24T18:35:31.950+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:31.951+0800] {logging_mixin.py:154} INFO - Added player id 199 in dictionary.
+[2023-11-24T18:35:32.257+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:32.257+0800] {logging_mixin.py:154} INFO - Added player id 200 in dictionary.
+[2023-11-24T18:35:32.587+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:32.588+0800] {logging_mixin.py:154} INFO - Added player id 201 in dictionary.
+[2023-11-24T18:35:32.751+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:32.751+0800] {logging_mixin.py:154} INFO - Added player id 202 in dictionary.
+[2023-11-24T18:35:32.927+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:32.927+0800] {logging_mixin.py:154} INFO - Added player id 203 in dictionary.
+[2023-11-24T18:35:33.118+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:33.119+0800] {logging_mixin.py:154} INFO - Added player id 206 in dictionary.
+[2023-11-24T18:35:33.472+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:33.473+0800] {logging_mixin.py:154} INFO - Added player id 207 in dictionary.
+[2023-11-24T18:35:33.655+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:33.655+0800] {logging_mixin.py:154} INFO - Added player id 208 in dictionary.
+[2023-11-24T18:35:33.817+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:33.817+0800] {logging_mixin.py:154} INFO - Added player id 210 in dictionary.
+[2023-11-24T18:35:33.981+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:33.981+0800] {logging_mixin.py:154} INFO - Added player id 211 in dictionary.
+[2023-11-24T18:35:34.132+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:34.133+0800] {logging_mixin.py:154} INFO - Added player id 212 in dictionary.
+[2023-11-24T18:35:34.523+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:34.523+0800] {logging_mixin.py:154} INFO - Added player id 213 in dictionary.
+[2023-11-24T18:35:34.868+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:34.869+0800] {logging_mixin.py:154} INFO - Added player id 214 in dictionary.
+[2023-11-24T18:35:35.190+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:35.191+0800] {logging_mixin.py:154} INFO - Added player id 215 in dictionary.
+[2023-11-24T18:35:35.355+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:35.356+0800] {logging_mixin.py:154} INFO - Added player id 216 in dictionary.
+[2023-11-24T18:35:35.535+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:35.536+0800] {logging_mixin.py:154} INFO - Added player id 217 in dictionary.
+[2023-11-24T18:35:35.881+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:35.881+0800] {logging_mixin.py:154} INFO - Added player id 218 in dictionary.
+[2023-11-24T18:35:36.219+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:36.219+0800] {logging_mixin.py:154} INFO - Added player id 362 in dictionary.
+[2023-11-24T18:35:36.563+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:36.563+0800] {logging_mixin.py:154} INFO - Added player id 589 in dictionary.
+[2023-11-24T18:35:36.882+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:36.882+0800] {logging_mixin.py:154} INFO - Added player id 609 in dictionary.
+[2023-11-24T18:35:37.050+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:37.051+0800] {logging_mixin.py:154} INFO - Added player id 611 in dictionary.
+[2023-11-24T18:35:37.213+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:37.214+0800] {logging_mixin.py:154} INFO - Added player id 613 in dictionary.
+[2023-11-24T18:35:37.547+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:37.548+0800] {logging_mixin.py:154} INFO - Added player id 623 in dictionary.
+[2023-11-24T18:35:37.876+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:37.876+0800] {logging_mixin.py:154} INFO - Added player id 659 in dictionary.
+[2023-11-24T18:35:38.210+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:38.211+0800] {logging_mixin.py:154} INFO - Added player id 667 in dictionary.
+[2023-11-24T18:35:38.535+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:38.535+0800] {logging_mixin.py:154} INFO - Added player id 671 in dictionary.
+[2023-11-24T18:35:38.716+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:38.716+0800] {logging_mixin.py:154} INFO - Added player id 677 in dictionary.
+[2023-11-24T18:35:39.080+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:39.080+0800] {logging_mixin.py:154} INFO - Added player id 680 in dictionary.
+[2023-11-24T18:35:39.413+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:39.413+0800] {logging_mixin.py:154} INFO - Added player id 681 in dictionary.
+[2023-11-24T18:35:39.769+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:39.770+0800] {logging_mixin.py:154} INFO - Added player id 687 in dictionary.
+[2023-11-24T18:35:39.950+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:39.950+0800] {logging_mixin.py:154} INFO - Added player id 716 in dictionary.
+[2023-11-24T18:35:40.133+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:40.133+0800] {logging_mixin.py:154} INFO - Added player id 717 in dictionary.
+[2023-11-24T18:35:40.478+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:40.479+0800] {logging_mixin.py:154} INFO - Added player id 718 in dictionary.
+[2023-11-24T18:35:40.812+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:40.813+0800] {logging_mixin.py:154} INFO - Added player id 723 in dictionary.
+[2023-11-24T18:35:41.185+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:41.185+0800] {logging_mixin.py:154} INFO - Added player id 7 in dictionary.
+[2023-11-24T18:35:41.382+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:41.383+0800] {logging_mixin.py:154} INFO - Added player id 219 in dictionary.
+[2023-11-24T18:35:41.563+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:41.564+0800] {logging_mixin.py:154} INFO - Added player id 220 in dictionary.
+[2023-11-24T18:35:41.732+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:41.732+0800] {logging_mixin.py:154} INFO - Added player id 221 in dictionary.
+[2023-11-24T18:35:42.083+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:42.084+0800] {logging_mixin.py:154} INFO - Added player id 222 in dictionary.
+[2023-11-24T18:35:42.425+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:42.426+0800] {logging_mixin.py:154} INFO - Added player id 223 in dictionary.
+[2023-11-24T18:35:42.758+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:42.758+0800] {logging_mixin.py:154} INFO - Added player id 224 in dictionary.
+[2023-11-24T18:35:42.927+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:42.928+0800] {logging_mixin.py:154} INFO - Added player id 225 in dictionary.
+[2023-11-24T18:35:43.078+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:43.078+0800] {logging_mixin.py:154} INFO - Added player id 226 in dictionary.
+[2023-11-24T18:35:43.252+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:43.252+0800] {logging_mixin.py:154} INFO - Added player id 227 in dictionary.
+[2023-11-24T18:35:43.423+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:43.424+0800] {logging_mixin.py:154} INFO - Added player id 228 in dictionary.
+[2023-11-24T18:35:43.804+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:43.804+0800] {logging_mixin.py:154} INFO - Added player id 229 in dictionary.
+[2023-11-24T18:35:43.966+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:43.966+0800] {logging_mixin.py:154} INFO - Added player id 230 in dictionary.
+[2023-11-24T18:35:44.164+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:44.165+0800] {logging_mixin.py:154} INFO - Added player id 231 in dictionary.
+[2023-11-24T18:35:44.374+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:44.374+0800] {logging_mixin.py:154} INFO - Added player id 232 in dictionary.
+[2023-11-24T18:35:44.713+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:44.713+0800] {logging_mixin.py:154} INFO - Added player id 233 in dictionary.
+[2023-11-24T18:35:44.887+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:44.888+0800] {logging_mixin.py:154} INFO - Added player id 234 in dictionary.
+[2023-11-24T18:35:45.241+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:45.241+0800] {logging_mixin.py:154} INFO - Added player id 235 in dictionary.
+[2023-11-24T18:35:45.403+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:45.403+0800] {logging_mixin.py:154} INFO - Added player id 236 in dictionary.
+[2023-11-24T18:35:45.743+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:45.744+0800] {logging_mixin.py:154} INFO - Added player id 237 in dictionary.
+[2023-11-24T18:35:46.083+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:46.084+0800] {logging_mixin.py:154} INFO - Added player id 238 in dictionary.
+[2023-11-24T18:35:46.426+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:46.426+0800] {logging_mixin.py:154} INFO - Added player id 239 in dictionary.
+[2023-11-24T18:35:46.765+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:46.766+0800] {logging_mixin.py:154} INFO - Added player id 240 in dictionary.
+[2023-11-24T18:35:46.960+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:46.960+0800] {logging_mixin.py:154} INFO - Added player id 241 in dictionary.
+[2023-11-24T18:35:47.168+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:47.169+0800] {logging_mixin.py:154} INFO - Added player id 242 in dictionary.
+[2023-11-24T18:35:47.527+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:47.527+0800] {logging_mixin.py:154} INFO - Added player id 243 in dictionary.
+[2023-11-24T18:35:47.856+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:47.857+0800] {logging_mixin.py:154} INFO - Added player id 385 in dictionary.
+[2023-11-24T18:35:48.178+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:48.178+0800] {logging_mixin.py:154} INFO - Added player id 615 in dictionary.
+[2023-11-24T18:35:48.527+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:48.527+0800] {logging_mixin.py:154} INFO - Added player id 657 in dictionary.
+[2023-11-24T18:35:48.883+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:48.884+0800] {logging_mixin.py:154} INFO - Added player id 658 in dictionary.
+[2023-11-24T18:35:49.205+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:49.205+0800] {logging_mixin.py:154} INFO - Added player id 720 in dictionary.
+[2023-11-24T18:35:49.535+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:49.535+0800] {logging_mixin.py:154} INFO - Added player id 721 in dictionary.
+[2023-11-24T18:35:50.906+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:50.907+0800] {logging_mixin.py:154} INFO - Added player id 724 in dictionary.
+[2023-11-24T18:35:51.224+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:51.225+0800] {logging_mixin.py:154} INFO - Added player id 244 in dictionary.
+[2023-11-24T18:35:51.387+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:51.387+0800] {logging_mixin.py:154} INFO - Added player id 245 in dictionary.
+[2023-11-24T18:35:51.548+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:51.548+0800] {logging_mixin.py:154} INFO - Added player id 246 in dictionary.
+[2023-11-24T18:35:51.888+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:51.888+0800] {logging_mixin.py:154} INFO - Added player id 247 in dictionary.
+[2023-11-24T18:35:52.202+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:52.203+0800] {logging_mixin.py:154} INFO - Added player id 248 in dictionary.
+[2023-11-24T18:35:52.368+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:52.369+0800] {logging_mixin.py:154} INFO - Added player id 249 in dictionary.
+[2023-11-24T18:35:52.717+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:52.717+0800] {logging_mixin.py:154} INFO - Added player id 250 in dictionary.
+[2023-11-24T18:35:53.058+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:53.059+0800] {logging_mixin.py:154} INFO - Added player id 251 in dictionary.
+[2023-11-24T18:35:53.436+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:53.436+0800] {logging_mixin.py:154} INFO - Added player id 252 in dictionary.
+[2023-11-24T18:35:53.807+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:53.807+0800] {logging_mixin.py:154} INFO - Added player id 253 in dictionary.
+[2023-11-24T18:35:54.007+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:54.007+0800] {logging_mixin.py:154} INFO - Added player id 254 in dictionary.
+[2023-11-24T18:35:54.381+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:54.382+0800] {logging_mixin.py:154} INFO - Added player id 255 in dictionary.
+[2023-11-24T18:35:54.730+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:54.731+0800] {logging_mixin.py:154} INFO - Added player id 257 in dictionary.
+[2023-11-24T18:35:55.049+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:55.049+0800] {logging_mixin.py:154} INFO - Added player id 259 in dictionary.
+[2023-11-24T18:35:55.222+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:55.223+0800] {logging_mixin.py:154} INFO - Added player id 260 in dictionary.
+[2023-11-24T18:35:55.384+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:55.384+0800] {logging_mixin.py:154} INFO - Added player id 261 in dictionary.
+[2023-11-24T18:35:55.751+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:55.751+0800] {logging_mixin.py:154} INFO - Added player id 262 in dictionary.
+[2023-11-24T18:35:55.947+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:55.947+0800] {logging_mixin.py:154} INFO - Added player id 263 in dictionary.
+[2023-11-24T18:35:56.263+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:56.263+0800] {logging_mixin.py:154} INFO - Added player id 264 in dictionary.
+[2023-11-24T18:35:56.424+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:56.425+0800] {logging_mixin.py:154} INFO - Added player id 265 in dictionary.
+[2023-11-24T18:35:56.579+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:56.579+0800] {logging_mixin.py:154} INFO - Added player id 266 in dictionary.
+[2023-11-24T18:35:56.934+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:56.935+0800] {logging_mixin.py:154} INFO - Added player id 579 in dictionary.
+[2023-11-24T18:35:57.322+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:57.323+0800] {logging_mixin.py:154} INFO - Added player id 588 in dictionary.
+[2023-11-24T18:35:57.514+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:57.515+0800] {logging_mixin.py:154} INFO - Added player id 601 in dictionary.
+[2023-11-24T18:35:57.846+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:57.847+0800] {logging_mixin.py:154} INFO - Added player id 624 in dictionary.
+[2023-11-24T18:35:58.027+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:58.027+0800] {logging_mixin.py:154} INFO - Added player id 645 in dictionary.
+[2023-11-24T18:35:58.372+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:58.373+0800] {logging_mixin.py:154} INFO - Added player id 649 in dictionary.
+[2023-11-24T18:35:58.549+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:58.549+0800] {logging_mixin.py:154} INFO - Added player id 650 in dictionary.
+[2023-11-24T18:35:58.761+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:58.761+0800] {logging_mixin.py:154} INFO - Added player id 661 in dictionary.
+[2023-11-24T18:35:59.100+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:59.100+0800] {logging_mixin.py:154} INFO - Added player id 691 in dictionary.
+[2023-11-24T18:35:59.424+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:59.425+0800] {logging_mixin.py:154} INFO - Added player id 719 in dictionary.
+[2023-11-24T18:35:59.766+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:59.767+0800] {logging_mixin.py:154} INFO - Added player id 256 in dictionary.
+[2023-11-24T18:35:59.924+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:35:59.925+0800] {logging_mixin.py:154} INFO - Added player id 267 in dictionary.
+[2023-11-24T18:36:00.279+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:00.280+0800] {logging_mixin.py:154} INFO - Added player id 268 in dictionary.
+[2023-11-24T18:36:00.624+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:00.624+0800] {logging_mixin.py:154} INFO - Added player id 269 in dictionary.
+[2023-11-24T18:36:00.981+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:00.981+0800] {logging_mixin.py:154} INFO - Added player id 270 in dictionary.
+[2023-11-24T18:36:01.358+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:01.358+0800] {logging_mixin.py:154} INFO - Added player id 271 in dictionary.
+[2023-11-24T18:36:01.698+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:01.698+0800] {logging_mixin.py:154} INFO - Added player id 272 in dictionary.
+[2023-11-24T18:36:02.026+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:02.027+0800] {logging_mixin.py:154} INFO - Added player id 273 in dictionary.
+[2023-11-24T18:36:02.382+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:02.383+0800] {logging_mixin.py:154} INFO - Added player id 274 in dictionary.
+[2023-11-24T18:36:02.553+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:02.554+0800] {logging_mixin.py:154} INFO - Added player id 275 in dictionary.
+[2023-11-24T18:36:02.912+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:02.913+0800] {logging_mixin.py:154} INFO - Added player id 276 in dictionary.
+[2023-11-24T18:36:03.248+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:03.249+0800] {logging_mixin.py:154} INFO - Added player id 277 in dictionary.
+[2023-11-24T18:36:03.593+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:03.593+0800] {logging_mixin.py:154} INFO - Added player id 278 in dictionary.
+[2023-11-24T18:36:03.959+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:03.959+0800] {logging_mixin.py:154} INFO - Added player id 279 in dictionary.
+[2023-11-24T18:36:04.305+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:04.305+0800] {logging_mixin.py:154} INFO - Added player id 280 in dictionary.
+[2023-11-24T18:36:04.470+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:04.471+0800] {logging_mixin.py:154} INFO - Added player id 281 in dictionary.
+[2023-11-24T18:36:04.623+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:04.623+0800] {logging_mixin.py:154} INFO - Added player id 282 in dictionary.
+[2023-11-24T18:36:04.787+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:04.787+0800] {logging_mixin.py:154} INFO - Added player id 283 in dictionary.
+[2023-11-24T18:36:04.942+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:04.943+0800] {logging_mixin.py:154} INFO - Added player id 284 in dictionary.
+[2023-11-24T18:36:05.107+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:05.107+0800] {logging_mixin.py:154} INFO - Added player id 285 in dictionary.
+[2023-11-24T18:36:05.467+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:05.467+0800] {logging_mixin.py:154} INFO - Added player id 286 in dictionary.
+[2023-11-24T18:36:05.642+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:05.643+0800] {logging_mixin.py:154} INFO - Added player id 287 in dictionary.
+[2023-11-24T18:36:05.809+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:05.809+0800] {logging_mixin.py:154} INFO - Added player id 288 in dictionary.
+[2023-11-24T18:36:05.971+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:05.972+0800] {logging_mixin.py:154} INFO - Added player id 558 in dictionary.
+[2023-11-24T18:36:06.310+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:06.310+0800] {logging_mixin.py:154} INFO - Added player id 591 in dictionary.
+[2023-11-24T18:36:06.642+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:06.642+0800] {logging_mixin.py:154} INFO - Added player id 610 in dictionary.
+[2023-11-24T18:36:07.002+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:07.003+0800] {logging_mixin.py:154} INFO - Added player id 625 in dictionary.
+[2023-11-24T18:36:07.335+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:07.336+0800] {logging_mixin.py:154} INFO - Added player id 651 in dictionary.
+[2023-11-24T18:36:07.687+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:07.688+0800] {logging_mixin.py:154} INFO - Added player id 652 in dictionary.
+[2023-11-24T18:36:08.018+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:08.018+0800] {logging_mixin.py:154} INFO - Added player id 662 in dictionary.
+[2023-11-24T18:36:08.186+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:08.186+0800] {logging_mixin.py:154} INFO - Added player id 683 in dictionary.
+[2023-11-24T18:36:08.395+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:08.396+0800] {logging_mixin.py:154} INFO - Added player id 688 in dictionary.
+[2023-11-24T18:36:08.592+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:08.592+0800] {logging_mixin.py:154} INFO - Added player id 692 in dictionary.
+[2023-11-24T18:36:08.754+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:08.754+0800] {logging_mixin.py:154} INFO - Added player id 707 in dictionary.
+[2023-11-24T18:36:08.923+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:08.923+0800] {logging_mixin.py:154} INFO - Added player id 732 in dictionary.
+[2023-11-24T18:36:09.071+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:09.072+0800] {logging_mixin.py:154} INFO - Added player id 289 in dictionary.
+[2023-11-24T18:36:09.254+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:09.254+0800] {logging_mixin.py:154} INFO - Added player id 290 in dictionary.
+[2023-11-24T18:36:09.589+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:09.590+0800] {logging_mixin.py:154} INFO - Added player id 291 in dictionary.
+[2023-11-24T18:36:09.933+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:09.933+0800] {logging_mixin.py:154} INFO - Added player id 292 in dictionary.
+[2023-11-24T18:36:10.117+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:10.118+0800] {logging_mixin.py:154} INFO - Added player id 293 in dictionary.
+[2023-11-24T18:36:10.284+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:10.284+0800] {logging_mixin.py:154} INFO - Added player id 294 in dictionary.
+[2023-11-24T18:36:10.452+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:10.452+0800] {logging_mixin.py:154} INFO - Added player id 295 in dictionary.
+[2023-11-24T18:36:10.607+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:10.607+0800] {logging_mixin.py:154} INFO - Added player id 296 in dictionary.
+[2023-11-24T18:36:10.799+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:10.799+0800] {logging_mixin.py:154} INFO - Added player id 297 in dictionary.
+[2023-11-24T18:36:10.982+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:10.982+0800] {logging_mixin.py:154} INFO - Added player id 298 in dictionary.
+[2023-11-24T18:36:11.290+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:11.290+0800] {logging_mixin.py:154} INFO - Added player id 299 in dictionary.
+[2023-11-24T18:36:11.635+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:11.635+0800] {logging_mixin.py:154} INFO - Added player id 300 in dictionary.
+[2023-11-24T18:36:11.982+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:11.982+0800] {logging_mixin.py:154} INFO - Added player id 301 in dictionary.
+[2023-11-24T18:36:12.349+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:12.349+0800] {logging_mixin.py:154} INFO - Added player id 302 in dictionary.
+[2023-11-24T18:36:12.500+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:12.500+0800] {logging_mixin.py:154} INFO - Added player id 303 in dictionary.
+[2023-11-24T18:36:12.650+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:12.651+0800] {logging_mixin.py:154} INFO - Added player id 304 in dictionary.
+[2023-11-24T18:36:13.004+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:13.004+0800] {logging_mixin.py:154} INFO - Added player id 305 in dictionary.
+[2023-11-24T18:36:13.333+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:13.333+0800] {logging_mixin.py:154} INFO - Added player id 306 in dictionary.
+[2023-11-24T18:36:13.537+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:13.538+0800] {logging_mixin.py:154} INFO - Added player id 307 in dictionary.
+[2023-11-24T18:36:13.717+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:13.717+0800] {logging_mixin.py:154} INFO - Added player id 308 in dictionary.
+[2023-11-24T18:36:13.887+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:13.887+0800] {logging_mixin.py:154} INFO - Added player id 309 in dictionary.
+[2023-11-24T18:36:14.229+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:14.229+0800] {logging_mixin.py:154} INFO - Added player id 310 in dictionary.
+[2023-11-24T18:36:14.389+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:14.390+0800] {logging_mixin.py:154} INFO - Added player id 311 in dictionary.
+[2023-11-24T18:36:14.833+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:14.833+0800] {logging_mixin.py:154} INFO - Added player id 312 in dictionary.
+[2023-11-24T18:36:15.005+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:15.005+0800] {logging_mixin.py:154} INFO - Added player id 313 in dictionary.
+[2023-11-24T18:36:15.201+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:15.202+0800] {logging_mixin.py:154} INFO - Added player id 626 in dictionary.
+[2023-11-24T18:36:15.515+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:15.516+0800] {logging_mixin.py:154} INFO - Added player id 627 in dictionary.
+[2023-11-24T18:36:15.863+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:15.864+0800] {logging_mixin.py:154} INFO - Added player id 628 in dictionary.
+[2023-11-24T18:36:16.217+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:16.218+0800] {logging_mixin.py:154} INFO - Added player id 629 in dictionary.
+[2023-11-24T18:36:16.563+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:16.563+0800] {logging_mixin.py:154} INFO - Added player id 668 in dictionary.
+[2023-11-24T18:36:16.894+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:16.895+0800] {logging_mixin.py:154} INFO - Added player id 708 in dictionary.
+[2023-11-24T18:36:17.076+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:17.077+0800] {logging_mixin.py:154} INFO - Added player id 726 in dictionary.
+[2023-11-24T18:36:17.403+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:17.403+0800] {logging_mixin.py:154} INFO - Added player id 728 in dictionary.
+[2023-11-24T18:36:18.780+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:18.780+0800] {logging_mixin.py:154} INFO - Added player id 743 in dictionary.
+[2023-11-24T18:36:19.120+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:19.121+0800] {logging_mixin.py:154} INFO - Added player id 21 in dictionary.
+[2023-11-24T18:36:19.306+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:19.307+0800] {logging_mixin.py:154} INFO - Added player id 52 in dictionary.
+[2023-11-24T18:36:19.644+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:19.644+0800] {logging_mixin.py:154} INFO - Added player id 314 in dictionary.
+[2023-11-24T18:36:19.981+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:19.982+0800] {logging_mixin.py:154} INFO - Added player id 315 in dictionary.
+[2023-11-24T18:36:20.348+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:20.349+0800] {logging_mixin.py:154} INFO - Added player id 316 in dictionary.
+[2023-11-24T18:36:20.713+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:20.713+0800] {logging_mixin.py:154} INFO - Added player id 317 in dictionary.
+[2023-11-24T18:36:20.878+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:20.879+0800] {logging_mixin.py:154} INFO - Added player id 318 in dictionary.
+[2023-11-24T18:36:21.195+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:21.195+0800] {logging_mixin.py:154} INFO - Added player id 319 in dictionary.
+[2023-11-24T18:36:21.532+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:21.532+0800] {logging_mixin.py:154} INFO - Added player id 320 in dictionary.
+[2023-11-24T18:36:21.905+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:21.906+0800] {logging_mixin.py:154} INFO - Added player id 321 in dictionary.
+[2023-11-24T18:36:22.241+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:22.241+0800] {logging_mixin.py:154} INFO - Added player id 322 in dictionary.
+[2023-11-24T18:36:22.576+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:22.576+0800] {logging_mixin.py:154} INFO - Added player id 323 in dictionary.
+[2023-11-24T18:36:22.912+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:22.912+0800] {logging_mixin.py:154} INFO - Added player id 324 in dictionary.
+[2023-11-24T18:36:23.257+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:23.257+0800] {logging_mixin.py:154} INFO - Added player id 325 in dictionary.
+[2023-11-24T18:36:23.426+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:23.426+0800] {logging_mixin.py:154} INFO - Added player id 326 in dictionary.
+[2023-11-24T18:36:23.781+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:23.781+0800] {logging_mixin.py:154} INFO - Added player id 327 in dictionary.
+[2023-11-24T18:36:24.160+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:24.161+0800] {logging_mixin.py:154} INFO - Added player id 328 in dictionary.
+[2023-11-24T18:36:24.508+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:24.508+0800] {logging_mixin.py:154} INFO - Added player id 329 in dictionary.
+[2023-11-24T18:36:24.846+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:24.847+0800] {logging_mixin.py:154} INFO - Added player id 330 in dictionary.
+[2023-11-24T18:36:25.197+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:25.197+0800] {logging_mixin.py:154} INFO - Added player id 331 in dictionary.
+[2023-11-24T18:36:25.510+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:25.510+0800] {logging_mixin.py:154} INFO - Added player id 332 in dictionary.
+[2023-11-24T18:36:25.830+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:25.830+0800] {logging_mixin.py:154} INFO - Added player id 333 in dictionary.
+[2023-11-24T18:36:26.182+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:26.182+0800] {logging_mixin.py:154} INFO - Added player id 334 in dictionary.
+[2023-11-24T18:36:26.529+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:26.530+0800] {logging_mixin.py:154} INFO - Added player id 335 in dictionary.
+[2023-11-24T18:36:26.888+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:26.888+0800] {logging_mixin.py:154} INFO - Added player id 336 in dictionary.
+[2023-11-24T18:36:27.245+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:27.245+0800] {logging_mixin.py:154} INFO - Added player id 337 in dictionary.
+[2023-11-24T18:36:27.592+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:27.593+0800] {logging_mixin.py:154} INFO - Added player id 338 in dictionary.
+[2023-11-24T18:36:27.812+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:27.812+0800] {logging_mixin.py:154} INFO - Added player id 339 in dictionary.
+[2023-11-24T18:36:28.169+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:28.169+0800] {logging_mixin.py:154} INFO - Added player id 340 in dictionary.
+[2023-11-24T18:36:28.323+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:28.324+0800] {logging_mixin.py:154} INFO - Added player id 393 in dictionary.
+[2023-11-24T18:36:28.679+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:28.680+0800] {logging_mixin.py:154} INFO - Added player id 553 in dictionary.
+[2023-11-24T18:36:28.998+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:28.999+0800] {logging_mixin.py:154} INFO - Added player id 575 in dictionary.
+[2023-11-24T18:36:29.370+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:29.371+0800] {logging_mixin.py:154} INFO - Added player id 582 in dictionary.
+[2023-11-24T18:36:29.702+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:29.702+0800] {logging_mixin.py:154} INFO - Added player id 586 in dictionary.
+[2023-11-24T18:36:29.858+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:29.858+0800] {logging_mixin.py:154} INFO - Added player id 602 in dictionary.
+[2023-11-24T18:36:30.009+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:30.009+0800] {logging_mixin.py:154} INFO - Added player id 614 in dictionary.
+[2023-11-24T18:36:30.336+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:30.337+0800] {logging_mixin.py:154} INFO - Added player id 630 in dictionary.
+[2023-11-24T18:36:30.668+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:30.668+0800] {logging_mixin.py:154} INFO - Added player id 631 in dictionary.
+[2023-11-24T18:36:30.999+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:30.999+0800] {logging_mixin.py:154} INFO - Added player id 648 in dictionary.
+[2023-11-24T18:36:31.687+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:31.688+0800] {logging_mixin.py:154} INFO - Added player id 665 in dictionary.
+[2023-11-24T18:36:32.024+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:32.024+0800] {logging_mixin.py:154} INFO - Added player id 682 in dictionary.
+[2023-11-24T18:36:32.356+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:32.356+0800] {logging_mixin.py:154} INFO - Added player id 727 in dictionary.
+[2023-11-24T18:36:32.699+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:32.699+0800] {logging_mixin.py:154} INFO - Added player id 729 in dictionary.
+[2023-11-24T18:36:33.000+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:33.000+0800] {logging_mixin.py:154} INFO - Added player id 734 in dictionary.
+[2023-11-24T18:36:33.172+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:33.172+0800] {logging_mixin.py:154} INFO - Added player id 341 in dictionary.
+[2023-11-24T18:36:33.344+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:33.344+0800] {logging_mixin.py:154} INFO - Added player id 342 in dictionary.
+[2023-11-24T18:36:33.534+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:33.535+0800] {logging_mixin.py:154} INFO - Added player id 343 in dictionary.
+[2023-11-24T18:36:33.708+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:33.709+0800] {logging_mixin.py:154} INFO - Added player id 344 in dictionary.
+[2023-11-24T18:36:34.050+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:34.050+0800] {logging_mixin.py:154} INFO - Added player id 345 in dictionary.
+[2023-11-24T18:36:34.374+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:34.375+0800] {logging_mixin.py:154} INFO - Added player id 346 in dictionary.
+[2023-11-24T18:36:34.691+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:34.691+0800] {logging_mixin.py:154} INFO - Added player id 347 in dictionary.
+[2023-11-24T18:36:35.037+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:35.037+0800] {logging_mixin.py:154} INFO - Added player id 348 in dictionary.
+[2023-11-24T18:36:35.198+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:35.198+0800] {logging_mixin.py:154} INFO - Added player id 349 in dictionary.
+[2023-11-24T18:36:35.365+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:35.365+0800] {logging_mixin.py:154} INFO - Added player id 350 in dictionary.
+[2023-11-24T18:36:35.532+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:35.533+0800] {logging_mixin.py:154} INFO - Added player id 352 in dictionary.
+[2023-11-24T18:36:35.681+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:35.682+0800] {logging_mixin.py:154} INFO - Added player id 353 in dictionary.
+[2023-11-24T18:36:35.851+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:35.851+0800] {logging_mixin.py:154} INFO - Added player id 354 in dictionary.
+[2023-11-24T18:36:36.019+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:36.019+0800] {logging_mixin.py:154} INFO - Added player id 355 in dictionary.
+[2023-11-24T18:36:36.361+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:36.362+0800] {logging_mixin.py:154} INFO - Added player id 356 in dictionary.
+[2023-11-24T18:36:36.514+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:36.514+0800] {logging_mixin.py:154} INFO - Added player id 357 in dictionary.
+[2023-11-24T18:36:36.854+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:36.855+0800] {logging_mixin.py:154} INFO - Added player id 358 in dictionary.
+[2023-11-24T18:36:37.228+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:37.229+0800] {logging_mixin.py:154} INFO - Added player id 359 in dictionary.
+[2023-11-24T18:36:37.394+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:37.394+0800] {logging_mixin.py:154} INFO - Added player id 361 in dictionary.
+[2023-11-24T18:36:37.745+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:37.746+0800] {logging_mixin.py:154} INFO - Added player id 363 in dictionary.
+[2023-11-24T18:36:38.076+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:38.076+0800] {logging_mixin.py:154} INFO - Added player id 364 in dictionary.
+[2023-11-24T18:36:38.414+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:38.414+0800] {logging_mixin.py:154} INFO - Added player id 365 in dictionary.
+[2023-11-24T18:36:38.791+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:38.791+0800] {logging_mixin.py:154} INFO - Added player id 366 in dictionary.
+[2023-11-24T18:36:39.443+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:39.444+0800] {logging_mixin.py:154} INFO - Added player id 367 in dictionary.
+[2023-11-24T18:36:39.610+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:39.610+0800] {logging_mixin.py:154} INFO - Added player id 368 in dictionary.
+[2023-11-24T18:36:39.797+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:39.797+0800] {logging_mixin.py:154} INFO - Added player id 369 in dictionary.
+[2023-11-24T18:36:39.962+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:39.962+0800] {logging_mixin.py:154} INFO - Added player id 566 in dictionary.
+[2023-11-24T18:36:40.147+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:40.147+0800] {logging_mixin.py:154} INFO - Added player id 616 in dictionary.
+[2023-11-24T18:36:40.305+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:40.306+0800] {logging_mixin.py:154} INFO - Added player id 678 in dictionary.
+[2023-11-24T18:36:40.664+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:40.665+0800] {logging_mixin.py:154} INFO - Added player id 209 in dictionary.
+[2023-11-24T18:36:41.016+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:41.016+0800] {logging_mixin.py:154} INFO - Added player id 370 in dictionary.
+[2023-11-24T18:36:41.355+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:41.355+0800] {logging_mixin.py:154} INFO - Added player id 371 in dictionary.
+[2023-11-24T18:36:41.512+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:41.512+0800] {logging_mixin.py:154} INFO - Added player id 372 in dictionary.
+[2023-11-24T18:36:41.666+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:41.666+0800] {logging_mixin.py:154} INFO - Added player id 373 in dictionary.
+[2023-11-24T18:36:42.028+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:42.028+0800] {logging_mixin.py:154} INFO - Added player id 374 in dictionary.
+[2023-11-24T18:36:42.406+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:42.406+0800] {logging_mixin.py:154} INFO - Added player id 375 in dictionary.
+[2023-11-24T18:36:42.726+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:42.727+0800] {logging_mixin.py:154} INFO - Added player id 376 in dictionary.
+[2023-11-24T18:36:43.046+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:43.047+0800] {logging_mixin.py:154} INFO - Added player id 377 in dictionary.
+[2023-11-24T18:36:43.374+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:43.374+0800] {logging_mixin.py:154} INFO - Added player id 379 in dictionary.
+[2023-11-24T18:36:43.645+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:43.645+0800] {logging_mixin.py:154} INFO - Added player id 380 in dictionary.
+[2023-11-24T18:36:44.006+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:44.007+0800] {logging_mixin.py:154} INFO - Added player id 381 in dictionary.
+[2023-11-24T18:36:44.197+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:44.198+0800] {logging_mixin.py:154} INFO - Added player id 382 in dictionary.
+[2023-11-24T18:36:44.538+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:44.539+0800] {logging_mixin.py:154} INFO - Added player id 383 in dictionary.
+[2023-11-24T18:36:44.874+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:44.874+0800] {logging_mixin.py:154} INFO - Added player id 384 in dictionary.
+[2023-11-24T18:36:45.041+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:45.042+0800] {logging_mixin.py:154} INFO - Added player id 386 in dictionary.
+[2023-11-24T18:36:45.235+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:45.235+0800] {logging_mixin.py:154} INFO - Added player id 387 in dictionary.
+[2023-11-24T18:36:45.555+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:45.556+0800] {logging_mixin.py:154} INFO - Added player id 388 in dictionary.
+[2023-11-24T18:36:45.723+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:45.724+0800] {logging_mixin.py:154} INFO - Added player id 389 in dictionary.
+[2023-11-24T18:36:46.055+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:46.056+0800] {logging_mixin.py:154} INFO - Added player id 390 in dictionary.
+[2023-11-24T18:36:46.244+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:46.244+0800] {logging_mixin.py:154} INFO - Added player id 391 in dictionary.
+[2023-11-24T18:36:46.418+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:46.418+0800] {logging_mixin.py:154} INFO - Added player id 392 in dictionary.
+[2023-11-24T18:36:46.771+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:46.771+0800] {logging_mixin.py:154} INFO - Added player id 394 in dictionary.
+[2023-11-24T18:36:46.953+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:46.954+0800] {logging_mixin.py:154} INFO - Added player id 395 in dictionary.
+[2023-11-24T18:36:47.286+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:47.287+0800] {logging_mixin.py:154} INFO - Added player id 396 in dictionary.
+[2023-11-24T18:36:47.469+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:47.469+0800] {logging_mixin.py:154} INFO - Added player id 397 in dictionary.
+[2023-11-24T18:36:47.633+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:47.634+0800] {logging_mixin.py:154} INFO - Added player id 398 in dictionary.
+[2023-11-24T18:36:48.009+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:48.010+0800] {logging_mixin.py:154} INFO - Added player id 399 in dictionary.
+[2023-11-24T18:36:48.333+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:48.334+0800] {logging_mixin.py:154} INFO - Added player id 400 in dictionary.
+[2023-11-24T18:36:48.509+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:48.510+0800] {logging_mixin.py:154} INFO - Added player id 401 in dictionary.
+[2023-11-24T18:36:48.686+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:48.686+0800] {logging_mixin.py:154} INFO - Added player id 508 in dictionary.
+[2023-11-24T18:36:49.034+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:49.034+0800] {logging_mixin.py:154} INFO - Added player id 597 in dictionary.
+[2023-11-24T18:36:49.220+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:49.221+0800] {logging_mixin.py:154} INFO - Added player id 617 in dictionary.
+[2023-11-24T18:36:49.553+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:49.553+0800] {logging_mixin.py:154} INFO - Added player id 632 in dictionary.
+[2023-11-24T18:36:49.878+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:49.878+0800] {logging_mixin.py:154} INFO - Added player id 669 in dictionary.
+[2023-11-24T18:36:50.195+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:50.196+0800] {logging_mixin.py:154} INFO - Added player id 685 in dictionary.
+[2023-11-24T18:36:50.535+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:50.535+0800] {logging_mixin.py:154} INFO - Added player id 695 in dictionary.
+[2023-11-24T18:36:50.717+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:50.717+0800] {logging_mixin.py:154} INFO - Added player id 703 in dictionary.
+[2023-11-24T18:36:51.083+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:51.084+0800] {logging_mixin.py:154} INFO - Added player id 709 in dictionary.
+[2023-11-24T18:36:51.268+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:51.269+0800] {logging_mixin.py:154} INFO - Added player id 204 in dictionary.
+[2023-11-24T18:36:51.438+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:51.438+0800] {logging_mixin.py:154} INFO - Added player id 402 in dictionary.
+[2023-11-24T18:36:51.609+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:51.609+0800] {logging_mixin.py:154} INFO - Added player id 403 in dictionary.
+[2023-11-24T18:36:51.957+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:51.957+0800] {logging_mixin.py:154} INFO - Added player id 404 in dictionary.
+[2023-11-24T18:36:52.117+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:52.117+0800] {logging_mixin.py:154} INFO - Added player id 405 in dictionary.
+[2023-11-24T18:36:52.452+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:52.452+0800] {logging_mixin.py:154} INFO - Added player id 406 in dictionary.
+[2023-11-24T18:36:52.634+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:52.635+0800] {logging_mixin.py:154} INFO - Added player id 407 in dictionary.
+[2023-11-24T18:36:52.983+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:52.983+0800] {logging_mixin.py:154} INFO - Added player id 408 in dictionary.
+[2023-11-24T18:36:53.302+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:53.302+0800] {logging_mixin.py:154} INFO - Added player id 409 in dictionary.
+[2023-11-24T18:36:53.620+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:53.620+0800] {logging_mixin.py:154} INFO - Added player id 410 in dictionary.
+[2023-11-24T18:36:53.967+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:53.967+0800] {logging_mixin.py:154} INFO - Added player id 411 in dictionary.
+[2023-11-24T18:36:54.197+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:54.197+0800] {logging_mixin.py:154} INFO - Added player id 412 in dictionary.
+[2023-11-24T18:36:54.578+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:54.579+0800] {logging_mixin.py:154} INFO - Added player id 413 in dictionary.
+[2023-11-24T18:36:54.919+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:54.919+0800] {logging_mixin.py:154} INFO - Added player id 414 in dictionary.
+[2023-11-24T18:36:55.087+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:55.088+0800] {logging_mixin.py:154} INFO - Added player id 415 in dictionary.
+[2023-11-24T18:36:55.249+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:55.249+0800] {logging_mixin.py:154} INFO - Added player id 416 in dictionary.
+[2023-11-24T18:36:55.406+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:55.406+0800] {logging_mixin.py:154} INFO - Added player id 417 in dictionary.
+[2023-11-24T18:36:55.762+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:55.762+0800] {logging_mixin.py:154} INFO - Added player id 418 in dictionary.
+[2023-11-24T18:36:55.918+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:55.919+0800] {logging_mixin.py:154} INFO - Added player id 419 in dictionary.
+[2023-11-24T18:36:56.234+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:56.235+0800] {logging_mixin.py:154} INFO - Added player id 420 in dictionary.
+[2023-11-24T18:36:56.433+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:56.434+0800] {logging_mixin.py:154} INFO - Added player id 421 in dictionary.
+[2023-11-24T18:36:56.769+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:56.769+0800] {logging_mixin.py:154} INFO - Added player id 422 in dictionary.
+[2023-11-24T18:36:56.943+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:56.944+0800] {logging_mixin.py:154} INFO - Added player id 423 in dictionary.
+[2023-11-24T18:36:57.295+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:57.296+0800] {logging_mixin.py:154} INFO - Added player id 424 in dictionary.
+[2023-11-24T18:36:57.478+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:57.479+0800] {logging_mixin.py:154} INFO - Added player id 425 in dictionary.
+[2023-11-24T18:36:57.821+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:57.821+0800] {logging_mixin.py:154} INFO - Added player id 426 in dictionary.
+[2023-11-24T18:36:58.008+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:58.008+0800] {logging_mixin.py:154} INFO - Added player id 427 in dictionary.
+[2023-11-24T18:36:58.334+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:58.335+0800] {logging_mixin.py:154} INFO - Added player id 428 in dictionary.
+[2023-11-24T18:36:58.514+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:58.514+0800] {logging_mixin.py:154} INFO - Added player id 429 in dictionary.
+[2023-11-24T18:36:58.689+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:58.690+0800] {logging_mixin.py:154} INFO - Added player id 430 in dictionary.
+[2023-11-24T18:36:59.059+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:59.059+0800] {logging_mixin.py:154} INFO - Added player id 431 in dictionary.
+[2023-11-24T18:36:59.214+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:59.214+0800] {logging_mixin.py:154} INFO - Added player id 432 in dictionary.
+[2023-11-24T18:36:59.375+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:59.375+0800] {logging_mixin.py:154} INFO - Added player id 433 in dictionary.
+[2023-11-24T18:36:59.725+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:36:59.726+0800] {logging_mixin.py:154} INFO - Added player id 580 in dictionary.
+[2023-11-24T18:37:00.084+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:00.084+0800] {logging_mixin.py:154} INFO - Added player id 581 in dictionary.
+[2023-11-24T18:37:00.429+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:00.429+0800] {logging_mixin.py:154} INFO - Added player id 603 in dictionary.
+[2023-11-24T18:37:00.601+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:00.601+0800] {logging_mixin.py:154} INFO - Added player id 633 in dictionary.
+[2023-11-24T18:37:00.806+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:00.807+0800] {logging_mixin.py:154} INFO - Added player id 634 in dictionary.
+[2023-11-24T18:37:01.167+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:01.167+0800] {logging_mixin.py:154} INFO - Added player id 635 in dictionary.
+[2023-11-24T18:37:01.508+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:01.509+0800] {logging_mixin.py:154} INFO - Added player id 738 in dictionary.
+[2023-11-24T18:37:01.877+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:01.878+0800] {logging_mixin.py:154} INFO - Added player id 739 in dictionary.
+[2023-11-24T18:37:02.054+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:02.055+0800] {logging_mixin.py:154} INFO - Added player id 23 in dictionary.
+[2023-11-24T18:37:02.237+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:02.237+0800] {logging_mixin.py:154} INFO - Added player id 28 in dictionary.
+[2023-11-24T18:37:02.614+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:02.615+0800] {logging_mixin.py:154} INFO - Added player id 186 in dictionary.
+[2023-11-24T18:37:02.966+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:02.966+0800] {logging_mixin.py:154} INFO - Added player id 205 in dictionary.
+[2023-11-24T18:37:03.182+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:03.183+0800] {logging_mixin.py:154} INFO - Added player id 378 in dictionary.
+[2023-11-24T18:37:03.588+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:03.589+0800] {logging_mixin.py:154} INFO - Added player id 434 in dictionary.
+[2023-11-24T18:37:03.986+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:03.986+0800] {logging_mixin.py:154} INFO - Added player id 435 in dictionary.
+[2023-11-24T18:37:04.340+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:04.341+0800] {logging_mixin.py:154} INFO - Added player id 436 in dictionary.
+[2023-11-24T18:37:04.690+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:04.690+0800] {logging_mixin.py:154} INFO - Added player id 437 in dictionary.
+[2023-11-24T18:37:05.044+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:05.044+0800] {logging_mixin.py:154} INFO - Added player id 438 in dictionary.
+[2023-11-24T18:37:05.261+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:05.261+0800] {logging_mixin.py:154} INFO - Added player id 439 in dictionary.
+[2023-11-24T18:37:05.594+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:05.595+0800] {logging_mixin.py:154} INFO - Added player id 440 in dictionary.
+[2023-11-24T18:37:05.957+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:05.958+0800] {logging_mixin.py:154} INFO - Added player id 441 in dictionary.
+[2023-11-24T18:37:06.297+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:06.297+0800] {logging_mixin.py:154} INFO - Added player id 442 in dictionary.
+[2023-11-24T18:37:06.644+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:06.644+0800] {logging_mixin.py:154} INFO - Added player id 443 in dictionary.
+[2023-11-24T18:37:07.006+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:07.007+0800] {logging_mixin.py:154} INFO - Added player id 444 in dictionary.
+[2023-11-24T18:37:07.355+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:07.355+0800] {logging_mixin.py:154} INFO - Added player id 445 in dictionary.
+[2023-11-24T18:37:07.706+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:07.707+0800] {logging_mixin.py:154} INFO - Added player id 446 in dictionary.
+[2023-11-24T18:37:08.054+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:08.055+0800] {logging_mixin.py:154} INFO - Added player id 447 in dictionary.
+[2023-11-24T18:37:08.417+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:08.417+0800] {logging_mixin.py:154} INFO - Added player id 448 in dictionary.
+[2023-11-24T18:37:08.786+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:08.786+0800] {logging_mixin.py:154} INFO - Added player id 449 in dictionary.
+[2023-11-24T18:37:09.122+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:09.122+0800] {logging_mixin.py:154} INFO - Added player id 451 in dictionary.
+[2023-11-24T18:37:09.477+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:09.478+0800] {logging_mixin.py:154} INFO - Added player id 452 in dictionary.
+[2023-11-24T18:37:09.819+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:09.820+0800] {logging_mixin.py:154} INFO - Added player id 453 in dictionary.
+[2023-11-24T18:37:10.163+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:10.164+0800] {logging_mixin.py:154} INFO - Added player id 454 in dictionary.
+[2023-11-24T18:37:10.512+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:10.513+0800] {logging_mixin.py:154} INFO - Added player id 455 in dictionary.
+[2023-11-24T18:37:10.857+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:10.858+0800] {logging_mixin.py:154} INFO - Added player id 456 in dictionary.
+[2023-11-24T18:37:11.206+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:11.206+0800] {logging_mixin.py:154} INFO - Added player id 457 in dictionary.
+[2023-11-24T18:37:11.619+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:11.619+0800] {logging_mixin.py:154} INFO - Added player id 458 in dictionary.
+[2023-11-24T18:37:11.984+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:11.984+0800] {logging_mixin.py:154} INFO - Added player id 459 in dictionary.
+[2023-11-24T18:37:12.640+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:12.640+0800] {logging_mixin.py:154} INFO - Added player id 460 in dictionary.
+[2023-11-24T18:37:12.855+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:12.856+0800] {logging_mixin.py:154} INFO - Added player id 461 in dictionary.
+[2023-11-24T18:37:13.023+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:13.023+0800] {logging_mixin.py:154} INFO - Added player id 462 in dictionary.
+[2023-11-24T18:37:13.350+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:13.351+0800] {logging_mixin.py:154} INFO - Added player id 463 in dictionary.
+[2023-11-24T18:37:13.687+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:13.687+0800] {logging_mixin.py:154} INFO - Added player id 464 in dictionary.
+[2023-11-24T18:37:14.069+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:14.069+0800] {logging_mixin.py:154} INFO - Added player id 465 in dictionary.
+[2023-11-24T18:37:14.397+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:14.397+0800] {logging_mixin.py:154} INFO - Added player id 466 in dictionary.
+[2023-11-24T18:37:14.713+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:14.714+0800] {logging_mixin.py:154} INFO - Added player id 467 in dictionary.
+[2023-11-24T18:37:14.906+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:14.907+0800] {logging_mixin.py:154} INFO - Added player id 468 in dictionary.
+[2023-11-24T18:37:15.239+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:15.240+0800] {logging_mixin.py:154} INFO - Added player id 469 in dictionary.
+[2023-11-24T18:37:15.580+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:15.580+0800] {logging_mixin.py:154} INFO - Added player id 470 in dictionary.
+[2023-11-24T18:37:15.762+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:15.763+0800] {logging_mixin.py:154} INFO - Added player id 604 in dictionary.
+[2023-11-24T18:37:16.143+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:16.143+0800] {logging_mixin.py:154} INFO - Added player id 636 in dictionary.
+[2023-11-24T18:37:16.672+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:16.673+0800] {logging_mixin.py:154} INFO - Added player id 637 in dictionary.
+[2023-11-24T18:37:17.045+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:17.045+0800] {logging_mixin.py:154} INFO - Added player id 679 in dictionary.
+[2023-11-24T18:37:17.382+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:17.382+0800] {logging_mixin.py:154} INFO - Added player id 696 in dictionary.
+[2023-11-24T18:37:17.720+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:17.720+0800] {logging_mixin.py:154} INFO - Added player id 710 in dictionary.
+[2023-11-24T18:37:18.057+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:18.057+0800] {logging_mixin.py:154} INFO - Added player id 711 in dictionary.
+[2023-11-24T18:37:18.377+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:18.377+0800] {logging_mixin.py:154} INFO - Added player id 712 in dictionary.
+[2023-11-24T18:37:18.757+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:18.757+0800] {logging_mixin.py:154} INFO - Added player id 713 in dictionary.
+[2023-11-24T18:37:18.926+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:18.927+0800] {logging_mixin.py:154} INFO - Added player id 714 in dictionary.
+[2023-11-24T18:37:19.326+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:19.326+0800] {logging_mixin.py:154} INFO - Added player id 27 in dictionary.
+[2023-11-24T18:37:19.478+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:19.479+0800] {logging_mixin.py:154} INFO - Added player id 33 in dictionary.
+[2023-11-24T18:37:19.651+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:19.651+0800] {logging_mixin.py:154} INFO - Added player id 360 in dictionary.
+[2023-11-24T18:37:19.811+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:19.811+0800] {logging_mixin.py:154} INFO - Added player id 471 in dictionary.
+[2023-11-24T18:37:20.142+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:20.142+0800] {logging_mixin.py:154} INFO - Added player id 472 in dictionary.
+[2023-11-24T18:37:20.529+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:20.530+0800] {logging_mixin.py:154} INFO - Added player id 473 in dictionary.
+[2023-11-24T18:37:20.859+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:20.859+0800] {logging_mixin.py:154} INFO - Added player id 474 in dictionary.
+[2023-11-24T18:37:21.023+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:21.023+0800] {logging_mixin.py:154} INFO - Added player id 476 in dictionary.
+[2023-11-24T18:37:21.356+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:21.357+0800] {logging_mixin.py:154} INFO - Added player id 477 in dictionary.
+[2023-11-24T18:37:21.707+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:21.707+0800] {logging_mixin.py:154} INFO - Added player id 478 in dictionary.
+[2023-11-24T18:37:22.041+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:22.041+0800] {logging_mixin.py:154} INFO - Added player id 479 in dictionary.
+[2023-11-24T18:37:22.407+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:22.408+0800] {logging_mixin.py:154} INFO - Added player id 480 in dictionary.
+[2023-11-24T18:37:22.731+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:22.731+0800] {logging_mixin.py:154} INFO - Added player id 481 in dictionary.
+[2023-11-24T18:37:22.897+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:22.897+0800] {logging_mixin.py:154} INFO - Added player id 482 in dictionary.
+[2023-11-24T18:37:23.259+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:23.260+0800] {logging_mixin.py:154} INFO - Added player id 483 in dictionary.
+[2023-11-24T18:37:23.618+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:23.619+0800] {logging_mixin.py:154} INFO - Added player id 484 in dictionary.
+[2023-11-24T18:37:23.825+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:23.826+0800] {logging_mixin.py:154} INFO - Added player id 485 in dictionary.
+[2023-11-24T18:37:24.152+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:24.153+0800] {logging_mixin.py:154} INFO - Added player id 486 in dictionary.
+[2023-11-24T18:37:24.502+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:24.503+0800] {logging_mixin.py:154} INFO - Added player id 487 in dictionary.
+[2023-11-24T18:37:25.329+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:25.329+0800] {logging_mixin.py:154} INFO - Added player id 488 in dictionary.
+[2023-11-24T18:37:25.687+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:25.687+0800] {logging_mixin.py:154} INFO - Added player id 489 in dictionary.
+[2023-11-24T18:37:25.854+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:25.854+0800] {logging_mixin.py:154} INFO - Added player id 490 in dictionary.
+[2023-11-24T18:37:26.186+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:26.187+0800] {logging_mixin.py:154} INFO - Added player id 576 in dictionary.
+[2023-11-24T18:37:26.503+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:26.504+0800] {logging_mixin.py:154} INFO - Added player id 587 in dictionary.
+[2023-11-24T18:37:26.867+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:26.868+0800] {logging_mixin.py:154} INFO - Added player id 592 in dictionary.
+[2023-11-24T18:37:27.039+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:27.040+0800] {logging_mixin.py:154} INFO - Added player id 593 in dictionary.
+[2023-11-24T18:37:27.416+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:27.417+0800] {logging_mixin.py:154} INFO - Added player id 638 in dictionary.
+[2023-11-24T18:37:27.585+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:27.585+0800] {logging_mixin.py:154} INFO - Added player id 653 in dictionary.
+[2023-11-24T18:37:27.942+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:27.942+0800] {logging_mixin.py:154} INFO - Added player id 654 in dictionary.
+[2023-11-24T18:37:28.292+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:28.292+0800] {logging_mixin.py:154} INFO - Added player id 655 in dictionary.
+[2023-11-24T18:37:28.635+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:28.635+0800] {logging_mixin.py:154} INFO - Added player id 656 in dictionary.
+[2023-11-24T18:37:28.976+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:28.976+0800] {logging_mixin.py:154} INFO - Added player id 663 in dictionary.
+[2023-11-24T18:37:29.329+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:29.330+0800] {logging_mixin.py:154} INFO - Added player id 666 in dictionary.
+[2023-11-24T18:37:29.723+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:29.723+0800] {logging_mixin.py:154} INFO - Added player id 693 in dictionary.
+[2023-11-24T18:37:30.105+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:30.105+0800] {logging_mixin.py:154} INFO - Added player id 730 in dictionary.
+[2023-11-24T18:37:30.453+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:30.453+0800] {logging_mixin.py:154} INFO - Added player id 731 in dictionary.
+[2023-11-24T18:37:30.838+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:30.838+0800] {logging_mixin.py:154} INFO - Added player id 450 in dictionary.
+[2023-11-24T18:37:31.164+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:31.164+0800] {logging_mixin.py:154} INFO - Added player id 491 in dictionary.
+[2023-11-24T18:37:31.336+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:31.336+0800] {logging_mixin.py:154} INFO - Added player id 492 in dictionary.
+[2023-11-24T18:37:31.504+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:31.504+0800] {logging_mixin.py:154} INFO - Added player id 493 in dictionary.
+[2023-11-24T18:37:31.672+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:31.672+0800] {logging_mixin.py:154} INFO - Added player id 494 in dictionary.
+[2023-11-24T18:37:32.019+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:32.019+0800] {logging_mixin.py:154} INFO - Added player id 495 in dictionary.
+[2023-11-24T18:37:32.197+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:32.198+0800] {logging_mixin.py:154} INFO - Added player id 496 in dictionary.
+[2023-11-24T18:37:32.359+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:32.360+0800] {logging_mixin.py:154} INFO - Added player id 497 in dictionary.
+[2023-11-24T18:37:32.528+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:32.529+0800] {logging_mixin.py:154} INFO - Added player id 498 in dictionary.
+[2023-11-24T18:37:32.854+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:32.854+0800] {logging_mixin.py:154} INFO - Added player id 499 in dictionary.
+[2023-11-24T18:37:33.187+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:33.187+0800] {logging_mixin.py:154} INFO - Added player id 500 in dictionary.
+[2023-11-24T18:37:33.357+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:33.358+0800] {logging_mixin.py:154} INFO - Added player id 501 in dictionary.
+[2023-11-24T18:37:33.537+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:33.537+0800] {logging_mixin.py:154} INFO - Added player id 502 in dictionary.
+[2023-11-24T18:37:33.722+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:33.722+0800] {logging_mixin.py:154} INFO - Added player id 503 in dictionary.
+[2023-11-24T18:37:33.895+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:33.895+0800] {logging_mixin.py:154} INFO - Added player id 504 in dictionary.
+[2023-11-24T18:37:34.247+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:34.247+0800] {logging_mixin.py:154} INFO - Added player id 505 in dictionary.
+[2023-11-24T18:37:34.428+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:34.428+0800] {logging_mixin.py:154} INFO - Added player id 506 in dictionary.
+[2023-11-24T18:37:34.769+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:34.769+0800] {logging_mixin.py:154} INFO - Added player id 507 in dictionary.
+[2023-11-24T18:37:35.112+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:35.112+0800] {logging_mixin.py:154} INFO - Added player id 509 in dictionary.
+[2023-11-24T18:37:35.447+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:35.447+0800] {logging_mixin.py:154} INFO - Added player id 510 in dictionary.
+[2023-11-24T18:37:35.621+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:35.621+0800] {logging_mixin.py:154} INFO - Added player id 511 in dictionary.
+[2023-11-24T18:37:36.333+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:36.334+0800] {logging_mixin.py:154} INFO - Added player id 512 in dictionary.
+[2023-11-24T18:37:36.510+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:36.511+0800] {logging_mixin.py:154} INFO - Added player id 513 in dictionary.
+[2023-11-24T18:37:36.860+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:36.861+0800] {logging_mixin.py:154} INFO - Added player id 514 in dictionary.
+[2023-11-24T18:37:37.217+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:37.218+0800] {logging_mixin.py:154} INFO - Added player id 515 in dictionary.
+[2023-11-24T18:37:37.384+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:37.384+0800] {logging_mixin.py:154} INFO - Added player id 516 in dictionary.
+[2023-11-24T18:37:37.718+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:37.718+0800] {logging_mixin.py:154} INFO - Added player id 517 in dictionary.
+[2023-11-24T18:37:38.110+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:38.111+0800] {logging_mixin.py:154} INFO - Added player id 518 in dictionary.
+[2023-11-24T18:37:38.274+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:38.275+0800] {logging_mixin.py:154} INFO - Added player id 519 in dictionary.
+[2023-11-24T18:37:38.434+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:38.434+0800] {logging_mixin.py:154} INFO - Added player id 520 in dictionary.
+[2023-11-24T18:37:38.774+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:38.774+0800] {logging_mixin.py:154} INFO - Added player id 521 in dictionary.
+[2023-11-24T18:37:39.092+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:39.093+0800] {logging_mixin.py:154} INFO - Added player id 583 in dictionary.
+[2023-11-24T18:37:39.253+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:39.254+0800] {logging_mixin.py:154} INFO - Added player id 639 in dictionary.
+[2023-11-24T18:37:39.427+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:39.428+0800] {logging_mixin.py:154} INFO - Added player id 640 in dictionary.
+[2023-11-24T18:37:39.762+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:39.763+0800] {logging_mixin.py:154} INFO - Added player id 641 in dictionary.
+[2023-11-24T18:37:40.076+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:40.076+0800] {logging_mixin.py:154} INFO - Added player id 702 in dictionary.
+[2023-11-24T18:37:40.244+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:40.244+0800] {logging_mixin.py:154} INFO - Added player id 722 in dictionary.
+[2023-11-24T18:37:40.597+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:40.597+0800] {logging_mixin.py:154} INFO - Added player id 740 in dictionary.
+[2023-11-24T18:37:40.974+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:40.974+0800] {logging_mixin.py:154} INFO - Added player id 522 in dictionary.
+[2023-11-24T18:37:41.140+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:41.140+0800] {logging_mixin.py:154} INFO - Added player id 523 in dictionary.
+[2023-11-24T18:37:41.319+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:41.319+0800] {logging_mixin.py:154} INFO - Added player id 524 in dictionary.
+[2023-11-24T18:37:41.495+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:41.496+0800] {logging_mixin.py:154} INFO - Added player id 525 in dictionary.
+[2023-11-24T18:37:41.663+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:41.663+0800] {logging_mixin.py:154} INFO - Added player id 526 in dictionary.
+[2023-11-24T18:37:42.045+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:42.045+0800] {logging_mixin.py:154} INFO - Added player id 527 in dictionary.
+[2023-11-24T18:37:42.213+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:42.214+0800] {logging_mixin.py:154} INFO - Added player id 528 in dictionary.
+[2023-11-24T18:37:42.548+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:42.548+0800] {logging_mixin.py:154} INFO - Added player id 529 in dictionary.
+[2023-11-24T18:37:42.774+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:42.775+0800] {logging_mixin.py:154} INFO - Added player id 530 in dictionary.
+[2023-11-24T18:37:43.125+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:43.125+0800] {logging_mixin.py:154} INFO - Added player id 531 in dictionary.
+[2023-11-24T18:37:43.282+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:43.283+0800] {logging_mixin.py:154} INFO - Added player id 532 in dictionary.
+[2023-11-24T18:37:43.614+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:43.614+0800] {logging_mixin.py:154} INFO - Added player id 533 in dictionary.
+[2023-11-24T18:37:43.952+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:43.952+0800] {logging_mixin.py:154} INFO - Added player id 534 in dictionary.
+[2023-11-24T18:37:44.103+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:44.104+0800] {logging_mixin.py:154} INFO - Added player id 535 in dictionary.
+[2023-11-24T18:37:44.463+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:44.463+0800] {logging_mixin.py:154} INFO - Added player id 536 in dictionary.
+[2023-11-24T18:37:44.808+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:44.808+0800] {logging_mixin.py:154} INFO - Added player id 537 in dictionary.
+[2023-11-24T18:37:44.994+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:44.994+0800] {logging_mixin.py:154} INFO - Added player id 538 in dictionary.
+[2023-11-24T18:37:45.168+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:45.168+0800] {logging_mixin.py:154} INFO - Added player id 539 in dictionary.
+[2023-11-24T18:37:45.503+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:45.503+0800] {logging_mixin.py:154} INFO - Added player id 541 in dictionary.
+[2023-11-24T18:37:45.668+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:45.668+0800] {logging_mixin.py:154} INFO - Added player id 542 in dictionary.
+[2023-11-24T18:37:46.023+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:46.023+0800] {logging_mixin.py:154} INFO - Added player id 543 in dictionary.
+[2023-11-24T18:37:46.284+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:46.285+0800] {logging_mixin.py:154} INFO - Added player id 544 in dictionary.
+[2023-11-24T18:37:46.621+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:46.621+0800] {logging_mixin.py:154} INFO - Added player id 577 in dictionary.
+[2023-11-24T18:37:46.802+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:46.802+0800] {logging_mixin.py:154} INFO - Added player id 642 in dictionary.
+[2023-11-24T18:37:46.975+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:46.975+0800] {logging_mixin.py:154} INFO - Added player id 647 in dictionary.
+[2023-11-24T18:37:47.169+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:47.170+0800] {logging_mixin.py:154} INFO - Added player id 664 in dictionary.
+[2023-11-24T18:37:47.504+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:47.504+0800] {logging_mixin.py:154} INFO - Added player id 676 in dictionary.
+[2023-11-24T18:37:47.672+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:47.672+0800] {logging_mixin.py:154} INFO - Added player id 689 in dictionary.
+[2023-11-24T18:37:48.024+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:48.024+0800] {logging_mixin.py:154} INFO - Added player id 351 in dictionary.
+[2023-11-24T18:37:48.191+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:48.191+0800] {logging_mixin.py:154} INFO - Added player id 545 in dictionary.
+[2023-11-24T18:37:48.419+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:48.419+0800] {logging_mixin.py:154} INFO - Added player id 546 in dictionary.
+[2023-11-24T18:37:48.777+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:48.777+0800] {logging_mixin.py:154} INFO - Added player id 547 in dictionary.
+[2023-11-24T18:37:48.941+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:48.942+0800] {logging_mixin.py:154} INFO - Added player id 548 in dictionary.
+[2023-11-24T18:37:49.305+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:49.306+0800] {logging_mixin.py:154} INFO - Added player id 549 in dictionary.
+[2023-11-24T18:37:49.652+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:49.653+0800] {logging_mixin.py:154} INFO - Added player id 550 in dictionary.
+[2023-11-24T18:37:49.823+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:49.823+0800] {logging_mixin.py:154} INFO - Added player id 551 in dictionary.
+[2023-11-24T18:37:49.989+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:49.990+0800] {logging_mixin.py:154} INFO - Added player id 552 in dictionary.
+[2023-11-24T18:37:50.165+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:50.166+0800] {logging_mixin.py:154} INFO - Added player id 554 in dictionary.
+[2023-11-24T18:37:50.484+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:50.485+0800] {logging_mixin.py:154} INFO - Added player id 555 in dictionary.
+[2023-11-24T18:37:50.843+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:50.843+0800] {logging_mixin.py:154} INFO - Added player id 556 in dictionary.
+[2023-11-24T18:37:51.002+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:51.003+0800] {logging_mixin.py:154} INFO - Added player id 557 in dictionary.
+[2023-11-24T18:37:51.320+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:51.321+0800] {logging_mixin.py:154} INFO - Added player id 559 in dictionary.
+[2023-11-24T18:37:51.696+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:51.697+0800] {logging_mixin.py:154} INFO - Added player id 560 in dictionary.
+[2023-11-24T18:37:52.039+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:52.039+0800] {logging_mixin.py:154} INFO - Added player id 561 in dictionary.
+[2023-11-24T18:37:52.389+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:52.389+0800] {logging_mixin.py:154} INFO - Added player id 562 in dictionary.
+[2023-11-24T18:37:52.722+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:52.722+0800] {logging_mixin.py:154} INFO - Added player id 563 in dictionary.
+[2023-11-24T18:37:53.097+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:53.097+0800] {logging_mixin.py:154} INFO - Added player id 564 in dictionary.
+[2023-11-24T18:37:53.448+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:53.448+0800] {logging_mixin.py:154} INFO - Added player id 565 in dictionary.
+[2023-11-24T18:37:53.621+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:53.622+0800] {logging_mixin.py:154} INFO - Added player id 567 in dictionary.
+[2023-11-24T18:37:53.980+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:53.981+0800] {logging_mixin.py:154} INFO - Added player id 568 in dictionary.
+[2023-11-24T18:37:54.173+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:54.174+0800] {logging_mixin.py:154} INFO - Added player id 569 in dictionary.
+[2023-11-24T18:37:54.342+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:54.343+0800] {logging_mixin.py:154} INFO - Added player id 570 in dictionary.
+[2023-11-24T18:37:54.684+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:54.684+0800] {logging_mixin.py:154} INFO - Added player id 571 in dictionary.
+[2023-11-24T18:37:54.850+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:54.850+0800] {logging_mixin.py:154} INFO - Added player id 572 in dictionary.
+[2023-11-24T18:37:55.015+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:55.015+0800] {logging_mixin.py:154} INFO - Added player id 573 in dictionary.
+[2023-11-24T18:37:55.353+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:55.353+0800] {logging_mixin.py:154} INFO - Added player id 574 in dictionary.
+[2023-11-24T18:37:55.521+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:55.522+0800] {logging_mixin.py:154} INFO - Added player id 590 in dictionary.
+[2023-11-24T18:37:55.703+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:55.703+0800] {logging_mixin.py:154} INFO - Added player id 598 in dictionary.
+[2023-11-24T18:37:56.057+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:56.057+0800] {logging_mixin.py:154} INFO - Added player id 697 in dictionary.
+[2023-11-24T18:37:56.422+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:56.422+0800] {logging_mixin.py:154} INFO - Added player id 698 in dictionary.
+[2023-11-24T18:37:56.777+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:56.778+0800] {logging_mixin.py:154} INFO - Added player id 704 in dictionary.
+[2023-11-24T18:37:56.952+0800] {logging_mixin.py:154} INFO - <class 'dict'>
+[2023-11-24T18:37:56.952+0800] {logging_mixin.py:154} INFO - Added player id 715 in dictionary.
+[2023-11-24T18:37:57.629+0800] {logging_mixin.py:154} INFO - /tmp/tmprrki8m7o/current_season_history_24112023.json is created
+[2023-11-24T18:37:57.634+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T18:37:57.639+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-24T18:38:11.185+0800] {logging_mixin.py:154} INFO - File is uploaded at blob
+[2023-11-24T18:38:11.188+0800] {logging_mixin.py:154} INFO - File is deleted in /tmp/tmprrki8m7o
+[2023-11-24T18:38:11.188+0800] {logging_mixin.py:154} INFO - Directory is deleted in /tmp/tmprrki8m7o
+[2023-11-24T18:38:11.207+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-24T18:38:11.214+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=download_file_from_blob_test, execution_date=20231124T103422, start_date=20231124T103425, end_date=20231124T103811
+[2023-11-24T18:38:11.250+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-24T18:38:11.272+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

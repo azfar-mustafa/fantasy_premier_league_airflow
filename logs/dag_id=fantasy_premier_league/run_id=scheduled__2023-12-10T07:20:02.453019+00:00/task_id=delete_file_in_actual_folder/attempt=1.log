@@ -1,0 +1,29 @@
+[2023-12-11T15:25:49.755+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league.delete_file_in_actual_folder scheduled__2023-12-10T07:20:02.453019+00:00 [queued]>
+[2023-12-11T15:25:49.764+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league.delete_file_in_actual_folder scheduled__2023-12-10T07:20:02.453019+00:00 [queued]>
+[2023-12-11T15:25:49.765+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-11T15:25:49.782+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): delete_file_in_actual_folder> on 2023-12-10 07:20:02.453019+00:00
+[2023-12-11T15:25:49.785+0800] {standard_task_runner.py:57} INFO - Started process 74284 to run task
+[2023-12-11T15:25:49.788+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league', 'delete_file_in_actual_folder', 'scheduled__2023-12-10T07:20:02.453019+00:00', '--job-id', '171', '--raw', '--subdir', 'DAGS_FOLDER/fantasy_premier_league_dag.py', '--cfg-path', '/tmp/tmpqvd1gz1d']
+[2023-12-11T15:25:49.790+0800] {standard_task_runner.py:85} INFO - Job 171: Subtask delete_file_in_actual_folder
+[2023-12-11T15:25:49.828+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league.delete_file_in_actual_folder scheduled__2023-12-10T07:20:02.453019+00:00 [running]> on host azfartitu.
+[2023-12-11T15:25:49.892+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league' AIRFLOW_CTX_TASK_ID='delete_file_in_actual_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-12-10T07:20:02.453019+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-10T07:20:02.453019+00:00'
+[2023-12-11T15:25:49.905+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T15:25:50.897+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-12-11T15:25:50.900+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T15:25:51.819+0800] {logging_mixin.py:154} INFO - Folder 'current_season_history/05122023' deleted successfully.
+[2023-12-11T15:25:51.821+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-12-11T15:25:51.824+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T15:25:52.769+0800] {logging_mixin.py:154} INFO - Folder 'events_metadata/05122023' deleted successfully.
+[2023-12-11T15:25:52.770+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-12-11T15:25:52.775+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T15:25:53.652+0800] {logging_mixin.py:154} INFO - Folder 'player_metadata/05122023' deleted successfully.
+[2023-12-11T15:25:53.654+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-12-11T15:25:53.659+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T15:25:54.570+0800] {logging_mixin.py:154} INFO - Folder 'position_metadata/05122023' deleted successfully.
+[2023-12-11T15:25:54.571+0800] {logging_mixin.py:154} INFO - Client is created
+[2023-12-11T15:25:54.576+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-11T15:25:55.449+0800] {logging_mixin.py:154} INFO - Folder 'teams_metadata/05122023' deleted successfully.
+[2023-12-11T15:25:55.452+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-11T15:25:55.459+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league, task_id=delete_file_in_actual_folder, execution_date=20231210T072002, start_date=20231211T072549, end_date=20231211T072555
+[2023-12-11T15:25:55.500+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-11T15:25:55.514+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

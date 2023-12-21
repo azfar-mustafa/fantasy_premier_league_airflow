@@ -1,0 +1,16 @@
+[2023-11-29T23:55:35.690+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-29T15:55:08.922975+00:00 [queued]>
+[2023-11-29T23:55:35.701+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-29T15:55:08.922975+00:00 [queued]>
+[2023-11-29T23:55:35.702+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-29T23:55:35.726+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): delete_file_in_actual_folder> on 2023-11-29 15:55:08.922975+00:00
+[2023-11-29T23:55:35.730+0800] {standard_task_runner.py:57} INFO - Started process 24801 to run task
+[2023-11-29T23:55:35.736+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'delete_file_in_actual_folder', 'manual__2023-11-29T15:55:08.922975+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmp9aw0al8e']
+[2023-11-29T23:55:35.738+0800] {standard_task_runner.py:85} INFO - Job 32: Subtask delete_file_in_actual_folder
+[2023-11-29T23:55:35.961+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.delete_file_in_actual_folder manual__2023-11-29T15:55:08.922975+00:00 [running]> on host azfartitu.
+[2023-11-29T23:55:36.052+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='delete_file_in_actual_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-11-29T15:55:08.922975+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-29T15:55:08.922975+00:00'
+[2023-11-29T23:55:36.060+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-29T23:55:36.605+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-29T23:55:37.711+0800] {wasb.py:504} INFO - Deleted blobs: ('current_season_history/28112023/current_season_history_28112023.json',)
+[2023-11-29T23:55:37.716+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-29T23:55:37.729+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=delete_file_in_actual_folder, execution_date=20231129T155508, start_date=20231129T155535, end_date=20231129T155537
+[2023-11-29T23:55:37.775+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-29T23:55:37.792+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

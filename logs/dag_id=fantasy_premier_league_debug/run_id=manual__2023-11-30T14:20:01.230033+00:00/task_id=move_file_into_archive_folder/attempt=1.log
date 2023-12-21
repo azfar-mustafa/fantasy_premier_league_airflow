@@ -1,0 +1,29 @@
+[2023-11-30T22:20:04.533+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.move_file_into_archive_folder manual__2023-11-30T14:20:01.230033+00:00 [queued]>
+[2023-11-30T22:20:04.540+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.move_file_into_archive_folder manual__2023-11-30T14:20:01.230033+00:00 [queued]>
+[2023-11-30T22:20:04.541+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-30T22:20:04.562+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): move_file_into_archive_folder> on 2023-11-30 14:20:01.230033+00:00
+[2023-11-30T22:20:04.565+0800] {standard_task_runner.py:57} INFO - Started process 47313 to run task
+[2023-11-30T22:20:04.568+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'move_file_into_archive_folder', 'manual__2023-11-30T14:20:01.230033+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmph2ti6ow0']
+[2023-11-30T22:20:04.569+0800] {standard_task_runner.py:85} INFO - Job 80: Subtask move_file_into_archive_folder
+[2023-11-30T22:20:04.695+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.move_file_into_archive_folder manual__2023-11-30T14:20:01.230033+00:00 [running]> on host azfartitu.
+[2023-11-30T22:20:04.784+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='move_file_into_archive_folder' AIRFLOW_CTX_EXECUTION_DATE='2023-11-30T14:20:01.230033+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-30T14:20:01.230033+00:00'
+[2023-11-30T22:20:04.816+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:05.900+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:10.370+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmpgy_2ovaf
+[2023-11-30T22:20:15.169+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-11-30T22:20:15.178+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:16.206+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmp75l131a0
+[2023-11-30T22:20:16.652+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-11-30T22:20:16.668+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:18.947+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmp5ua7xh23
+[2023-11-30T22:20:20.554+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-11-30T22:20:20.562+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:21.382+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmpriwwrdtq
+[2023-11-30T22:20:21.645+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-11-30T22:20:21.652+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T22:20:22.469+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmpj0ffjb8s
+[2023-11-30T22:20:22.721+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-11-30T22:20:22.723+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-30T22:20:22.747+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=move_file_into_archive_folder, execution_date=20231130T142001, start_date=20231130T142004, end_date=20231130T142022
+[2023-11-30T22:20:22.796+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-30T22:20:22.823+0800] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,25 @@
+[2023-12-20T22:52:39.096+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_transformation_player_metadata_debug.player_metadata_bronze_to_silver_test_transform scheduled__2023-12-19T14:52:14.444206+00:00 [queued]>
+[2023-12-20T22:52:39.110+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_transformation_player_metadata_debug.player_metadata_bronze_to_silver_test_transform scheduled__2023-12-19T14:52:14.444206+00:00 [queued]>
+[2023-12-20T22:52:39.110+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-20T22:52:39.153+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): player_metadata_bronze_to_silver_test_transform> on 2023-12-19 14:52:14.444206+00:00
+[2023-12-20T22:52:39.158+0800] {standard_task_runner.py:57} INFO - Started process 179653 to run task
+[2023-12-20T22:52:39.163+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'data_transformation_player_metadata_debug', 'player_metadata_bronze_to_silver_test_transform', 'scheduled__2023-12-19T14:52:14.444206+00:00', '--job-id', '209', '--raw', '--subdir', 'DAGS_FOLDER/data_transformation_dag.py', '--cfg-path', '/tmp/tmpkedklc26']
+[2023-12-20T22:52:39.165+0800] {standard_task_runner.py:85} INFO - Job 209: Subtask player_metadata_bronze_to_silver_test_transform
+[2023-12-20T22:52:39.279+0800] {task_command.py:416} INFO - Running <TaskInstance: data_transformation_player_metadata_debug.player_metadata_bronze_to_silver_test_transform scheduled__2023-12-19T14:52:14.444206+00:00 [running]> on host azfartitu.
+[2023-12-20T22:52:39.405+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='data_transformation_player_metadata_debug' AIRFLOW_CTX_TASK_ID='player_metadata_bronze_to_silver_test_transform' AIRFLOW_CTX_EXECUTION_DATE='2023-12-19T14:52:14.444206+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-19T14:52:14.444206+00:00'
+[2023-12-20T22:52:39.476+0800] {logging_mixin.py:154} INFO - Temporary directory is created: /tmp/tmpfaseohdr
+[2023-12-20T22:52:39.485+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-20T22:52:41.415+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-20T22:52:44.376+0800] {logging_mixin.py:154} INFO - player_metadata_11122023.json is downloaded at /tmp/tmpfaseohdr from player_metadata/current/11122023
+[2023-12-20T22:52:46.098+0800] {logging_mixin.py:154} INFO - Table player_metadata is created
+[2023-12-20T22:52:46.189+0800] {logging_mixin.py:154} INFO - Copy data from table player_metadata into file player_metadata_11122023.parquet
+[2023-12-20T22:52:46.194+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-20T22:52:46.201+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-20T22:52:48.231+0800] {logging_mixin.py:154} INFO - File player_metadata_11122023.parquet is uploaded into silver container
+[2023-12-20T22:52:48.232+0800] {logging_mixin.py:154} INFO - /tmp/tmpfaseohdr/player_metadata_11122023.parquet is removed
+[2023-12-20T22:52:48.233+0800] {logging_mixin.py:154} INFO - /tmp/tmpfaseohdr/player_metadata_11122023.json is removed
+[2023-12-20T22:52:48.235+0800] {logging_mixin.py:154} INFO - /tmp/tmpfaseohdr is removed
+[2023-12-20T22:52:48.244+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-20T22:52:48.254+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_transformation_player_metadata_debug, task_id=player_metadata_bronze_to_silver_test_transform, execution_date=20231219T145214, start_date=20231220T145239, end_date=20231220T145248
+[2023-12-20T22:52:48.478+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-20T22:52:48.491+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,23 @@
+[2023-11-24T12:37:30.254+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league.download_file_from_blob manual__2023-11-24T04:37:16.068412+00:00 [queued]>
+[2023-11-24T12:37:30.260+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league.download_file_from_blob manual__2023-11-24T04:37:16.068412+00:00 [queued]>
+[2023-11-24T12:37:30.261+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-24T12:37:30.285+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): download_file_from_blob> on 2023-11-24 04:37:16.068412+00:00
+[2023-11-24T12:37:30.288+0800] {standard_task_runner.py:57} INFO - Started process 76554 to run task
+[2023-11-24T12:37:30.291+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league', 'download_file_from_blob', 'manual__2023-11-24T04:37:16.068412+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/fantasy_premier_league_dag.py', '--cfg-path', '/tmp/tmp4karg58j']
+[2023-11-24T12:37:30.293+0800] {standard_task_runner.py:85} INFO - Job 19: Subtask download_file_from_blob
+[2023-11-24T12:37:30.337+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league.download_file_from_blob manual__2023-11-24T04:37:16.068412+00:00 [running]> on host azfartitu.
+[2023-11-24T12:37:30.411+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league' AIRFLOW_CTX_TASK_ID='download_file_from_blob' AIRFLOW_CTX_EXECUTION_DATE='2023-11-24T04:37:16.068412+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-24T04:37:16.068412+00:00'
+[2023-11-24T12:37:30.428+0800] {logging_mixin.py:154} INFO - Temporary directory created: /tmp/tmpo196wdor
+[2023-11-24T12:37:30.428+0800] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py", line 97, in get_file_from_blob
+    get_file(file_path=temp_dir, container_name='bronze', blob_name=blob_name)
+NameError: name 'get_file' is not defined. Did you mean: 'tempfile'?
+[2023-11-24T12:37:30.436+0800] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=fantasy_premier_league, task_id=download_file_from_blob, execution_date=20231124T043716, start_date=20231124T043730, end_date=20231124T043730
+[2023-11-24T12:37:30.455+0800] {standard_task_runner.py:104} ERROR - Failed to execute job 19 for task download_file_from_blob (name 'get_file' is not defined; 76554)
+[2023-11-24T12:37:30.464+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-24T12:37:30.475+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

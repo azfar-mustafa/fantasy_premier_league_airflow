@@ -1,0 +1,23 @@
+[2023-11-30T23:19:56.722+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_second_debug.get_old_date manual__2023-11-30T15:19:52.845641+00:00 [queued]>
+[2023-11-30T23:19:56.730+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_second_debug.get_old_date manual__2023-11-30T15:19:52.845641+00:00 [queued]>
+[2023-11-30T23:19:56.730+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-11-30T23:19:56.750+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): get_old_date> on 2023-11-30 15:19:52.845641+00:00
+[2023-11-30T23:19:56.752+0800] {standard_task_runner.py:57} INFO - Started process 49503 to run task
+[2023-11-30T23:19:56.757+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_second_debug', 'get_old_date', 'manual__2023-11-30T15:19:52.845641+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/azfar_second_dag.py', '--cfg-path', '/tmp/tmplgh_ofbl']
+[2023-11-30T23:19:56.758+0800] {standard_task_runner.py:85} INFO - Job 84: Subtask get_old_date
+[2023-11-30T23:19:56.802+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_second_debug.get_old_date manual__2023-11-30T15:19:52.845641+00:00 [running]> on host azfartitu.
+[2023-11-30T23:19:56.875+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_second_debug' AIRFLOW_CTX_TASK_ID='get_old_date' AIRFLOW_CTX_EXECUTION_DATE='2023-11-30T15:19:52.845641+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-11-30T15:19:52.845641+00:00'
+[2023-11-30T23:19:56.883+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-11-30T23:19:58.191+0800] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/dags/azfar_second_dag.py", line 48, in get_old_date
+    data_counts[parts[1]] += 1
+NameError: name 'data_counts' is not defined. Did you mean: 'date_counts'?
+[2023-11-30T23:19:58.198+0800] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fantasy_premier_league_second_debug, task_id=get_old_date, execution_date=20231130T151952, start_date=20231130T151956, end_date=20231130T151958
+[2023-11-30T23:19:58.226+0800] {standard_task_runner.py:104} ERROR - Failed to execute job 84 for task get_old_date (name 'data_counts' is not defined; 49503)
+[2023-11-30T23:19:58.256+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-30T23:19:58.301+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
