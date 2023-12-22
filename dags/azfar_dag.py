@@ -33,64 +33,122 @@ dag = DAG(
     schedule_interval=timedelta(days=1),
 )
 
-def current_season_history_bronze_to_silver_test():
-    current_utc_timestamp = datetime.utcnow()
-    utc_timezone = pytz.timezone('UTC')
-    myt_timezone = pytz.timezone('Asia/Kuala_Lumpur')
-    myt_timestamp = utc_timezone.localize(current_utc_timestamp).astimezone(myt_timezone)
-    #formatted_current_date = myt_timestamp.strftime("%d%m%Y")
-    formatted_current_date = '11122023'
+def get_silver_old_date_test(**kwargs):
+    container_name = 'silver'
+    az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
+    list_of_files = az_hook.get_blobs_list_recursive(container_name=container_name) #To get the first level blob name
+    print(f"List of files - {list_of_files}")
+    date_counts = set()
+    for path in list_of_files:
+        parts = path.split('/')
+        print(f"Parts - {parts}")
+        if len(parts) > 2 and parts[2].isdigit() and "current" in parts:
+            date_counts.add(parts[2])
 
-    temp_dir = tempfile.mkdtemp()
-    print(f"Temporary directory is created: {temp_dir}")
+    datetime_dates = [datetime.strptime(date, "%d%m%Y") for date in date_counts]
+    print(datetime_dates)
+    min_date = min(datetime_dates)
+    non_recent_date = min_date.strftime("%d%m%Y")
+    print(non_recent_date)
 
-    bronze_blob_folder_path = f"current_season_history/current/{formatted_current_date}"
-    blob_name = f"current_season_history_{formatted_current_date}.json"
-    parquet_file_name = f"current_season_history_{formatted_current_date}.parquet"
-    temp_file_path = os.path.join(temp_dir, blob_name)
-    bronze_blob_path = os.path.join(bronze_blob_folder_path, blob_name)
+    kwargs['ti'].xcom_push(key='my_key', value=non_recent_date)
 
-    silver_blob_name = f"current_season_history/current/{formatted_current_date}/{parquet_file_name}"
-    silver_parquet_file_full_path = os.path.join(temp_dir, parquet_file_name)
 
-    az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-    az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=bronze_blob_path)
-    print(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
+def move_silver_file_into_archive_folder_test(**kwargs):
+    ti = kwargs['ti']
+    formatted_current_date = ti.xcom_pull(task_ids='get_silver_old_date_test', key='my_key')
 
-    duckdb.sql(f"CREATE TABLE current_season_history AS SELECT * FROM read_json_auto('{temp_file_path}')")
-    print(f"Table current_season_history is created")
-    duckdb.sql(f"COPY (SELECT * FROM current_season_history) TO '{silver_parquet_file_full_path}' (FORMAT PARQUET)")
-    print(f"Copy data from table current_season_history into file {parquet_file_name}")
-
-    az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-    az_hook.load_file(
-            file_path=silver_parquet_file_full_path,
-            container_name='silver',
-            blob_name=silver_blob_name,
-            overwrite=True
-        )
-    print(f"File {parquet_file_name} is uploaded into silver container")
+    print(f"value {formatted_current_date}")
     
-    os.remove(silver_parquet_file_full_path)
-    print(f"{silver_parquet_file_full_path} is removed")
+    container_name = 'silver'
+    
+    az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
+    list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
+    new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
+    print("File is renamed")
+    print(new_list_of_files)
+ 
+    for folder_name in  new_list_of_files:
+        print(folder_name)
+        blob_name = f"{folder_name}_{formatted_current_date}.parquet"
+        blob_path = f"{folder_name}/current/{formatted_current_date}/{blob_name}"
+        virtual_folder_path = f"{folder_name}/archive/{formatted_current_date}/"
 
-    os.remove(temp_file_path)
-    print(f"{temp_file_path} is removed")
 
-    os.rmdir(temp_dir)
-    print(f"{temp_dir} is removed")
+        temp_dir = tempfile.mkdtemp()
+        print("Created local temporary folder")
+        print(blob_path)
+        temp_file_path = os.path.join(temp_dir, blob_name)
+
+        az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
+        az_hook.get_file(file_path=temp_file_path, container_name=container_name, blob_name=blob_path)
+        print(f"File is downloaded at {temp_dir}")
+
+        az_hook.load_file(
+                    file_path=temp_file_path,
+                    container_name=container_name,
+                    blob_name=f"{virtual_folder_path}{blob_name}",
+                    overwrite=True
+                )
+        print(f"File is copied to archive")
+
+
+def delete_old_file_in_silver_folder_test(**kwargs):
+    # Reference
+    # https://airflow.apache.org/docs/apache-airflow-providers-microsoft-azure/stable/_api/airflow/providers/microsoft/azure/hooks/data_lake/index.html
+    # https://airflow.apache.org/docs/apache-airflow-providers-microsoft-azure/stable/_api/airflow/providers/microsoft/azure/hooks/wasb/index.html
+
+    ti = kwargs['ti']
+    formatted_current_date = ti.xcom_pull(task_ids='get_silver_old_date_test', key='my_key')
+
+    container_name = 'silver'
+
+    file_system_name = 'silver'
+    
+
+    # Delete directory and the file
+
+    az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
+    list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
+    new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
+
+    for folder_name in new_list_of_files:
+        directory_to_delete = f"{folder_name}/current/{formatted_current_date}"
+        adls_hook = AzureDataLakeStorageV2Hook(adls_conn_id=AZURE_BLOB_CONN_ID)
+        print("Client is created")
+        try:
+            adls_hook.delete_directory(file_system_name, directory_to_delete)
+            print(f"Folder '{directory_to_delete}' deleted successfully.")
+        except Exception as e:
+            print(f"Fail to delete because of {str(e)}")
     
 
 
-current_season_history_bronze_to_silver_test = PythonOperator(
-    task_id='current_season_history_bronze_to_silver_test',
-    python_callable=current_season_history_bronze_to_silver_test,
+get_silver_old_date_test = PythonOperator(
+    task_id='get_silver_old_date_test',
+    python_callable=get_silver_old_date_test,
     provide_context=True,
     dag=dag,
 )
 
 
-current_season_history_bronze_to_silver_test
+move_silver_file_into_archive_folder_test = PythonOperator(
+    task_id='move_silver_file_into_archive_folder_test',
+    python_callable=move_silver_file_into_archive_folder_test,
+    provide_context=True,
+    dag=dag,
+)
+
+
+delete_old_file_in_silver_folder_test = PythonOperator(
+    task_id='delete_old_file_in_silver_folder_test',
+    python_callable=delete_old_file_in_silver_folder_test,
+    provide_context=True,
+    dag=dag,
+)
+
+
+get_silver_old_date_test >> move_silver_file_into_archive_folder_test >> delete_old_file_in_silver_folder_test
 
 
 if __name__ == "__main__":

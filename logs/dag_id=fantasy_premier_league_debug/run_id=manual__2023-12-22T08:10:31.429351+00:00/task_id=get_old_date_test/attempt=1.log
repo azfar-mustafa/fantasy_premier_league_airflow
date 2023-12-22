@@ -1,0 +1,33 @@
+[2023-12-22T16:10:35.802+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.get_old_date_test manual__2023-12-22T08:10:31.429351+00:00 [queued]>
+[2023-12-22T16:10:35.812+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.get_old_date_test manual__2023-12-22T08:10:31.429351+00:00 [queued]>
+[2023-12-22T16:10:35.813+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-22T16:10:35.856+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): get_old_date_test> on 2023-12-22 08:10:31.429351+00:00
+[2023-12-22T16:10:35.861+0800] {standard_task_runner.py:57} INFO - Started process 109070 to run task
+[2023-12-22T16:10:35.867+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'get_old_date_test', 'manual__2023-12-22T08:10:31.429351+00:00', '--job-id', '219', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmp719sup0g']
+[2023-12-22T16:10:35.869+0800] {standard_task_runner.py:85} INFO - Job 219: Subtask get_old_date_test
+[2023-12-22T16:10:36.014+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.get_old_date_test manual__2023-12-22T08:10:31.429351+00:00 [running]> on host azfartitu.
+[2023-12-22T16:10:36.117+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='get_old_date_test' AIRFLOW_CTX_EXECUTION_DATE='2023-12-22T08:10:31.429351+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-22T08:10:31.429351+00:00'
+[2023-12-22T16:10:36.127+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-22T16:10:37.230+0800] {logging_mixin.py:154} INFO - List of files - ['current_season_history', 'current_season_history/current', 'current_season_history/current/11122023', 'current_season_history/current/11122023/current_season_history_11122023.parquet', 'player_metadata', 'player_metadata/current', 'player_metadata/current/11122023', 'player_metadata/current/11122023/player_metadata_11122023.parquet', 'position_metadata', 'position_metadata/current', 'position_metadata/current/11122023', 'position_metadata/current/11122023/position_metadata_11122023.parquet', 'teams_metadata', 'teams_metadata/current', 'teams_metadata/current/11122023', 'teams_metadata/current/11122023/teams_metadata_11122023.parquet']
+[2023-12-22T16:10:37.231+0800] {logging_mixin.py:154} INFO - Parts - ['current_season_history']
+[2023-12-22T16:10:37.231+0800] {logging_mixin.py:154} INFO - Parts - ['current_season_history', 'current']
+[2023-12-22T16:10:37.231+0800] {logging_mixin.py:154} INFO - Parts - ['current_season_history', 'current', '11122023']
+[2023-12-22T16:10:37.231+0800] {logging_mixin.py:154} INFO - Parts - ['current_season_history', 'current', '11122023', 'current_season_history_11122023.parquet']
+[2023-12-22T16:10:37.231+0800] {logging_mixin.py:154} INFO - Parts - ['player_metadata']
+[2023-12-22T16:10:37.231+0800] {logging_mixin.py:154} INFO - Parts - ['player_metadata', 'current']
+[2023-12-22T16:10:37.231+0800] {logging_mixin.py:154} INFO - Parts - ['player_metadata', 'current', '11122023']
+[2023-12-22T16:10:37.232+0800] {logging_mixin.py:154} INFO - Parts - ['player_metadata', 'current', '11122023', 'player_metadata_11122023.parquet']
+[2023-12-22T16:10:37.232+0800] {logging_mixin.py:154} INFO - Parts - ['position_metadata']
+[2023-12-22T16:10:37.232+0800] {logging_mixin.py:154} INFO - Parts - ['position_metadata', 'current']
+[2023-12-22T16:10:37.232+0800] {logging_mixin.py:154} INFO - Parts - ['position_metadata', 'current', '11122023']
+[2023-12-22T16:10:37.232+0800] {logging_mixin.py:154} INFO - Parts - ['position_metadata', 'current', '11122023', 'position_metadata_11122023.parquet']
+[2023-12-22T16:10:37.232+0800] {logging_mixin.py:154} INFO - Parts - ['teams_metadata']
+[2023-12-22T16:10:37.232+0800] {logging_mixin.py:154} INFO - Parts - ['teams_metadata', 'current']
+[2023-12-22T16:10:37.232+0800] {logging_mixin.py:154} INFO - Parts - ['teams_metadata', 'current', '11122023']
+[2023-12-22T16:10:37.232+0800] {logging_mixin.py:154} INFO - Parts - ['teams_metadata', 'current', '11122023', 'teams_metadata_11122023.parquet']
+[2023-12-22T16:10:37.234+0800] {logging_mixin.py:154} INFO - [datetime.datetime(2023, 12, 11, 0, 0)]
+[2023-12-22T16:10:37.235+0800] {logging_mixin.py:154} INFO - 11122023
+[2023-12-22T16:10:37.270+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-22T16:10:37.280+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=get_old_date_test, execution_date=20231222T081031, start_date=20231222T081035, end_date=20231222T081037
+[2023-12-22T16:10:37.325+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-22T16:10:37.363+0800] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

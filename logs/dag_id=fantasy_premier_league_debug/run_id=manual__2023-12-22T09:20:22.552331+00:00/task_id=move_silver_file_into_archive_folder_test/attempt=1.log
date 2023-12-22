@@ -1,0 +1,41 @@
+[2023-12-22T17:20:30.993+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.move_silver_file_into_archive_folder_test manual__2023-12-22T09:20:22.552331+00:00 [queued]>
+[2023-12-22T17:20:31.001+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.move_silver_file_into_archive_folder_test manual__2023-12-22T09:20:22.552331+00:00 [queued]>
+[2023-12-22T17:20:31.001+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-22T17:20:31.027+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): move_silver_file_into_archive_folder_test> on 2023-12-22 09:20:22.552331+00:00
+[2023-12-22T17:20:31.030+0800] {standard_task_runner.py:57} INFO - Started process 114485 to run task
+[2023-12-22T17:20:31.034+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'move_silver_file_into_archive_folder_test', 'manual__2023-12-22T09:20:22.552331+00:00', '--job-id', '245', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmp3udqp3vk']
+[2023-12-22T17:20:31.035+0800] {standard_task_runner.py:85} INFO - Job 245: Subtask move_silver_file_into_archive_folder_test
+[2023-12-22T17:20:31.081+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.move_silver_file_into_archive_folder_test manual__2023-12-22T09:20:22.552331+00:00 [running]> on host azfartitu.
+[2023-12-22T17:20:31.158+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='move_silver_file_into_archive_folder_test' AIRFLOW_CTX_EXECUTION_DATE='2023-12-22T09:20:22.552331+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-22T09:20:22.552331+00:00'
+[2023-12-22T17:20:31.165+0800] {logging_mixin.py:154} INFO - value 11122023
+[2023-12-22T17:20:31.173+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-22T17:20:32.174+0800] {logging_mixin.py:154} INFO - File is renamed
+[2023-12-22T17:20:32.174+0800] {logging_mixin.py:154} INFO - ['current_season_history', 'player_metadata', 'position_metadata', 'teams_metadata']
+[2023-12-22T17:20:32.174+0800] {logging_mixin.py:154} INFO - current_season_history
+[2023-12-22T17:20:32.176+0800] {logging_mixin.py:154} INFO - Created local temporary folder
+[2023-12-22T17:20:32.177+0800] {logging_mixin.py:154} INFO - current_season_history/current/11122023/current_season_history_11122023.parquet
+[2023-12-22T17:20:32.181+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-22T17:20:33.796+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmpyclck0wt
+[2023-12-22T17:20:34.787+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-12-22T17:20:34.787+0800] {logging_mixin.py:154} INFO - player_metadata
+[2023-12-22T17:20:34.792+0800] {logging_mixin.py:154} INFO - Created local temporary folder
+[2023-12-22T17:20:34.792+0800] {logging_mixin.py:154} INFO - player_metadata/current/11122023/player_metadata_11122023.parquet
+[2023-12-22T17:20:34.798+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-22T17:20:36.161+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmprun09ip2
+[2023-12-22T17:20:36.889+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-12-22T17:20:36.889+0800] {logging_mixin.py:154} INFO - position_metadata
+[2023-12-22T17:20:36.890+0800] {logging_mixin.py:154} INFO - Created local temporary folder
+[2023-12-22T17:20:36.891+0800] {logging_mixin.py:154} INFO - position_metadata/current/11122023/position_metadata_11122023.parquet
+[2023-12-22T17:20:36.897+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-22T17:20:37.748+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmp381cgoen
+[2023-12-22T17:20:37.949+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-12-22T17:20:37.949+0800] {logging_mixin.py:154} INFO - teams_metadata
+[2023-12-22T17:20:37.986+0800] {logging_mixin.py:154} INFO - Created local temporary folder
+[2023-12-22T17:20:37.987+0800] {logging_mixin.py:154} INFO - teams_metadata/current/11122023/teams_metadata_11122023.parquet
+[2023-12-22T17:20:37.993+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-22T17:20:38.810+0800] {logging_mixin.py:154} INFO - File is downloaded at /tmp/tmpgypqvp7v
+[2023-12-22T17:20:39.008+0800] {logging_mixin.py:154} INFO - File is copied to archive
+[2023-12-22T17:20:39.009+0800] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-22T17:20:39.015+0800] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=fantasy_premier_league_debug, task_id=move_silver_file_into_archive_folder_test, execution_date=20231222T092022, start_date=20231222T092030, end_date=20231222T092039
+[2023-12-22T17:20:39.035+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-22T17:20:39.049+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,65 @@
+[2023-12-22T16:09:11.284+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.move_silver_file_into_archive_folder_test manual__2023-12-22T08:09:02.709052+00:00 [queued]>
+[2023-12-22T16:09:11.292+0800] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fantasy_premier_league_debug.move_silver_file_into_archive_folder_test manual__2023-12-22T08:09:02.709052+00:00 [queued]>
+[2023-12-22T16:09:11.293+0800] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-22T16:09:11.314+0800] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): move_silver_file_into_archive_folder_test> on 2023-12-22 08:09:02.709052+00:00
+[2023-12-22T16:09:11.318+0800] {standard_task_runner.py:57} INFO - Started process 108880 to run task
+[2023-12-22T16:09:11.321+0800] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'fantasy_premier_league_debug', 'move_silver_file_into_archive_folder_test', 'manual__2023-12-22T08:09:02.709052+00:00', '--job-id', '218', '--raw', '--subdir', 'DAGS_FOLDER/azfar_dag.py', '--cfg-path', '/tmp/tmp4tyqabpo']
+[2023-12-22T16:09:11.324+0800] {standard_task_runner.py:85} INFO - Job 218: Subtask move_silver_file_into_archive_folder_test
+[2023-12-22T16:09:11.372+0800] {task_command.py:416} INFO - Running <TaskInstance: fantasy_premier_league_debug.move_silver_file_into_archive_folder_test manual__2023-12-22T08:09:02.709052+00:00 [running]> on host azfartitu.
+[2023-12-22T16:09:11.446+0800] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fantasy_premier_league_debug' AIRFLOW_CTX_TASK_ID='move_silver_file_into_archive_folder_test' AIRFLOW_CTX_EXECUTION_DATE='2023-12-22T08:09:02.709052+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-22T08:09:02.709052+00:00'
+[2023-12-22T16:09:11.453+0800] {logging_mixin.py:154} INFO - value None
+[2023-12-22T16:09:11.461+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-22T16:09:12.497+0800] {logging_mixin.py:154} INFO - File is renamed
+[2023-12-22T16:09:12.497+0800] {logging_mixin.py:154} INFO - ['current_season_history', 'player_metadata', 'position_metadata', 'teams_metadata']
+[2023-12-22T16:09:12.497+0800] {logging_mixin.py:154} INFO - current_season_history
+[2023-12-22T16:09:12.498+0800] {logging_mixin.py:154} INFO - Created local temporary folder
+[2023-12-22T16:09:12.498+0800] {logging_mixin.py:154} INFO - current_season_history/current/None/current_season_history_None.json
+[2023-12-22T16:09:12.503+0800] {base.py:73} INFO - Using connection ID 'azure_blob_conn_id' for task execution.
+[2023-12-22T16:09:13.332+0800] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py", line 84, in move_silver_file_into_archive_folder_test
+    az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=blob_path)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/wasb.py", line 391, in get_file
+    stream = self.download(container_name=container_name, blob_name=blob_name, **kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/providers/microsoft/azure/hooks/wasb.py", line 446, in download
+    return blob_client.download_blob(offset=offset, length=length, **kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/core/tracing/decorator.py", line 78, in wrapper_use_tracer
+    return func(*args, **kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_blob_client.py", line 942, in download_blob
+    return StorageStreamDownloader(**options)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_download.py", line 366, in __init__
+    self._response = self._initial_request()
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_download.py", line 462, in _initial_request
+    process_storage_error(error)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_shared/response_handlers.py", line 184, in process_storage_error
+    exec("raise error from None")   # pylint: disable=exec-used # nosec
+  File "<string>", line 1, in <module>
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_download.py", line 414, in _initial_request
+    location_mode, response = self._clients.blob.download(
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/core/tracing/decorator.py", line 78, in wrapper_use_tracer
+    return func(*args, **kwargs)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/storage/blob/_generated/operations/_blob_operations.py", line 1611, in download
+    map_error(status_code=response.status_code, response=response, error_map=error_map)
+  File "/home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/azure/core/exceptions.py", line 165, in map_error
+    raise error
+azure.core.exceptions.ResourceNotFoundError: The specified blob does not exist.
+RequestId:7bf8acac-e01e-0030-43ae-34ac04000000
+Time:2023-12-22T08:09:10.6000847Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:7bf8acac-e01e-0030-43ae-34ac04000000
+Time:2023-12-22T08:09:10.6000847Z</Message></Error>
+[2023-12-22T16:09:13.366+0800] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=fantasy_premier_league_debug, task_id=move_silver_file_into_archive_folder_test, execution_date=20231222T080902, start_date=20231222T080911, end_date=20231222T080913
+[2023-12-22T16:09:13.389+0800] {standard_task_runner.py:104} ERROR - Failed to execute job 218 for task move_silver_file_into_archive_folder_test (The specified blob does not exist.
+RequestId:7bf8acac-e01e-0030-43ae-34ac04000000
+Time:2023-12-22T08:09:10.6000847Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:7bf8acac-e01e-0030-43ae-34ac04000000
+Time:2023-12-22T08:09:10.6000847Z</Message></Error>; 108880)
+[2023-12-22T16:09:13.425+0800] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-22T16:09:13.442+0800] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
