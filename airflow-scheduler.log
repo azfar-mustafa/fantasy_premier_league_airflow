@@ -4347,3 +4347,11 @@ werkzeug.exceptions.Forbidden: 403 Forbidden: You don't have the permission to a
 2023-12-22 17:24:11,587 INFO - DagRun Finished: dag_id=fantasy_premier_league_debug, execution_date=2023-12-22 09:23:45.365627+00:00, run_id=manual__2023-12-22T09:23:45.365627+00:00, run_start_date=2023-12-22 09:23:46.983287+00:00, run_end_date=2023-12-22 09:24:11.586894+00:00, run_duration=24.603607, state=success, external_trigger=True, run_type=manual, data_interval_start=2023-12-21 09:23:45.365627+00:00, data_interval_end=2023-12-22 09:23:45.365627+00:00, dag_hash=e8b21b84052589753889a3e87d30fdaa
 2023-12-22 17:25:21,602 INFO - Adopting or resetting orphaned tasks for active dag runs
 2023-12-22 17:30:21,652 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-12-22 17:33:47,356 INFO - Exiting gracefully upon receiving signal 15
+2023-12-22 17:33:48,378 INFO - Sending Signals.SIGTERM to group 110503. PIDs of all processes in the group: [110503]
+2023-12-22 17:33:48,379 INFO - Sending the signal Signals.SIGTERM to group 110503
+2023-12-22 17:33:48,715 INFO - Process psutil.Process(pid=110503, status='terminated', exitcode=0, started='16:30:01') (110503) terminated with exit code 0
+2023-12-22 17:33:48,726 INFO - Sending Signals.SIGTERM to group 110503. PIDs of all processes in the group: []
+2023-12-22 17:33:48,726 INFO - Sending the signal Signals.SIGTERM to group 110503
+2023-12-22 17:33:48,727 INFO - Sending the signal Signals.SIGTERM to process 110503 as process group is missing.
+2023-12-22 17:33:48,727 INFO - Exited execute loop

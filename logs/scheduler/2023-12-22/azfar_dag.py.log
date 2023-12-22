@@ -1524,3 +1524,24 @@ NameError: name 'move_silver_file_into_archive_folder_test' is not defined
 [2023-12-22T17:31:46.517+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:31:46.516+0800] {dag.py:2941} INFO - Sync 1 DAGs
 [2023-12-22T17:31:46.541+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:31:46.541+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-22T07:50:34.065040+00:00, run_after=2023-12-23T07:50:34.065040+00:00
 [2023-12-22T17:31:46.567+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py took 0.132 seconds
+[2023-12-22T17:32:16.989+0800] {processor.py:157} INFO - Started process (PID=115561) to work on /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py
+[2023-12-22T17:32:16.994+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py for tasks to queue
+[2023-12-22T17:32:16.996+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:16.995+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py
+[2023-12-22T17:32:17.042+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py
+[2023-12-22T17:32:17.059+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:17.059+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-22T17:32:17.078+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:17.078+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-22T07:50:34.065040+00:00, run_after=2023-12-23T07:50:34.065040+00:00
+[2023-12-22T17:32:17.103+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py took 0.118 seconds
+[2023-12-22T17:32:47.544+0800] {processor.py:157} INFO - Started process (PID=115604) to work on /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py
+[2023-12-22T17:32:47.546+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py for tasks to queue
+[2023-12-22T17:32:47.548+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:47.548+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py
+[2023-12-22T17:32:47.595+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py
+[2023-12-22T17:32:47.610+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:47.610+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-22T17:32:47.627+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:47.626+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-22T07:50:34.065040+00:00, run_after=2023-12-23T07:50:34.065040+00:00
+[2023-12-22T17:32:47.652+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py took 0.111 seconds
+[2023-12-22T17:33:18.073+0800] {processor.py:157} INFO - Started process (PID=115639) to work on /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py
+[2023-12-22T17:33:18.079+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py for tasks to queue
+[2023-12-22T17:33:18.081+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:33:18.080+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py
+[2023-12-22T17:33:18.133+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league_debug']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py
+[2023-12-22T17:33:18.155+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:33:18.155+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-22T17:33:18.174+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:33:18.174+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league_debug to 2023-12-22T07:50:34.065040+00:00, run_after=2023-12-23T07:50:34.065040+00:00
+[2023-12-22T17:33:18.202+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/azfar_dag.py took 0.134 seconds

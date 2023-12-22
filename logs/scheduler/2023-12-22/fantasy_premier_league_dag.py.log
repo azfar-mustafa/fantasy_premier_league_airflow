@@ -1518,3 +1518,27 @@
 [2023-12-22T17:31:45.625+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:31:45.624+0800] {dag.py:2941} INFO - Sync 1 DAGs
 [2023-12-22T17:31:45.643+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:31:45.643+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league to 2023-12-22T08:25:26.717901+00:00, run_after=2023-12-23T08:25:26.717901+00:00
 [2023-12-22T17:31:45.707+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py took 0.171 seconds
+[2023-12-22T17:32:16.106+0800] {processor.py:157} INFO - Started process (PID=115547) to work on /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py
+[2023-12-22T17:32:16.113+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py for tasks to queue
+[2023-12-22T17:32:16.116+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:16.116+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py
+[2023-12-22T17:32:16.165+0800] {logging_mixin.py:154} WARNING - /home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-22T17:32:16.169+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py
+[2023-12-22T17:32:16.193+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:16.193+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-22T17:32:16.210+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:16.210+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league to 2023-12-22T08:25:26.717901+00:00, run_after=2023-12-23T08:25:26.717901+00:00
+[2023-12-22T17:32:16.242+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py took 0.143 seconds
+[2023-12-22T17:32:46.659+0800] {processor.py:157} INFO - Started process (PID=115596) to work on /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py
+[2023-12-22T17:32:46.663+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py for tasks to queue
+[2023-12-22T17:32:46.665+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:46.665+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py
+[2023-12-22T17:32:46.733+0800] {logging_mixin.py:154} WARNING - /home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-22T17:32:46.737+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py
+[2023-12-22T17:32:46.762+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:46.762+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-22T17:32:46.778+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:32:46.778+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league to 2023-12-22T08:25:26.717901+00:00, run_after=2023-12-23T08:25:26.717901+00:00
+[2023-12-22T17:32:46.804+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py took 0.150 seconds
+[2023-12-22T17:33:17.196+0800] {processor.py:157} INFO - Started process (PID=115631) to work on /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py
+[2023-12-22T17:33:17.201+0800] {processor.py:829} INFO - Processing file /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py for tasks to queue
+[2023-12-22T17:33:17.204+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:33:17.203+0800] {dagbag.py:536} INFO - Filling up the DagBag from /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py
+[2023-12-22T17:33:17.265+0800] {logging_mixin.py:154} WARNING - /home/azfarmustafa/airflow_tutorial/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2023-12-22T17:33:17.270+0800] {processor.py:839} INFO - DAG(s) dict_keys(['fantasy_premier_league']) retrieved from /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py
+[2023-12-22T17:33:17.299+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:33:17.299+0800] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-22T17:33:17.315+0800] {logging_mixin.py:154} INFO - [2023-12-22T17:33:17.315+0800] {dag.py:3722} INFO - Setting next_dagrun for fantasy_premier_league to 2023-12-22T08:25:26.717901+00:00, run_after=2023-12-23T08:25:26.717901+00:00
+[2023-12-22T17:33:17.341+0800] {processor.py:179} INFO - Processing /home/azfarmustafa/airflow_tutorial/dags/fantasy_premier_league_dag.py took 0.157 seconds
