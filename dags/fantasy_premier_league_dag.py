@@ -169,7 +169,12 @@ def get_old_date(**kwargs):
     non_recent_date = min_date.strftime("%d%m%Y")
     print(non_recent_date)
 
-    kwargs['ti'].xcom_push(key='my_key', value=non_recent_date)
+    current_date = datetime.now().strftime("%d%m%Y")
+
+    if non_recent_date != current_date:
+        kwargs['ti'].xcom_push(key='my_key', value=non_recent_date)
+    else:
+        print("Value is same as current date. Not pushing.")
 
 
 
@@ -178,38 +183,41 @@ def move_bronze_file_into_archive_folder(**kwargs):
     formatted_current_date = ti.xcom_pull(task_ids='get_old_date', key='my_key')
 
     print(f"value {formatted_current_date}")
+
+    if formatted_current_date is not None:
+        container_name = 'bronze'
     
-    container_name = 'bronze'
-    
-    az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-    list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
-    new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
-    print("File is renamed")
-    print(new_list_of_files)
- 
-    for folder_name in  new_list_of_files:
-        print(folder_name)
-        blob_name = f"{folder_name}_{formatted_current_date}.json"
-        blob_path = f"{folder_name}/current/{formatted_current_date}/{blob_name}"
-        virtual_folder_path = f"{folder_name}/archive/{formatted_current_date}/"
-
-
-        temp_dir = tempfile.mkdtemp()
-        print("Created local temporary folder")
-        print(blob_path)
-        temp_file_path = os.path.join(temp_dir, blob_name)
-
         az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-        az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=blob_path)
-        print(f"File is downloaded at {temp_dir}")
+        list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
+        new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
+        print("File is renamed")
+        print(new_list_of_files)
+    
+        for folder_name in  new_list_of_files:
+            print(folder_name)
+            blob_name = f"{folder_name}_{formatted_current_date}.json"
+            blob_path = f"{folder_name}/current/{formatted_current_date}/{blob_name}"
+            virtual_folder_path = f"{folder_name}/archive/{formatted_current_date}/"
 
-        az_hook.load_file(
-                    file_path=temp_file_path,
-                    container_name=container_name,
-                    blob_name=f"{virtual_folder_path}{blob_name}",
-                    overwrite=True
-                )
-        print(f"File is copied to archive")
+
+            temp_dir = tempfile.mkdtemp()
+            print("Created local temporary folder")
+            print(blob_path)
+            temp_file_path = os.path.join(temp_dir, blob_name)
+
+            az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
+            az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=blob_path)
+            print(f"File is downloaded at {temp_dir}")
+
+            az_hook.load_file(
+                        file_path=temp_file_path,
+                        container_name=container_name,
+                        blob_name=f"{virtual_folder_path}{blob_name}",
+                        overwrite=True
+                    )
+            print(f"File is copied to archive")
+    else:
+        print("No file is archived")
 
 
 def delete_file_in_actual_folder(**kwargs):
@@ -220,26 +228,29 @@ def delete_file_in_actual_folder(**kwargs):
     ti = kwargs['ti']
     formatted_current_date = ti.xcom_pull(task_ids='get_old_date', key='my_key')
 
-    container_name = 'bronze'
+    if formatted_current_date is not None:
+        container_name = 'bronze'
 
-    file_system_name = 'bronze'
-    
+        file_system_name = 'bronze'
 
-    # Delete directory and the file
 
-    az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-    list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
-    new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
+        # Delete directory and the file
 
-    for folder_name in new_list_of_files:
-        directory_to_delete = f"{folder_name}/current/{formatted_current_date}"
-        adls_hook = AzureDataLakeStorageV2Hook(adls_conn_id=AZURE_BLOB_CONN_ID)
-        print("Client is created")
-        try:
-            adls_hook.delete_directory(file_system_name, directory_to_delete)
-            print(f"Folder '{directory_to_delete}' deleted successfully.")
-        except Exception as e:
-            print(f"Fail to delete because of {str(e)}")
+        az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
+        list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
+        new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
+
+        for folder_name in new_list_of_files:
+            directory_to_delete = f"{folder_name}/current/{formatted_current_date}"
+            adls_hook = AzureDataLakeStorageV2Hook(adls_conn_id=AZURE_BLOB_CONN_ID)
+            print("Client is created")
+            try:
+                adls_hook.delete_directory(file_system_name, directory_to_delete)
+                print(f"Folder '{directory_to_delete}' deleted successfully.")
+            except Exception as e:
+                print(f"Fail to delete because of {str(e)}")
+    else:
+        print("No file is deleted")
 
 
 def current_season_history_bronze_to_silver():
@@ -448,7 +459,12 @@ def get_silver_old_date(**kwargs):
     non_recent_date = min_date.strftime("%d%m%Y")
     print(non_recent_date)
 
-    kwargs['ti'].xcom_push(key='my_key', value=non_recent_date)
+    current_date = datetime.now().strftime("%d%m%Y")
+
+    if non_recent_date != current_date:
+        kwargs['ti'].xcom_push(key='my_key', value=non_recent_date)
+    else:
+        print("Value is same as current date. Not pushing.")
 
 
 def move_silver_file_into_archive_folder(**kwargs):
@@ -456,38 +472,41 @@ def move_silver_file_into_archive_folder(**kwargs):
     formatted_current_date = ti.xcom_pull(task_ids='get_silver_old_date', key='my_key')
 
     print(f"value {formatted_current_date}")
-    
-    container_name = 'silver'
-    
-    az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-    list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
-    new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
-    print("File is renamed")
-    print(new_list_of_files)
- 
-    for folder_name in  new_list_of_files:
-        print(folder_name)
-        blob_name = f"{folder_name}_{formatted_current_date}.parquet"
-        blob_path = f"{folder_name}/current/{formatted_current_date}/{blob_name}"
-        virtual_folder_path = f"{folder_name}/archive/{formatted_current_date}/"
+
+    if formatted_current_date is not None:
+            container_name = 'silver'
+
+            az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
+            list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
+            new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
+            print("File is renamed")
+            print(new_list_of_files)
+
+            for folder_name in  new_list_of_files:
+                print(folder_name)
+                blob_name = f"{folder_name}_{formatted_current_date}.parquet"
+                blob_path = f"{folder_name}/current/{formatted_current_date}/{blob_name}"
+                virtual_folder_path = f"{folder_name}/archive/{formatted_current_date}/"
 
 
-        temp_dir = tempfile.mkdtemp()
-        print("Created local temporary folder")
-        print(blob_path)
-        temp_file_path = os.path.join(temp_dir, blob_name)
+                temp_dir = tempfile.mkdtemp()
+                print("Created local temporary folder")
+                print(blob_path)
+                temp_file_path = os.path.join(temp_dir, blob_name)
 
-        az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-        az_hook.get_file(file_path=temp_file_path, container_name=container_name, blob_name=blob_path)
-        print(f"File is downloaded at {temp_dir}")
+                az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
+                az_hook.get_file(file_path=temp_file_path, container_name=container_name, blob_name=blob_path)
+                print(f"File is downloaded at {temp_dir}")
 
-        az_hook.load_file(
-                    file_path=temp_file_path,
-                    container_name=container_name,
-                    blob_name=f"{virtual_folder_path}{blob_name}",
-                    overwrite=True
-                )
-        print(f"File is copied to archive")
+                az_hook.load_file(
+                            file_path=temp_file_path,
+                            container_name=container_name,
+                            blob_name=f"{virtual_folder_path}{blob_name}",
+                            overwrite=True
+                        )
+                print(f"File is copied to archive")
+    else:
+        print("No file is archived")
 
 
 def delete_old_file_in_silver_folder(**kwargs):
