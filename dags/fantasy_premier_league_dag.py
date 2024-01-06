@@ -37,7 +37,7 @@ dag = DAG(
 def extract_data_from_api(**kwargs):
     ti = kwargs['ti']
     api_result = ti.xcom_pull(task_ids='fetch_fpl_api_data')
-    print("API Result:", api_result)
+    logging.info("API Result:", api_result)
 
     if not api_result:
         logging.error("API result not found in XCom")
@@ -70,7 +70,7 @@ def upload_to_blob(**kwargs):
             with tempfile.NamedTemporaryFile(mode='w+', delete=False) as temp_file:
                 json.dump(data, temp_file, indent=4)
                 temp_file_path = temp_file.name
-            print(f"Temporary file created: {temp_file_path}")
+            logging.info(f"Temporary file created: {temp_file_path}")
             az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
             az_hook.load_file(
                 file_path=temp_file_path,
@@ -79,10 +79,10 @@ def upload_to_blob(**kwargs):
                 overwrite=True
             )
             os.remove(temp_file_path)
-            print(f"Temporary file removed: {temp_file_path}")
-            logging.info(f"File uploaded to Azure Blob Storage: {container_name}/{blob_name}")
+            logging.info(f"Temporary file removed: {temp_file_path}")
+            logging.info(f"File uploaded into Bronze container in Azure Blob Storage: {container_name}/{blob_name}")
     except Exception as e:
-        logging.error(f"Error uploading to Azure Blob Storage: {e}")
+        logging.error(f"Error uploading file into Bronze container in Azure Blob Storage: {e}", exc_info=True)
 
 
 
@@ -94,7 +94,7 @@ def download_file_from_blob():
     formatted_current_date = myt_timestamp.strftime("%d%m%Y")
 
     temp_dir = tempfile.mkdtemp()
-    print(f"Temporary directory created: {temp_dir}")
+    logging.info(f"Temporary directory created: {temp_dir}")
 
     blob_path = f"player_metadata/current/{formatted_current_date}/player_metadata_{formatted_current_date}.json"
     blob_name = f"player_metadata_{formatted_current_date}.json"
@@ -102,14 +102,13 @@ def download_file_from_blob():
 
     az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
     az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=blob_path)
-    print(f"File is downloaded at {temp_dir}")
+    logging.info(f"File is downloaded at {temp_dir}")
 
     with open(temp_file_path, "r") as json_file:
         main_json_file = json.load(json_file)
-        print(type(main_json_file))
 
     os.remove(temp_file_path)
-    print(f"File is deleted in {temp_dir}")
+    logging.info(f"File {blob_name} is deleted in local temporary directory - {temp_dir}")
 
 
     current_season_history_file_name = f"current_season_history_{formatted_current_date}.json"
@@ -125,15 +124,14 @@ def download_file_from_blob():
         response = requests.get(url, timeout=60)
         if response.status_code == 200:
             player_data = response.json()
-            print(type(player_data))
             current_season_past_fixture = player_data['history']
             all_dict.extend(current_season_past_fixture)
-            print(f"Added player id {player_id} in dictionary.")
+            logging.info(f"Added player id {player_id} in dictionary.")
 
 
     with open(player_id_local_file_path, 'w') as local_file_player_id:
         json.dump(all_dict, local_file_player_id, indent=4)
-        print(f"{player_id_local_file_path} is created")
+        logging.info(f"{player_id_local_file_path} is created")
 
     current_season_history_blob_name = f"current_season_history/current/{formatted_current_date}/{current_season_history_file_name}"
     az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
@@ -143,14 +141,14 @@ def download_file_from_blob():
             blob_name=current_season_history_blob_name,
             overwrite=True
         )
-    print(f"File is uploaded at blob")
+    logging.info(f"File {current_season_history_file_name} is uploaded at into Bronze container")
     
 
     os.remove(player_id_local_file_path)
-    print(f"File is deleted in {temp_dir}")
+    logging.info(f"File {current_season_history_file_name} is deleted in local temporary directory - {temp_dir}")
 
     os.rmdir(temp_dir)
-    print(f"Directory is deleted in {temp_dir}")
+    logging.info(f"Local temporary directory - {temp_dir} is deleted")
 
 
 def get_old_date(**kwargs):
@@ -167,14 +165,15 @@ def get_old_date(**kwargs):
     datetime_dates = [datetime.strptime(date, "%d%m%Y") for date in date_counts]
     min_date = min(datetime_dates)
     non_recent_date = min_date.strftime("%d%m%Y")
-    print(non_recent_date)
+    logging.info(f"The old date is {non_recent_date}")
 
     current_date = datetime.now().strftime("%d%m%Y")
 
     if non_recent_date != current_date:
         kwargs['ti'].xcom_push(key='my_key', value=non_recent_date)
+        logging.info(f"Date {non_recent_date} is pushed to xcom.")
     else:
-        print("Value is same as current date. Not pushing.")
+        logging.info("Value is same as current date. Not pushing.")
 
 
 
@@ -182,7 +181,7 @@ def move_bronze_file_into_archive_folder(**kwargs):
     ti = kwargs['ti']
     formatted_current_date = ti.xcom_pull(task_ids='get_old_date', key='my_key')
 
-    print(f"value {formatted_current_date}")
+    logging.info(f"Date processed is {formatted_current_date}")
 
     if formatted_current_date is not None:
         container_name = 'bronze'
@@ -190,24 +189,23 @@ def move_bronze_file_into_archive_folder(**kwargs):
         az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
         list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
         new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
-        print("File is renamed")
-        print(new_list_of_files)
+        logging.info("File is renamed")
+        logging.info(new_list_of_files)
     
         for folder_name in  new_list_of_files:
-            print(folder_name)
+            logging.info(f"Folder name is {folder_name}")
             blob_name = f"{folder_name}_{formatted_current_date}.json"
             blob_path = f"{folder_name}/current/{formatted_current_date}/{blob_name}"
             virtual_folder_path = f"{folder_name}/archive/{formatted_current_date}/"
 
 
             temp_dir = tempfile.mkdtemp()
-            print("Created local temporary folder")
-            print(blob_path)
+            logging.info(f"Created local temporary folder - {temp_dir}")
             temp_file_path = os.path.join(temp_dir, blob_name)
 
             az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
             az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=blob_path)
-            print(f"File is downloaded at {temp_dir}")
+            logging.info(f"File is downloaded at {temp_dir}")
 
             az_hook.load_file(
                         file_path=temp_file_path,
@@ -215,9 +213,9 @@ def move_bronze_file_into_archive_folder(**kwargs):
                         blob_name=f"{virtual_folder_path}{blob_name}",
                         overwrite=True
                     )
-            print(f"File is copied to archive")
+            logging.info(f"File {blob_name} is copied to archive - {virtual_folder_path}")
     else:
-        print("No file is archived")
+        logging.info("No file is archived")
 
 
 def delete_file_in_actual_folder(**kwargs):
@@ -243,14 +241,14 @@ def delete_file_in_actual_folder(**kwargs):
         for folder_name in new_list_of_files:
             directory_to_delete = f"{folder_name}/current/{formatted_current_date}"
             adls_hook = AzureDataLakeStorageV2Hook(adls_conn_id=AZURE_BLOB_CONN_ID)
-            print("Client is created")
+            logging.info("Client is created")
             try:
                 adls_hook.delete_directory(file_system_name, directory_to_delete)
-                print(f"Folder '{directory_to_delete}' deleted successfully.")
+                logging.info(f"Folder '{directory_to_delete}' deleted successfully.")
             except Exception as e:
-                print(f"Fail to delete because of {str(e)}")
+                logging.error(f"Fail to delete folder {directory_to_delete} because of {str(e)}", exc_info=True)
     else:
-        print("No file is deleted")
+        logging.info("No file is deleted")
 
 
 def current_season_history_bronze_to_silver():
@@ -261,7 +259,7 @@ def current_season_history_bronze_to_silver():
     formatted_current_date = myt_timestamp.strftime("%d%m%Y")
 
     temp_dir = tempfile.mkdtemp()
-    print(f"Temporary directory is created: {temp_dir}")
+    logging.info(f"Temporary directory is created: {temp_dir}")
 
     bronze_blob_folder_path = f"current_season_history/current/{formatted_current_date}"
     blob_name = f"current_season_history_{formatted_current_date}.json"
@@ -274,12 +272,12 @@ def current_season_history_bronze_to_silver():
 
     az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
     az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=bronze_blob_path)
-    print(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
+    logging.info(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
 
     duckdb.sql(f"CREATE TABLE current_season_history AS SELECT * FROM read_json_auto('{temp_file_path}')")
-    print(f"Table current_season_history is created")
+    logging.info(f"Table current_season_history is created")
     duckdb.sql(f"COPY (SELECT * FROM current_season_history) TO '{silver_parquet_file_full_path}' (FORMAT PARQUET)")
-    print(f"Copy data from table current_season_history into file {parquet_file_name}")
+    logging.info(f"Copy data from table current_season_history into file {parquet_file_name}")
 
     az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
     az_hook.load_file(
@@ -288,16 +286,16 @@ def current_season_history_bronze_to_silver():
             blob_name=silver_blob_name,
             overwrite=True
         )
-    print(f"File {parquet_file_name} is uploaded into silver container")
+    logging.info(f"File {parquet_file_name} is uploaded into silver container")
     
     os.remove(silver_parquet_file_full_path)
-    print(f"{silver_parquet_file_full_path} is removed")
+    logging.info(f"{silver_parquet_file_full_path} is removed")
 
     os.remove(temp_file_path)
-    print(f"{temp_file_path} is removed")
+    logging.info(f"{temp_file_path} is removed")
 
     os.rmdir(temp_dir)
-    print(f"{temp_dir} is removed")
+    logging.info(f"{temp_dir} is removed")
 
 
 def player_metadata_bronze_to_silver():
@@ -308,7 +306,7 @@ def player_metadata_bronze_to_silver():
     formatted_current_date = myt_timestamp.strftime("%d%m%Y")
 
     temp_dir = tempfile.mkdtemp()
-    print(f"Temporary directory is created: {temp_dir}")
+    logging.info(f"Temporary directory is created: {temp_dir}")
 
     bronze_blob_folder_path = f"player_metadata/current/{formatted_current_date}"
     blob_name = f"player_metadata_{formatted_current_date}.json"
@@ -321,12 +319,12 @@ def player_metadata_bronze_to_silver():
 
     az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
     az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=bronze_blob_path)
-    print(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
+    logging.info(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
 
     duckdb.sql(f"CREATE TABLE player_metadata AS SELECT *, CONCAT(first_name, ' ', second_name) as full_name, now_cost/10 as latest_price FROM read_json_auto('{temp_file_path}')")
-    print(f"Table player_metadata is created")
+    logging.info(f"Table player_metadata is created")
     duckdb.sql(f"COPY (SELECT * FROM player_metadata) TO '{silver_parquet_file_full_path}' (FORMAT PARQUET)")
-    print(f"Copy data from table player_metadata into file {parquet_file_name}")
+    logging.info(f"Copy data from table player_metadata into file {parquet_file_name}")
 
     az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
     az_hook.load_file(
@@ -335,16 +333,16 @@ def player_metadata_bronze_to_silver():
             blob_name=silver_blob_name,
             overwrite=True
         )
-    print(f"File {parquet_file_name} is uploaded into silver container")
+    logging.info(f"File {parquet_file_name} is uploaded into silver container")
     
     os.remove(silver_parquet_file_full_path)
-    print(f"{silver_parquet_file_full_path} is removed")
+    logging.info(f"{silver_parquet_file_full_path} is removed")
 
     os.remove(temp_file_path)
-    print(f"{temp_file_path} is removed")
+    logging.info(f"{temp_file_path} is removed")
 
     os.rmdir(temp_dir)
-    print(f"{temp_dir} is removed")
+    logging.info(f"{temp_dir} is removed")
 
 
 def position_metadata_bronze_to_silver():
@@ -355,7 +353,7 @@ def position_metadata_bronze_to_silver():
     formatted_current_date = myt_timestamp.strftime("%d%m%Y")
 
     temp_dir = tempfile.mkdtemp()
-    print(f"Temporary directory is created: {temp_dir}")
+    logging.info(f"Temporary directory is created: {temp_dir}")
 
     bronze_blob_folder_path = f"position_metadata/current/{formatted_current_date}"
     blob_name = f"position_metadata_{formatted_current_date}.json"
@@ -368,12 +366,12 @@ def position_metadata_bronze_to_silver():
 
     az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
     az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=bronze_blob_path)
-    print(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
+    logging.info(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
 
     duckdb.sql(f"CREATE TABLE position_metadata AS SELECT * FROM read_json_auto('{temp_file_path}')")
-    print(f"Table position_metadata is created")
+    logging.info(f"Table position_metadata is created")
     duckdb.sql(f"COPY (SELECT * FROM position_metadata) TO '{silver_parquet_file_full_path}' (FORMAT PARQUET)")
-    print(f"Copy data from table position_metadata into file {parquet_file_name}")
+    logging.info(f"Copy data from table position_metadata into file {parquet_file_name}")
 
     az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
     az_hook.load_file(
@@ -382,16 +380,16 @@ def position_metadata_bronze_to_silver():
             blob_name=silver_blob_name,
             overwrite=True
         )
-    print(f"File {parquet_file_name} is uploaded into silver container")
+    logging.info(f"File {parquet_file_name} is uploaded into silver container")
     
     os.remove(silver_parquet_file_full_path)
-    print(f"{silver_parquet_file_full_path} is removed")
+    logging.info(f"{silver_parquet_file_full_path} is removed")
 
     os.remove(temp_file_path)
-    print(f"{temp_file_path} is removed")
+    logging.info(f"{temp_file_path} is removed")
 
     os.rmdir(temp_dir)
-    print(f"{temp_dir} is removed")
+    logging.info(f"{temp_dir} is removed")
 
 
 def teams_metadata_bronze_to_silver():
@@ -402,7 +400,7 @@ def teams_metadata_bronze_to_silver():
     formatted_current_date = myt_timestamp.strftime("%d%m%Y")
 
     temp_dir = tempfile.mkdtemp()
-    print(f"Temporary directory is created: {temp_dir}")
+    logging.info(f"Temporary directory is created: {temp_dir}")
 
     bronze_blob_folder_path = f"teams_metadata/current/{formatted_current_date}"
     blob_name = f"teams_metadata_{formatted_current_date}.json"
@@ -413,14 +411,16 @@ def teams_metadata_bronze_to_silver():
     silver_blob_name = f"teams_metadata/current/{formatted_current_date}/{parquet_file_name}"
     silver_parquet_file_full_path = os.path.join(temp_dir, parquet_file_name)
 
+    table_name = "teams_metadata"
+
     az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
     az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=bronze_blob_path)
-    print(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
+    logging.info(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
 
-    duckdb.sql(f"CREATE TABLE teams_metadata AS SELECT * FROM read_json_auto('{temp_file_path}')")
-    print(f"Table teams_metadata is created")
-    duckdb.sql(f"COPY (SELECT * FROM teams_metadata) TO '{silver_parquet_file_full_path}' (FORMAT PARQUET)")
-    print(f"Copy data from table teams_metadata into file {parquet_file_name}")
+    duckdb.sql(f"CREATE TABLE {table_name} AS SELECT * FROM read_json_auto('{temp_file_path}')")
+    logging.info(f"Table {table_name} is created")
+    duckdb.sql(f"COPY (SELECT * FROM {table_name}) TO '{silver_parquet_file_full_path}' (FORMAT PARQUET)")
+    logging.info(f"Copy data from table {table_name} into file {parquet_file_name}")
 
     az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
     az_hook.load_file(
@@ -429,49 +429,50 @@ def teams_metadata_bronze_to_silver():
             blob_name=silver_blob_name,
             overwrite=True
         )
-    print(f"File {parquet_file_name} is uploaded into silver container")
+    logging.info(f"File {parquet_file_name} is uploaded into silver container")
     
     os.remove(silver_parquet_file_full_path)
-    print(f"{silver_parquet_file_full_path} is removed")
+    logging.info(f"{silver_parquet_file_full_path} is removed")
 
     os.remove(temp_file_path)
-    print(f"{temp_file_path} is removed")
+    logging.info(f"{temp_file_path} is removed")
 
     os.rmdir(temp_dir)
-    print(f"{temp_dir} is removed")
+    logging.info(f"{temp_dir} is removed")
 
 
 def get_silver_old_date(**kwargs):
     container_name = 'silver'
     az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
     list_of_files = az_hook.get_blobs_list_recursive(container_name=container_name) #To get the first level blob name
-    print(f"List of files - {list_of_files}")
+    logging.info(f"List of files - {list_of_files}")
     date_counts = set()
     for path in list_of_files:
         parts = path.split('/')
-        print(f"Parts - {parts}")
+        logging.info(f"Parts - {parts}")
         if len(parts) > 2 and parts[2].isdigit() and "current" in parts:
             date_counts.add(parts[2])
 
     datetime_dates = [datetime.strptime(date, "%d%m%Y") for date in date_counts]
-    print(datetime_dates)
+    logging.info(datetime_dates)
     min_date = min(datetime_dates)
     non_recent_date = min_date.strftime("%d%m%Y")
-    print(non_recent_date)
+    logging.info(non_recent_date)
 
     current_date = datetime.now().strftime("%d%m%Y")
 
     if non_recent_date != current_date:
         kwargs['ti'].xcom_push(key='my_key', value=non_recent_date)
+        logging.info(f"Date {non_recent_date} is pushed to xcom.")
     else:
-        print("Value is same as current date. Not pushing.")
+        logging.info("Value is same as current date. Not pushing.")
 
 
 def move_silver_file_into_archive_folder(**kwargs):
     ti = kwargs['ti']
     formatted_current_date = ti.xcom_pull(task_ids='get_silver_old_date', key='my_key')
 
-    print(f"value {formatted_current_date}")
+    logging.info(f"Date processed is {formatted_current_date}")
 
     if formatted_current_date is not None:
             container_name = 'silver'
@@ -479,24 +480,24 @@ def move_silver_file_into_archive_folder(**kwargs):
             az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
             list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
             new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
-            print("File is renamed")
-            print(new_list_of_files)
+            logging.info("File is renamed")
+            logging.info(new_list_of_files)
 
             for folder_name in  new_list_of_files:
-                print(folder_name)
+                logging.info(folder_name)
                 blob_name = f"{folder_name}_{formatted_current_date}.parquet"
                 blob_path = f"{folder_name}/current/{formatted_current_date}/{blob_name}"
                 virtual_folder_path = f"{folder_name}/archive/{formatted_current_date}/"
 
 
                 temp_dir = tempfile.mkdtemp()
-                print("Created local temporary folder")
-                print(blob_path)
+                logging.info(f"Created local temporary folder - {temp_dir}")
                 temp_file_path = os.path.join(temp_dir, blob_name)
+                logging.info(f"Created full path to download blob into local temporary folder - {temp_file_path}")
 
                 az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
                 az_hook.get_file(file_path=temp_file_path, container_name=container_name, blob_name=blob_path)
-                print(f"File is downloaded at {temp_dir}")
+                logging.info(f"File is downloaded at {temp_dir}")
 
                 az_hook.load_file(
                             file_path=temp_file_path,
@@ -504,9 +505,9 @@ def move_silver_file_into_archive_folder(**kwargs):
                             blob_name=f"{virtual_folder_path}{blob_name}",
                             overwrite=True
                         )
-                print(f"File is copied to archive")
+                logging.info(f"File {blob_name} is copied to archive")
     else:
-        print("No file is archived")
+        logging.info("No file is archived")
 
 
 def delete_old_file_in_silver_folder(**kwargs):
@@ -516,6 +517,7 @@ def delete_old_file_in_silver_folder(**kwargs):
 
     ti = kwargs['ti']
     formatted_current_date = ti.xcom_pull(task_ids='get_silver_old_date', key='my_key')
+    logging.info(f"Date processed is {formatted_current_date}")
 
     container_name = 'silver'
 
@@ -531,12 +533,12 @@ def delete_old_file_in_silver_folder(**kwargs):
     for folder_name in new_list_of_files:
         directory_to_delete = f"{folder_name}/current/{formatted_current_date}"
         adls_hook = AzureDataLakeStorageV2Hook(adls_conn_id=AZURE_BLOB_CONN_ID)
-        print("Client is created")
+        logging.info("Client is created")
         try:
             adls_hook.delete_directory(file_system_name, directory_to_delete)
-            print(f"Folder '{directory_to_delete}' deleted successfully.")
+            logging.info(f"Folder '{directory_to_delete}' deleted successfully.")
         except Exception as e:
-            print(f"Fail to delete because of {str(e)}")
+            logging.error(f"Fail to delete directory {directory_to_delete} because of {str(e)}")
 
 
 
