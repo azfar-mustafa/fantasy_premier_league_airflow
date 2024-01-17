@@ -32,7 +32,9 @@ def upload_to_blob(**kwargs):
                 json.dump(data, temp_file, indent=4)
                 temp_file_path = temp_file.name
             logging.info(f"Temporary file created: {temp_file_path}")
+            print(AZURE_BLOB_CONN_ID)
             az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
+            print(az_hook)
             az_hook.load_file(
                 file_path=temp_file_path,
                 container_name=container_name,
