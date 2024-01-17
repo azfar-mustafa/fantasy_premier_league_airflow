@@ -227,11 +227,7 @@ class FantasyPremierLeague:
 
 
     def current_season_history_bronze_to_silver():
-        current_utc_timestamp = datetime.utcnow()
-        utc_timezone = pytz.timezone('UTC')
-        myt_timezone = pytz.timezone('Asia/Kuala_Lumpur')
-        myt_timestamp = utc_timezone.localize(current_utc_timestamp).astimezone(myt_timezone)
-        formatted_current_date = myt_timestamp.strftime("%d%m%Y")
+        formatted_current_date = FantasyPremierLeague._get_current_date()
 
         temp_dir = tempfile.mkdtemp()
         logging.info(f"Temporary directory is created: {temp_dir}")
@@ -274,11 +270,7 @@ class FantasyPremierLeague:
 
 
     def player_metadata_bronze_to_silver():
-        current_utc_timestamp = datetime.utcnow()
-        utc_timezone = pytz.timezone('UTC')
-        myt_timezone = pytz.timezone('Asia/Kuala_Lumpur')
-        myt_timestamp = utc_timezone.localize(current_utc_timestamp).astimezone(myt_timezone)
-        formatted_current_date = myt_timestamp.strftime("%d%m%Y")
+        formatted_current_date = FantasyPremierLeague._get_current_date()
 
         temp_dir = tempfile.mkdtemp()
         logging.info(f"Temporary directory is created: {temp_dir}")
@@ -321,11 +313,7 @@ class FantasyPremierLeague:
 
 
     def position_metadata_bronze_to_silver():
-        current_utc_timestamp = datetime.utcnow()
-        utc_timezone = pytz.timezone('UTC')
-        myt_timezone = pytz.timezone('Asia/Kuala_Lumpur')
-        myt_timestamp = utc_timezone.localize(current_utc_timestamp).astimezone(myt_timezone)
-        formatted_current_date = myt_timestamp.strftime("%d%m%Y")
+        formatted_current_date = FantasyPremierLeague._get_current_date()
 
         temp_dir = tempfile.mkdtemp()
         logging.info(f"Temporary directory is created: {temp_dir}")
@@ -368,11 +356,7 @@ class FantasyPremierLeague:
 
 
     def teams_metadata_bronze_to_silver():
-        current_utc_timestamp = datetime.utcnow()
-        utc_timezone = pytz.timezone('UTC')
-        myt_timezone = pytz.timezone('Asia/Kuala_Lumpur')
-        myt_timestamp = utc_timezone.localize(current_utc_timestamp).astimezone(myt_timezone)
-        formatted_current_date = myt_timestamp.strftime("%d%m%Y")
+        formatted_current_date = FantasyPremierLeague._get_current_date()
 
         temp_dir = tempfile.mkdtemp()
         logging.info(f"Temporary directory is created: {temp_dir}")
