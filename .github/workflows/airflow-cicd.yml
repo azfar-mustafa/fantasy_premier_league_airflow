@@ -32,17 +32,17 @@ jobs:
         pip install -r requirements.txt
         pip install apache-airflow
     
-    - name: Initialize Airflow Database
-      run: |
-        AIRFLOW_HOME=/home/runner/work/fantasy_premier_league_airflow/fantasy_premier_league_airflow 
-
-        mkdir -p $AIRFLOW_HOME/logs/scheduler/2023-12-21
-
-        airflow db init
-
-        airflow webserver &
-        
-        airflow scheduler &
+#    - name: Initialize Airflow Database
+#      run: |
+#        AIRFLOW_HOME=/home/runner/work/fantasy_premier_league_airflow/fantasy_premier_league_airflow 
+#
+#        mkdir -p $AIRFLOW_HOME/logs/scheduler/2023-12-21
+#
+#        airflow db init
+#
+#        airflow webserver &
+#        
+#        airflow scheduler &
         
 
     - name: Deploy Airflow DAGs
