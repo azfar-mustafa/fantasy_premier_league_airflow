@@ -12,6 +12,13 @@ from airflow.providers.microsoft.azure.hooks.data_lake import AzureDataLakeStora
 AZURE_BLOB_CONN_ID = 'azure_blob_conn_id'
 
 class FantasyPremierLeague:
+    def __init__(self):
+        self.bronze_container = 'bronze'
+        self.silver_container = 'silver'
+        self.local_temp_file_path = None
+        self.temp_dir = tempfile.mkdtemp()
+
+
     def extract_data_from_api(**kwargs):
         ti = kwargs['ti']
         api_result = ti.xcom_pull(task_ids='fetch_fpl_api_data')
@@ -24,6 +31,7 @@ class FantasyPremierLeague:
 
         return api_result_dict['events'], api_result_dict['teams'], api_result_dict['elements'], api_result_dict['element_types']
     
+
     def _get_current_date():
         current_utc_timestamp = datetime.utcnow()
         utc_timezone = pytz.timezone('UTC')
@@ -33,44 +41,48 @@ class FantasyPremierLeague:
         return formatted_current_date
 
 
-    def upload_to_blob(**kwargs):
+    def _upload_file_blob_connection(self, local_temp_file_path, destination_container, destination_blob_directory):
+        az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
+        az_hook.load_file(
+            file_path = local_temp_file_path,
+            container_name = destination_container,
+            blob_name = destination_blob_directory,
+            overwrite = True
+        )
+
+
+    def upload_to_blob(self, **kwargs):
         # To add idempotence concept before data is uploaded to blob.
-        file_date_azfar = FantasyPremierLeague._get_current_date()
+        formatted_current_date = FantasyPremierLeague._get_current_date()
         ti = kwargs.get('ti')
         new_dict = ti.xcom_pull(task_ids='extract_data_from_api')
 
         metadata = ['events_metadata', 'teams_metadata', 'player_metadata', 'position_metadata']
 
-        container_name = 'bronze'
 
         try:
             zipped_api = zip(metadata, new_dict)
             for attribute_name, data in zipped_api:
-                virtual_folder_path = f"{attribute_name}/current/{file_date_azfar}/"
-                blob_name = f"{attribute_name}_{file_date_azfar}.json"
+                full_blob_path = f"{attribute_name}/current/{formatted_current_date}/{attribute_name}_{formatted_current_date}.json"
+
                 with tempfile.NamedTemporaryFile(mode='w+', delete=False) as temp_file:
                     json.dump(data, temp_file, indent=4)
                     temp_file_path = temp_file.name
                 logging.info(f"Temporary file created: {temp_file_path}")
-                az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-                az_hook.load_file(
-                    file_path=temp_file_path,
-                    container_name=container_name,
-                    blob_name=f"{virtual_folder_path}{blob_name}",
-                    overwrite=True
-                )
+                
+                self._upload_file_blob_connection(temp_file_path, self.bronze_container, full_blob_path)
                 os.remove(temp_file_path)
                 logging.info(f"Temporary file removed: {temp_file_path}")
-                logging.info(f"File uploaded into Bronze container in Azure Blob Storage: {container_name}/{blob_name}")
+                logging.info(f"File uploaded into Bronze container in Azure Blob Storage: {full_blob_path}")
         except Exception as e:
             logging.error(f"Error uploading file into Bronze container in Azure Blob Storage: {e}", exc_info=True)
 
 
 
-    def download_file_from_blob():
+    def download_file_from_blob(self):
         formatted_current_date = FantasyPremierLeague._get_current_date()
 
-        temp_dir = tempfile.mkdtemp()
+        temp_dir = self.temp_dir
         logging.info(f"Temporary directory created: {temp_dir}")
 
         blob_path = f"player_metadata/current/{formatted_current_date}/player_metadata_{formatted_current_date}.json"
@@ -78,7 +90,7 @@ class FantasyPremierLeague:
         temp_file_path = os.path.join(temp_dir, blob_name)
 
         az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-        az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=blob_path)
+        az_hook.get_file(file_path=temp_file_path, container_name=self.bronze_container, blob_name=blob_path)
         logging.info(f"File is downloaded at {temp_dir}")
 
         with open(temp_file_path, "r") as json_file:
@@ -110,13 +122,7 @@ class FantasyPremierLeague:
             logging.info(f"{player_id_local_file_path} is created")
 
         current_season_history_blob_name = f"current_season_history/current/{formatted_current_date}/{current_season_history_file_name}"
-        az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-        az_hook.load_file(
-                file_path=player_id_local_file_path,
-                container_name='bronze',
-                blob_name=current_season_history_blob_name,
-                overwrite=True
-            )
+        self._upload_file_blob_connection(player_id_local_file_path, self.bronze_container, current_season_history_blob_name)
         logging.info(f"File {current_season_history_file_name} is uploaded at into Bronze container")
 
 
@@ -127,10 +133,9 @@ class FantasyPremierLeague:
         logging.info(f"Local temporary directory - {temp_dir} is deleted")
 
 
-    def get_old_date(**kwargs):
-        container_name = 'bronze'
+    def get_old_date(self, **kwargs):
         az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-        list_of_files = az_hook.get_blobs_list_recursive(container_name=container_name) #To get the first level blob name
+        list_of_files = az_hook.get_blobs_list_recursive(container_name=self.bronze_container) #To get the first level blob name
 
         date_counts = set()
         for path in list_of_files:
@@ -152,17 +157,16 @@ class FantasyPremierLeague:
             logging.info("Value is same as current date. Not pushing.")
 
 
-    def move_bronze_file_into_archive_folder(**kwargs):
+    def move_bronze_file_into_archive_folder(self, **kwargs):
         ti = kwargs['ti']
         formatted_current_date = ti.xcom_pull(task_ids='get_old_date', key='my_key')
 
         logging.info(f"Date processed is {formatted_current_date}")
 
         if formatted_current_date is not None:
-            container_name = 'bronze'
 
             az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-            list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
+            list_of_files = az_hook.get_blobs_list(container_name=self.bronze_container) #To get the first level blob name
             new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
             logging.info("File is renamed")
             logging.info(new_list_of_files)
@@ -174,26 +178,20 @@ class FantasyPremierLeague:
                 virtual_folder_path = f"{folder_name}/archive/{formatted_current_date}/"
 
 
-                temp_dir = tempfile.mkdtemp()
+                temp_dir = self.temp_dir
                 logging.info(f"Created local temporary folder - {temp_dir}")
                 temp_file_path = os.path.join(temp_dir, blob_name)
 
                 az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-                az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=blob_path)
+                az_hook.get_file(file_path=temp_file_path, container_name=self.bronze_container, blob_name=blob_path)
                 logging.info(f"File {blob_name} is downloaded at {temp_dir}")
 
-                az_hook.load_file(
-                            file_path=temp_file_path,
-                            container_name=container_name,
-                            blob_name=f"{virtual_folder_path}{blob_name}",
-                            overwrite=True
-                        )
-                logging.info(f"File {blob_name} is copied to archive - {virtual_folder_path}")
+                self._upload_file_blob_connection(temp_file_path, self.bronze_container, f"{virtual_folder_path}{blob_name}")
         else:
             logging.info("No file is archived")
 
 
-    def delete_file_in_actual_folder(**kwargs):
+    def delete_file_in_actual_folder(self, **kwargs):
         # Reference
         # https://airflow.apache.org/docs/apache-airflow-providers-microsoft-azure/stable/_api/airflow/providers/microsoft/azure/hooks/data_lake/index.html
         # https://airflow.apache.org/docs/apache-airflow-providers-microsoft-azure/stable/_api/airflow/providers/microsoft/azure/hooks/wasb/index.html
@@ -202,15 +200,10 @@ class FantasyPremierLeague:
         formatted_current_date = ti.xcom_pull(task_ids='get_old_date', key='my_key')
 
         if formatted_current_date is not None:
-            container_name = 'bronze'
-
-            file_system_name = 'bronze'
-
-
             # Delete directory and the file
 
             az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-            list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
+            list_of_files = az_hook.get_blobs_list(container_name=self.bronze_container) #To get the first level blob name
             new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
 
             for folder_name in new_list_of_files:
@@ -218,7 +211,7 @@ class FantasyPremierLeague:
                 adls_hook = AzureDataLakeStorageV2Hook(adls_conn_id=AZURE_BLOB_CONN_ID)
                 logging.info("Client is created")
                 try:
-                    adls_hook.delete_directory(file_system_name, directory_to_delete)
+                    adls_hook.delete_directory(self.bronze_container, directory_to_delete)
                     logging.info(f"Folder '{directory_to_delete}' deleted successfully.")
                 except Exception as e:
                     logging.error(f"Fail to delete folder {directory_to_delete} because of {str(e)}", exc_info=True)
@@ -226,10 +219,10 @@ class FantasyPremierLeague:
             logging.info("No file is deleted")
 
 
-    def current_season_history_bronze_to_silver():
+    def current_season_history_bronze_to_silver(self):
         formatted_current_date = FantasyPremierLeague._get_current_date()
 
-        temp_dir = tempfile.mkdtemp()
+        temp_dir = self.temp_dir
         logging.info(f"Temporary directory is created: {temp_dir}")
 
         bronze_blob_folder_path = f"current_season_history/current/{formatted_current_date}"
@@ -242,21 +235,15 @@ class FantasyPremierLeague:
         silver_parquet_file_full_path = os.path.join(temp_dir, parquet_file_name)
 
         az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-        az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=bronze_blob_path)
+        az_hook.get_file(file_path=temp_file_path, container_name=self.bronze_container, blob_name=bronze_blob_path)
         logging.info(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
 
         duckdb.sql(f"CREATE TABLE current_season_history AS SELECT * FROM read_json_auto('{temp_file_path}')")
         logging.info(f"Table current_season_history is created")
         duckdb.sql(f"COPY (SELECT * FROM current_season_history) TO '{silver_parquet_file_full_path}' (FORMAT PARQUET)")
         logging.info(f"Copy data from table current_season_history into file {parquet_file_name}")
-
-        az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-        az_hook.load_file(
-                file_path=silver_parquet_file_full_path,
-                container_name='silver',
-                blob_name=silver_blob_name,
-                overwrite=True
-            )
+        
+        self._upload_file_blob_connection(silver_parquet_file_full_path, self.silver_container, silver_blob_name)
         logging.info(f"File {parquet_file_name} is uploaded into silver container")
 
         os.remove(silver_parquet_file_full_path)
@@ -264,15 +251,15 @@ class FantasyPremierLeague:
 
         os.remove(temp_file_path)
         logging.info(f"{temp_file_path} is removed")
-
+#
         os.rmdir(temp_dir)
         logging.info(f"{temp_dir} is removed")
 
 
-    def player_metadata_bronze_to_silver():
+    def player_metadata_bronze_to_silver(self):
         formatted_current_date = FantasyPremierLeague._get_current_date()
 
-        temp_dir = tempfile.mkdtemp()
+        temp_dir = self.temp_dir
         logging.info(f"Temporary directory is created: {temp_dir}")
 
         bronze_blob_folder_path = f"player_metadata/current/{formatted_current_date}"
@@ -285,7 +272,7 @@ class FantasyPremierLeague:
         silver_parquet_file_full_path = os.path.join(temp_dir, parquet_file_name)
 
         az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-        az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=bronze_blob_path)
+        az_hook.get_file(file_path=temp_file_path, container_name=self.bronze_container, blob_name=bronze_blob_path)
         logging.info(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
 
         duckdb.sql(f"CREATE TABLE player_metadata AS SELECT *, CONCAT(first_name, ' ', second_name) as full_name, now_cost/10 as latest_price FROM read_json_auto('{temp_file_path}')")
@@ -293,13 +280,7 @@ class FantasyPremierLeague:
         duckdb.sql(f"COPY (SELECT * FROM player_metadata) TO '{silver_parquet_file_full_path}' (FORMAT PARQUET)")
         logging.info(f"Copy data from table player_metadata into file {parquet_file_name}")
 
-        az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-        az_hook.load_file(
-                file_path=silver_parquet_file_full_path,
-                container_name='silver',
-                blob_name=silver_blob_name,
-                overwrite=True
-            )
+        self._upload_file_blob_connection(silver_parquet_file_full_path, self.silver_container, silver_blob_name)
         logging.info(f"File {parquet_file_name} is uploaded into silver container")
 
         os.remove(silver_parquet_file_full_path)
@@ -312,10 +293,10 @@ class FantasyPremierLeague:
         logging.info(f"{temp_dir} is removed")
 
 
-    def position_metadata_bronze_to_silver():
+    def position_metadata_bronze_to_silver(self):
         formatted_current_date = FantasyPremierLeague._get_current_date()
 
-        temp_dir = tempfile.mkdtemp()
+        temp_dir = self.temp_dir
         logging.info(f"Temporary directory is created: {temp_dir}")
 
         bronze_blob_folder_path = f"position_metadata/current/{formatted_current_date}"
@@ -328,7 +309,7 @@ class FantasyPremierLeague:
         silver_parquet_file_full_path = os.path.join(temp_dir, parquet_file_name)
 
         az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-        az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=bronze_blob_path)
+        az_hook.get_file(file_path=temp_file_path, container_name=self.bronze_container, blob_name=bronze_blob_path)
         logging.info(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
 
         duckdb.sql(f"CREATE TABLE position_metadata AS SELECT * FROM read_json_auto('{temp_file_path}')")
@@ -336,13 +317,7 @@ class FantasyPremierLeague:
         duckdb.sql(f"COPY (SELECT * FROM position_metadata) TO '{silver_parquet_file_full_path}' (FORMAT PARQUET)")
         logging.info(f"Copy data from table position_metadata into file {parquet_file_name}")
 
-        az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-        az_hook.load_file(
-                file_path=silver_parquet_file_full_path,
-                container_name='silver',
-                blob_name=silver_blob_name,
-                overwrite=True
-            )
+        self._upload_file_blob_connection(silver_parquet_file_full_path, self.silver_container, silver_blob_name)
         logging.info(f"File {parquet_file_name} is uploaded into silver container")
 
         os.remove(silver_parquet_file_full_path)
@@ -350,15 +325,15 @@ class FantasyPremierLeague:
 
         os.remove(temp_file_path)
         logging.info(f"{temp_file_path} is removed")
-
+#
         os.rmdir(temp_dir)
         logging.info(f"{temp_dir} is removed")
 
 
-    def teams_metadata_bronze_to_silver():
+    def teams_metadata_bronze_to_silver(self):
         formatted_current_date = FantasyPremierLeague._get_current_date()
 
-        temp_dir = tempfile.mkdtemp()
+        temp_dir = self.temp_dir
         logging.info(f"Temporary directory is created: {temp_dir}")
 
         bronze_blob_folder_path = f"teams_metadata/current/{formatted_current_date}"
@@ -373,7 +348,7 @@ class FantasyPremierLeague:
         table_name = "teams_metadata"
 
         az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-        az_hook.get_file(file_path=temp_file_path, container_name='bronze', blob_name=bronze_blob_path)
+        az_hook.get_file(file_path=temp_file_path, container_name=self.bronze_container, blob_name=bronze_blob_path)
         logging.info(f"{blob_name} is downloaded at {temp_dir} from {bronze_blob_folder_path}")
 
         duckdb.sql(f"CREATE TABLE {table_name} AS SELECT * FROM read_json_auto('{temp_file_path}')")
@@ -381,13 +356,7 @@ class FantasyPremierLeague:
         duckdb.sql(f"COPY (SELECT * FROM {table_name}) TO '{silver_parquet_file_full_path}' (FORMAT PARQUET)")
         logging.info(f"Copy data from table {table_name} into file {parquet_file_name}")
 
-        az_hook = WasbHook.get_hook(AZURE_BLOB_CONN_ID)
-        az_hook.load_file(
-                file_path=silver_parquet_file_full_path,
-                container_name='silver',
-                blob_name=silver_blob_name,
-                overwrite=True
-            )
+        self._upload_file_blob_connection(silver_parquet_file_full_path, self.silver_container, silver_blob_name)
         logging.info(f"File {parquet_file_name} is uploaded into silver container")
 
         os.remove(silver_parquet_file_full_path)
@@ -395,15 +364,14 @@ class FantasyPremierLeague:
 
         os.remove(temp_file_path)
         logging.info(f"{temp_file_path} is removed")
-
+#
         os.rmdir(temp_dir)
         logging.info(f"{temp_dir} is removed")
 
 
-    def get_silver_old_date(**kwargs):
-        container_name = 'silver'
+    def get_silver_old_date(self, **kwargs):
         az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-        list_of_files = az_hook.get_blobs_list_recursive(container_name=container_name) #To get the first level blob name
+        list_of_files = az_hook.get_blobs_list_recursive(container_name=self.silver_container) #To get the first level blob name
         logging.info(f"List of files - {list_of_files}")
         date_counts = set()
         for path in list_of_files:
@@ -427,17 +395,16 @@ class FantasyPremierLeague:
             logging.info("Value is same as current date. Not pushing.")
 
     
-    def move_silver_file_into_archive_folder(**kwargs):
+    def move_silver_file_into_archive_folder(self, **kwargs):
         ti = kwargs['ti']
         formatted_current_date = ti.xcom_pull(task_ids='get_silver_old_date', key='my_key')
 
         logging.info(f"Date processed is {formatted_current_date}")
 
         if formatted_current_date is not None:
-                container_name = 'silver'
 
                 az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-                list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
+                list_of_files = az_hook.get_blobs_list(container_name=self.silver_container) #To get the first level blob name
                 new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
                 logging.info("File is renamed")
                 logging.info(new_list_of_files)
@@ -449,27 +416,25 @@ class FantasyPremierLeague:
                     virtual_folder_path = f"{folder_name}/archive/{formatted_current_date}/"
 
 
-                    temp_dir = tempfile.mkdtemp()
+                    temp_dir = self.temp_dir
                     logging.info(f"Created local temporary folder - {temp_dir}")
                     temp_file_path = os.path.join(temp_dir, blob_name)
                     logging.info(f"Created full path to download blob into local temporary folder - {temp_file_path}")
 
                     az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-                    az_hook.get_file(file_path=temp_file_path, container_name=container_name, blob_name=blob_path)
+                    az_hook.get_file(file_path=temp_file_path, container_name=self.silver_container, blob_name=blob_path)
                     logging.info(f"File is downloaded at {temp_dir}")
 
-                    az_hook.load_file(
-                                file_path=temp_file_path,
-                                container_name=container_name,
-                                blob_name=f"{virtual_folder_path}{blob_name}",
-                                overwrite=True
-                            )
+                    self._upload_file_blob_connection(temp_file_path, self.silver_container, f"{virtual_folder_path}{blob_name}")
                     logging.info(f"File {blob_name} is copied to archive")
+
+                    os.rmdir(temp_dir)
+                    logging.info(f"{temp_dir} is removed")
         else:
             logging.info("No file is archived")
 
 
-    def delete_old_file_in_silver_folder(**kwargs):
+    def delete_old_file_in_silver_folder(self, **kwargs):
         # Reference
         # https://airflow.apache.org/docs/apache-airflow-providers-microsoft-azure/stable/_api/airflow/providers/microsoft/azure/hooks/data_lake/index.html
         # https://airflow.apache.org/docs/apache-airflow-providers-microsoft-azure/stable/_api/airflow/providers/microsoft/azure/hooks/wasb/index.html
@@ -478,15 +443,10 @@ class FantasyPremierLeague:
         formatted_current_date = ti.xcom_pull(task_ids='get_silver_old_date', key='my_key')
         logging.info(f"Date processed is {formatted_current_date}")
 
-        container_name = 'silver'
-
-        file_system_name = 'silver'
-
-
         # Delete directory and the file
 
         az_hook = WasbHook(wasb_conn_id=AZURE_BLOB_CONN_ID)
-        list_of_files = az_hook.get_blobs_list(container_name=container_name) #To get the first level blob name
+        list_of_files = az_hook.get_blobs_list(container_name=self.silver_container) #To get the first level blob name
         new_list_of_files = [original_string.replace('/', '') for original_string in list_of_files]
 
         for folder_name in new_list_of_files:
@@ -494,7 +454,7 @@ class FantasyPremierLeague:
             adls_hook = AzureDataLakeStorageV2Hook(adls_conn_id=AZURE_BLOB_CONN_ID)
             logging.info("Client is created")
             try:
-                adls_hook.delete_directory(file_system_name, directory_to_delete)
+                adls_hook.delete_directory(self.silver_container, directory_to_delete)
                 logging.info(f"Folder '{directory_to_delete}' deleted in silver container successfully.")
             except Exception as e:
                 logging.error(f"Fail to delete directory {directory_to_delete} because of {str(e)}")
