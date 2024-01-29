@@ -8,6 +8,8 @@ from src.fantasyPremierLeague_fileProcessing import FantasyPremierLeague
 
 AZURE_BLOB_CONN_ID = 'azure_blob_conn_id'
 
+fantasypremierleague = FantasyPremierLeague()
+
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -38,7 +40,7 @@ fetch_fpl_api_data_task = SimpleHttpOperator(
 
 upload_to_blob_task = PythonOperator(
     task_id='upload_to_blob',
-    python_callable=FantasyPremierLeague.upload_to_blob,
+    python_callable=fantasypremierleague.upload_to_blob,
     op_kwargs = ['ti'],
     provide_context=True,
     dag=dag,
@@ -53,7 +55,7 @@ extract_data_from_api_task = PythonOperator(
 
 download_file_from_blob_task = PythonOperator(
     task_id='download_file_from_blob',
-    python_callable=FantasyPremierLeague.download_file_from_blob,
+    python_callable=fantasypremierleague.download_file_from_blob,
     provide_context=True,
     dag=dag,
 )
@@ -61,7 +63,7 @@ download_file_from_blob_task = PythonOperator(
 
 get_old_date_task = PythonOperator(
     task_id='get_old_date',
-    python_callable=FantasyPremierLeague.get_old_date,
+    python_callable=fantasypremierleague.get_old_date,
     provide_context=True,
     dag=dag
 )
@@ -69,7 +71,7 @@ get_old_date_task = PythonOperator(
 
 move_bronze_file_into_archive_folder_task = PythonOperator(
     task_id='move_bronze_file_into_archive_folder',
-    python_callable=FantasyPremierLeague.move_bronze_file_into_archive_folder,
+    python_callable=fantasypremierleague.move_bronze_file_into_archive_folder,
     provide_context=True,
     dag=dag,
 )
@@ -77,7 +79,7 @@ move_bronze_file_into_archive_folder_task = PythonOperator(
 
 delete_file_in_actual_folder_task = PythonOperator(
     task_id='delete_file_in_actual_folder',
-    python_callable=FantasyPremierLeague.delete_file_in_actual_folder,
+    python_callable=fantasypremierleague.delete_file_in_actual_folder,
     provide_context=True,
     dag=dag,
 )
@@ -85,7 +87,7 @@ delete_file_in_actual_folder_task = PythonOperator(
 
 current_season_history_bronze_to_silver_task = PythonOperator(
     task_id='current_season_history_bronze_to_silver',
-    python_callable=FantasyPremierLeague.current_season_history_bronze_to_silver,
+    python_callable=fantasypremierleague.current_season_history_bronze_to_silver,
     provide_context=True,
     dag=dag,
 )
@@ -93,7 +95,7 @@ current_season_history_bronze_to_silver_task = PythonOperator(
 
 player_metadata_bronze_to_silver_task = PythonOperator(
     task_id='player_metadata_bronze_to_silver',
-    python_callable=FantasyPremierLeague.player_metadata_bronze_to_silver,
+    python_callable=fantasypremierleague.player_metadata_bronze_to_silver,
     provide_context=True,
     dag=dag,
 )
@@ -101,7 +103,7 @@ player_metadata_bronze_to_silver_task = PythonOperator(
 
 position_metadata_bronze_to_silver_task = PythonOperator(
     task_id='position_metadata_bronze_to_silver',
-    python_callable=FantasyPremierLeague.position_metadata_bronze_to_silver,
+    python_callable=fantasypremierleague.position_metadata_bronze_to_silver,
     provide_context=True,
     dag=dag,
 )
@@ -109,7 +111,7 @@ position_metadata_bronze_to_silver_task = PythonOperator(
 
 teams_metadata_bronze_to_silver_task = PythonOperator(
     task_id='teams_metadata_bronze_to_silver',
-    python_callable=FantasyPremierLeague.teams_metadata_bronze_to_silver,
+    python_callable=fantasypremierleague.teams_metadata_bronze_to_silver,
     provide_context=True,
     dag=dag,
 )
@@ -117,7 +119,7 @@ teams_metadata_bronze_to_silver_task = PythonOperator(
 
 get_silver_old_date_task = PythonOperator(
     task_id='get_silver_old_date',
-    python_callable=FantasyPremierLeague.get_silver_old_date,
+    python_callable=fantasypremierleague.get_silver_old_date,
     provide_context=True,
     dag=dag,
 )
@@ -125,7 +127,7 @@ get_silver_old_date_task = PythonOperator(
 
 move_silver_file_into_archive_folder_task = PythonOperator(
     task_id='move_silver_file_into_archive_folder',
-    python_callable=FantasyPremierLeague.move_silver_file_into_archive_folder,
+    python_callable=fantasypremierleague.move_silver_file_into_archive_folder,
     provide_context=True,
     dag=dag,
 )
@@ -133,7 +135,7 @@ move_silver_file_into_archive_folder_task = PythonOperator(
 
 delete_old_file_in_silver_folder_task = PythonOperator(
     task_id='delete_old_file_in_silver_folder',
-    python_callable=FantasyPremierLeague.delete_old_file_in_silver_folder,
+    python_callable=fantasypremierleague.delete_old_file_in_silver_folder,
     provide_context=True,
     dag=dag,
 )
