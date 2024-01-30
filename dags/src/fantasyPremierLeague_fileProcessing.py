@@ -15,10 +15,10 @@ class FantasyPremierLeague:
     def __init__(self):
         self.bronze_container = 'bronze'
         self.silver_container = 'silver'
-        self.local_temp_file_path = None
         self.temp_dir = tempfile.mkdtemp()
 
 
+    @staticmethod
     def extract_data_from_api(**kwargs):
         ti = kwargs['ti']
         api_result = ti.xcom_pull(task_ids='fetch_fpl_api_data')
@@ -32,6 +32,7 @@ class FantasyPremierLeague:
         return api_result_dict['events'], api_result_dict['teams'], api_result_dict['elements'], api_result_dict['element_types']
     
 
+    @staticmethod
     def _get_current_date():
         current_utc_timestamp = datetime.utcnow()
         utc_timezone = pytz.timezone('UTC')
@@ -49,6 +50,23 @@ class FantasyPremierLeague:
             blob_name = destination_blob_directory,
             overwrite = True
         )
+
+    
+    def _remove_local_temp_file_and_directory(self, local_temp_directory):
+        files_to_delete = [os.path.join(local_temp_directory, file) for file in os.listdir(local_temp_directory) if os.path.isfile(os.path.join(local_temp_directory, file))]
+
+        for file_path in files_to_delete:
+            
+            try:
+                os.remove(file_path)
+                logging.info(f"Temporary file removed: {file_path}")
+            except Exception as e:
+                logging.error(f"Error during local temp cleanup: {e}", exc_info=True)
+
+        os.rmdir(local_temp_directory)
+        logging.info(f"Local temporary directory removed: {local_temp_directory}")
+
+
 
 
     def upload_to_blob(self, **kwargs):
@@ -126,11 +144,7 @@ class FantasyPremierLeague:
         logging.info(f"File {current_season_history_file_name} is uploaded at into Bronze container")
 
 
-        os.remove(player_id_local_file_path)
-        logging.info(f"File {current_season_history_file_name} is deleted in local temporary directory - {temp_dir}")
-
-        os.rmdir(temp_dir)
-        logging.info(f"Local temporary directory - {temp_dir} is deleted")
+        self._remove_local_temp_file_and_directory(temp_dir)
 
 
     def get_old_date(self, **kwargs):
@@ -246,14 +260,7 @@ class FantasyPremierLeague:
         self._upload_file_blob_connection(silver_parquet_file_full_path, self.silver_container, silver_blob_name)
         logging.info(f"File {parquet_file_name} is uploaded into silver container")
 
-        os.remove(silver_parquet_file_full_path)
-        logging.info(f"{silver_parquet_file_full_path} is removed")
-
-        os.remove(temp_file_path)
-        logging.info(f"{temp_file_path} is removed")
-#
-        os.rmdir(temp_dir)
-        logging.info(f"{temp_dir} is removed")
+        self._remove_local_temp_file_and_directory(temp_dir)
 
 
     def player_metadata_bronze_to_silver(self):
@@ -283,14 +290,7 @@ class FantasyPremierLeague:
         self._upload_file_blob_connection(silver_parquet_file_full_path, self.silver_container, silver_blob_name)
         logging.info(f"File {parquet_file_name} is uploaded into silver container")
 
-        os.remove(silver_parquet_file_full_path)
-        logging.info(f"{silver_parquet_file_full_path} is removed")
-
-        os.remove(temp_file_path)
-        logging.info(f"{temp_file_path} is removed")
-
-        os.rmdir(temp_dir)
-        logging.info(f"{temp_dir} is removed")
+        self._remove_local_temp_file_and_directory(temp_dir)
 
 
     def position_metadata_bronze_to_silver(self):
@@ -320,14 +320,7 @@ class FantasyPremierLeague:
         self._upload_file_blob_connection(silver_parquet_file_full_path, self.silver_container, silver_blob_name)
         logging.info(f"File {parquet_file_name} is uploaded into silver container")
 
-        os.remove(silver_parquet_file_full_path)
-        logging.info(f"{silver_parquet_file_full_path} is removed")
-
-        os.remove(temp_file_path)
-        logging.info(f"{temp_file_path} is removed")
-#
-        os.rmdir(temp_dir)
-        logging.info(f"{temp_dir} is removed")
+        self._remove_local_temp_file_and_directory(temp_dir)
 
 
     def teams_metadata_bronze_to_silver(self):
@@ -359,14 +352,7 @@ class FantasyPremierLeague:
         self._upload_file_blob_connection(silver_parquet_file_full_path, self.silver_container, silver_blob_name)
         logging.info(f"File {parquet_file_name} is uploaded into silver container")
 
-        os.remove(silver_parquet_file_full_path)
-        logging.info(f"{silver_parquet_file_full_path} is removed")
-
-        os.remove(temp_file_path)
-        logging.info(f"{temp_file_path} is removed")
-#
-        os.rmdir(temp_dir)
-        logging.info(f"{temp_dir} is removed")
+        self._remove_local_temp_file_and_directory(temp_dir)
 
 
     def get_silver_old_date(self, **kwargs):
@@ -428,8 +414,7 @@ class FantasyPremierLeague:
                     self._upload_file_blob_connection(temp_file_path, self.silver_container, f"{virtual_folder_path}{blob_name}")
                     logging.info(f"File {blob_name} is copied to archive")
 
-                    os.rmdir(temp_dir)
-                    logging.info(f"{temp_dir} is removed")
+                self._remove_local_temp_file_and_directory(temp_dir)
         else:
             logging.info("No file is archived")
 
